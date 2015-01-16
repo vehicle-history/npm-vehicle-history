@@ -1,0 +1,341 @@
+{
+  "parser": {
+    "fields": [
+      {
+        "name": "name.manufacturer",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "#manufacturer"
+          }
+        ]
+      },
+      {
+        "name": "name.name",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "span#name"
+          }
+        ]
+      },
+      {
+        "name": "name.model",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "div#model"
+          }
+        ]
+      },
+      {
+        "name": "variant.type",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "span#type"
+          }
+        ]
+      },
+      {
+        "name": "variant.kind",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "span#kind"
+          }
+        ]
+      },
+      {
+        "name": "engine.cc",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "span#cc"
+          }
+        ]
+      },
+      {
+        "name": "engine.fuel",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "span#fuel"
+          }
+        ]
+      },
+      {
+        "name": "production.year",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "p.year span.strong"
+          }
+        ]
+      },
+      {
+        "name": "policy.status",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "p.oc span.strong"
+          },
+          {
+            "type": "trim"
+          }
+        ]
+      },
+      {
+        "name": "registration.status",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "p.status span.strong"
+          },
+          {
+            "type": "trim"
+          }
+        ]
+      },
+      {
+        "name": "inspection.status",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "p.tech span.strong"
+          },
+          {
+            "type": "trim"
+          }
+        ]
+      },
+      {
+        "name": "mileage.value",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "#mileageeeee"
+          },
+          {
+            "type": "trim"
+          }
+        ]
+      },
+      {
+        "name": "mileage.type",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": "#mileagetype"
+          },
+          {
+            "type": "trim"
+          }
+        ]
+      },
+      {
+        "name": "status.stolen",
+        "stages": [
+          {
+            "type": "selector",
+            "selector": ".stolen"
+          }
+        ]
+      }
+    ]
+  },
+  "resolver": {
+    "variant": {
+      "types": [
+        {
+          "name": "CAR",
+          "values": [
+            "car"
+          ]
+        },
+        {
+          "name": "VAN",
+          "values": [
+            "van"
+          ]
+        }
+      ],
+      "kinds": [
+        {
+          "name": "HATCHBACK",
+          "values": [
+            "hatchback"
+          ]
+        },
+        {
+          "name": "LIMOUSINE",
+          "values": [
+            "limousine"
+          ]
+        },
+        {
+          "name": "SEDAN",
+          "values": [
+            "sedan"
+          ]
+        },
+        {
+          "name": "OTHER",
+          "values": [
+            "other"
+          ]
+        }
+      ],
+      "engineFuels": [
+        {
+          "name": "PETROL",
+          "values": [
+            "petrol"
+          ]
+        },
+        {
+          "name": "CNG",
+          "values": [
+            "cng"
+          ]
+        },
+        {
+          "name": "LPG",
+          "values": [
+            "lpg"
+          ]
+        },
+        {
+          "name": "DIESEL",
+          "values": [
+            "diesel"
+          ]
+        },
+        {
+          "name": "OTHER",
+          "values": [
+            "other"
+          ]
+        }
+      ],
+      "policyStatus": [
+        {
+          "name": "UPTODATE",
+          "values": [
+            "actual"
+          ]
+        },
+        {
+          "name": "OUTDATED",
+          "values": [
+            "not actual"
+          ]
+        }
+      ],
+      "registrationStatus": [
+        {
+          "name": "REGISTERED",
+          "values": [
+            "registered"
+          ]
+        },
+        {
+          "name": "OUTDATED",
+          "values": [
+            "not registered"
+          ]
+        }
+      ],
+      "inspectionStatus": [
+        {
+          "name": "UPTODATE",
+          "values": [
+            "actual"
+          ]
+        },
+        {
+          "name": "OUTDATED",
+          "values": [
+            "not actual"
+          ]
+        }
+      ],
+      "mileageStatus": [
+        {
+          "name": "KM",
+          "values": [
+            "km"
+          ]
+        },
+        {
+          "name": "MILE",
+          "values": [
+            "mile"
+          ]
+        }
+      ]
+    }
+  },
+  "example": {
+    "plate": "AB1234",
+    "vin": "ABC123456789DEF",
+    "firstRegistrationDate": "11.12.2014",
+    "url": "https://vehiclehost/vehicle-history.xhtml"
+  },
+  "form": {
+    "url": "https://vehiclehost",
+    "prefix": "vehiclehistory",
+    "postUrlHost": "vehiclehost",
+    "postUrlRegex": "/action=\"(https\\:\/\/vehiclehost\/strona\\-glowna.+?)\" class/g",
+    "headers": {
+      "Content-Type": "application/xhtml+xml",
+      "User-Agent": "Mozilla/5.0",
+      "Origin": "https://vehiclehost",
+      "Referer": "https://vehiclehost"
+    },
+    "fields": [
+      {
+        "fieldName": "vehiclehistory:buttonCheck",
+        "fieldRegex": null,
+        "fieldDefaultValue": "Check",
+        "searchCarRequestField": null
+      },
+      {
+        "fieldName": "vehiclehistory:form",
+        "fieldRegex": null,
+        "fieldDefaultValue": "vehiclehistory:form",
+        "searchCarRequestField": null
+      },
+      {
+        "fieldName": "javax.faces.encodedURL",
+        "fieldRegex": "/name=\"javax.faces.encodedURL\" value=\"(.+?)\"/g",
+        "fieldDefaultValue": null,
+        "searchCarRequestField": null
+      },
+      {
+        "fieldName": "javax.faces.ViewState",
+        "fieldRegex": "/id=\"javax.faces.ViewState\" value=\"(.+?)\"/g",
+        "fieldDefaultValue": null,
+        "searchCarRequestField": null
+      },
+      {
+        "fieldName": "vehiclehistory:plate",
+        "fieldRegex": null,
+        "fieldDefaultValue": null,
+        "searchCarRequestField": "plate"
+      },
+      {
+        "fieldName": "vehiclehistory:vin",
+        "fieldRegex": null,
+        "fieldDefaultValue": null,
+        "searchCarRequestField": "vin"
+      },
+      {
+        "fieldName": "vehiclehistory:date",
+        "fieldRegex": null,
+        "fieldDefaultValue": null,
+        "searchCarRequestField": "firstRegistrationDate"
+      }
+    ]
+  }
+}
