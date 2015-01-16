@@ -4,14 +4,13 @@
   "description": "Check vehicle history based on vin number.",
   "main": "./index.js",
   "dependencies": {
-    "config": "^1.9.0",
-    "html-entities": "^1.1.1",
-    "request": "^2.51.0",
+    "pl-numberplates": "^0.5.0",
     "winston": "^0.8.3",
     "vehicle-history-provider-pl": "^0.9.0",
     "www-fields-parser": "^0.1.4"
   },
   "devDependencies": {
+    "config": "^1.10.0",
     "chai": "^1.10.0",
     "istanbul": "^0.3.5",
     "mocha": "^2.1.0",
