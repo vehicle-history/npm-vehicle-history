@@ -25,14 +25,14 @@ npm test
 
 ## Dependencies
 
-- [config](https://github.com/lorenwest/node-config): Configuration control for production node deployments
-- [html-entities](https://github.com/mdevils/node-html-entities): Faster HTML entities encode/decode library.
-- [request](https://github.com/request/request): Simplified HTTP request client.
+- [pl-numberplates](https://github.com/Zenedith/npm-pl-numberplates): Node JS package to validate PL number plates.
 - [winston](https://github.com/flatiron/winston): A multi-transport async logging library for Node.js
+- [vehicle-history-provider-web](https://github.com/vehicle-history/npm-vehicle-history-provider-web): Vehicle history web provider using car plate and vin number.
 - [www-fields-parser](https://github.com/Zenedith/npm-www-fields-parser): Web page parser based on cheerio
 
 ## Dev Dependencies
 
+- [config](https://github.com/lorenwest/node-config): Configuration control for production node deployments
 - [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [istanbul](https://github.com/gotwarlost/istanbul): Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework

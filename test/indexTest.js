@@ -37,4 +37,13 @@ describe('index test', function () {
       done();
     });
   });
+
+
+  it('should export meta version', function (done) {
+
+    var version = index.VERSION;
+    should.exist(version);
+    done();
+  });
+
 });
