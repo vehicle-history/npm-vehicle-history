@@ -1,9 +1,9 @@
 # vehicle-history
 [![npm version](https://badge.fury.io/js/vehicle-history.svg)](http://badge.fury.io/js/vehicle-history)
-[![Coverage Status](https://coveralls.io/repos/vehicle-history/npm-vehicle-history/badge.png?branch=parser)](https://coveralls.io/r/vehicle-history/npm-vehicle-history?branch=parser)
-[![Build Status](https://travis-ci.org/vehicle-history/npm-vehicle-history.svg?branch=parser)](https://travis-ci.org/vehicle-history/npm-vehicle-history)
+[![Coverage Status](https://coveralls.io/repos/vehicle-history/npm-vehicle-history/badge.png?branch=master)](https://coveralls.io/r/vehicle-history/npm-vehicle-history?branch=master)
+[![Build Status](https://travis-ci.org/vehicle-history/npm-vehicle-history.svg?branch=master)](https://travis-ci.org/vehicle-history/npm-vehicle-history)
 
-[![NPM](https://nodei.co/npm/vehicle-history.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vehicle-history/)
+[![NPM](https://nodei.co/npm/vehicle-history.png?downloads=true&stars=true)](https://nodei.co/npm/vehicle-history/)
 
 Check vehicle history based on vin number.
 
@@ -28,7 +28,6 @@ npm test
 - [pl-numberplates](https://github.com/Zenedith/npm-pl-numberplates): Node JS package to validate PL number plates.
 - [winston](https://github.com/flatiron/winston): A multi-transport async logging library for Node.js
 - [vehicle-history-provider-web](https://github.com/vehicle-history/npm-vehicle-history-provider-web): Vehicle history web provider using car plate and vin number.
-- [www-fields-parser](https://github.com/Zenedith/npm-www-fields-parser): Web page parser based on cheerio
 
 ## Dev Dependencies
 
