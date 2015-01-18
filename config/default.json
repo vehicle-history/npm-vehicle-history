@@ -35,6 +35,18 @@
           ]
         },
         {
+          "name": "COUPE",
+          "values": [
+            "coupe"
+          ]
+        },
+        {
+          "name": "COMBI",
+          "values": [
+            "combi"
+          ]
+        },
+        {
           "name": "OTHER",
           "values": [
             "other"

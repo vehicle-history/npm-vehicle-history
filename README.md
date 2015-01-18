@@ -25,9 +25,12 @@ npm test
 
 ## Dependencies
 
+- [async](https://github.com/caolan/async): Higher-order functions and common patterns for asynchronous code
 - [pl-numberplates](https://github.com/Zenedith/npm-pl-numberplates): Node JS package to validate PL number plates.
-- [winston](https://github.com/flatiron/winston): A multi-transport async logging library for Node.js
+- [uk-numberplates](https://github.com/CapitalReg/uk-numberplates): Node JS package to validate UK number plates.
 - [vehicle-history-provider-web](https://github.com/vehicle-history/npm-vehicle-history-provider-web): Vehicle history web provider using car plate and vin number.
+- [vehicle-history-provider-xml](https://github.com/vehicle-history/npm-vehicle-history-provider-xml): Vehicle history xml provider using car plate and vin number.
+- [winston](https://github.com/flatiron/winston): A multi-transport async logging library for Node.js
 
 ## Dev Dependencies
 
