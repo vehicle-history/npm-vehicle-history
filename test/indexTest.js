@@ -46,5 +46,4 @@ describe('index test', function () {
     done();
   });
 
-})
-;
+});

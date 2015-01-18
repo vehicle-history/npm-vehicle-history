@@ -9,7 +9,7 @@ describe('provider test', function () {
 
     var plate = 'pwr 17wq';
 
-    var dataProvider = provider.selectProvider(plate, function (err, dataProvider) {
+    provider.selectProvider(plate, function (err, dataProvider) {
       expect(dataProvider).to.be.not.null;
       done();
     });
