@@ -8,11 +8,18 @@ exports.checkVehicleHistory = function (plate, vin, firstRegistrationDate, optio
   logger.debug('checkCarHistory: plate:' + plate + ', vin:' + vin + ', firstRegistrationDate:' + firstRegistrationDate);
 
   try {
-    var carDataProvider = provider.selectProvider(plate);
-    carDataProvider.checkVehicleHistory(plate, vin, firstRegistrationDate, options, callback);
+    provider.selectProvider(plate, function (err, carDataProvider) {
+
+      if (err) {
+        logger.debug('checkCarHistory: Unable to select provider for plate "%s"', plate);
+        return callback(err);
+      }
+
+      return carDataProvider.checkVehicleHistory(plate, vin, firstRegistrationDate, options, callback);
+    });
   }
   catch (e) {
-    logger.warn('checkCarHistory: unable to get car data from provider for plate: "%s"', plate);
+    logger.warn('checkCarHistory: unable to get car data from provider for plate: "%s".', plate, e);
     return callback(e);
   }
 };

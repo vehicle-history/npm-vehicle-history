@@ -25,9 +25,12 @@ npm test
 
 ## Dependencies
 
+- [async](https://github.com/caolan/async): Higher-order functions and common patterns for asynchronous code
 - [pl-numberplates](https://github.com/Zenedith/npm-pl-numberplates): Node JS package to validate PL number plates.
-- [winston](https://github.com/flatiron/winston): A multi-transport async logging library for Node.js
+- [uk-numberplates](https://github.com/CapitalReg/uk-numberplates): Node JS package to validate UK number plates.
 - [vehicle-history-provider-web](https://github.com/vehicle-history/npm-vehicle-history-provider-web): Vehicle history web provider using car plate and vin number.
+- [vehicle-history-provider-xml](https://github.com/vehicle-history/npm-vehicle-history-provider-xml): Vehicle history xml provider using car plate and vin number.
+- [winston](https://github.com/flatiron/winston): A multi-transport async logging library for Node.js
 
 ## Dev Dependencies
 
@@ -36,6 +39,11 @@ npm test
 - [istanbul](https://github.com/gotwarlost/istanbul): Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
 - [rewire](https://github.com/jhnns/rewire): Easy dependency injection for node.js unit testing
+
+
+## Changelog
+
+[CHANGELOG](CHANGELOG.md)
 
 
 ## License
