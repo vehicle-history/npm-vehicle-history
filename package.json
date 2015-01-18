@@ -4,9 +4,12 @@
   "description": "Check vehicle history based on vin number.",
   "main": "./index.js",
   "dependencies": {
+    "async": "^0.9.0",
     "pl-numberplates": "^0.5.0",
-    "winston": "^0.8.3",
-    "vehicle-history-provider-web": "^0.9.1"
+    "uk-numberplates": "^0.0.2",
+    "vehicle-history-provider-web": "^0.9.1",
+    "vehicle-history-provider-xml": "^0.9.0",
+    "winston": "^0.8.3"
   },
   "devDependencies": {
     "config": "^1.10.0",

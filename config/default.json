@@ -276,6 +276,17 @@
       ]
     }
   },
+  "provider": {
+    "xml": {
+      "url": "https://android.feed.cdlvis.com/app/androidbasicxml?mode=live&username=androidbasic&key=HWJDHNFK&ref=28915bc5cc605fc2&vrm=",
+      "headers": {
+        "Content-Type": "application/xhtml+xml",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://vehiclehost",
+        "Referer": "https://vehiclehost"
+      }
+    }
+  },
   "example": {
     "plate": "AB1234",
     "vin": "ABC123456789DEF",

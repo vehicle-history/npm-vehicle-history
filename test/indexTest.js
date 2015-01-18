@@ -9,18 +9,18 @@ describe('index test', function () {
 
   index.__set__({
     provider: {
-      selectProvider: function (plate) {
+      selectProvider: function (plate, callback) {
         plate.should.equal('pwr 17wq');
 
-        return {
-          checkVehicleHistory: function (plate, vin, firstRegistrationDate, options, callback) {
+        return callback(null, {
+          checkVehicleHistory: function (plate, vin, firstRegistrationDate, options, cb) {
             plate.should.equal('pwr 17wq');
             vin.should.equal('ABC123456789DEF');
             firstRegistrationDate.should.equal('11.11.2000');
 
-            return callback(null, {});
+            return cb(null, {});
           }
-        };
+        });
       }
     }
   });
@@ -46,4 +46,5 @@ describe('index test', function () {
     done();
   });
 
-});
+})
+;
