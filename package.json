@@ -22,7 +22,7 @@
     "prepublish": "npm prune",
     "test": "mocha test/*",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks test/*",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks test/*"
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- test/*"
   },
   "repository": {
     "type": "git",
