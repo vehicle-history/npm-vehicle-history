@@ -203,7 +203,6 @@
       "example": {
         "plate": "AB1234",
         "vin": "ABC123456789DEF",
-        "firstRegistrationDate": "11.12.2014",
         "url": "https://vehiclehost/vehicle-history.xhtml"
       },
       "form": {
