@@ -1,6 +1,6 @@
 require('newrelic');
 var myRestifyApi = require('my-restify-api');
-var vehicleHistoryController = require('./lib/controllers/vehicleHistory');
+var vehicleHistoryController = require('./lib/controller/vehicleHistory');
 var logger = require('./lib/logger/logger').logger;
 
 var PATH = '/api/vehicle-history';

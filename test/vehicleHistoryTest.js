@@ -1,13 +1,13 @@
-var rewire = require('rewire');
-var index = rewire('../index');
 var options = require('config');
+var rewire = require('rewire');
+var vehicleHistory = rewire('../lib/vehicleHistory');
 var chai = require('chai');
 var should = chai.should();
 var expect = chai.expect;
 
-describe('index test', function () {
+describe('vehicle history test', function () {
 
-  index.__set__({
+  vehicleHistory.__set__({
     provider: {
       selectProvider: function (plate, callback) {
         plate.should.equal('pwr 17wq');
@@ -31,7 +31,7 @@ describe('index test', function () {
     var vin = 'ABC123456789DEF';
     var firstRegistrationDate = '11.11.2000';
 
-    index.checkVehicleHistory(plate, vin, firstRegistrationDate, options, function (err, result) {
+    vehicleHistory.checkVehicleHistory(plate, vin, firstRegistrationDate, options, function (err, result) {
       should.not.exist(err);
       should.exist(result);
       done();
@@ -41,7 +41,7 @@ describe('index test', function () {
 
   it('should export meta version', function (done) {
 
-    var version = index.VERSION;
+    var version = vehicleHistory.VERSION;
     should.exist(version);
     done();
   });
