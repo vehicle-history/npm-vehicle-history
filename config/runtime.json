@@ -77,15 +77,10 @@
           ]
         },
         {
-          "name": "GAS",
+          "name": "PETROL_GAS",
           "values": [
             "cng",
-            "lpg"
-          ]
-        },
-        {
-          "name": "PETROL/GAS",
-          "values": [
+            "lpg",
             "petrol/gas"
           ]
         },
