@@ -1,8 +1,9 @@
 {
   "apiVersion": "1.0.0",
   "swaggerVersion": "1.2",
-  "basePath1": "http://localhost:3000",
-  "basePath": "http://vehicle-history-api.herokuapp.com",
+  "basePath2": "http://localhost:3000",
+  "basePath": "http://vehicle-history.herokuapp.com",
+  "basePath1": "http://vehicle-history-api.herokuapp.com",
   "apis": [
     {
       "path": "/api-docs/vehicle-history.json",

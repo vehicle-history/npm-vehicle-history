@@ -1,8 +1,9 @@
 {
   "apiVersion": "1.0.0",
   "swaggerVersion": "1.2",
-  "basePath1": "http://localhost:3000",
-  "basePath": "http://vehicle-history-api.herokuapp.com",
+  "basePath2": "http://localhost:3000",
+  "basePath": "http://vehicle-history.herokuapp.com",
+  "basePath1": "http://vehicle-history-api.herokuapp.com",
   "resourcePath": "/api/vehicle-history",
   "apis": [
     {
@@ -35,7 +36,7 @@
             {
               "name": "vin",
               "description": "Car vin number",
-              "required": true,
+              "required": false,
               "type": "string",
               "defaultValue": "ABC123456789DEF",
               "paramType": "query",
@@ -44,17 +45,9 @@
             {
               "name": "firstRegistrationDate",
               "description": "Car first registration date",
-              "required": true,
-              "type": "string",
-              "defaultValue": "11.12.2014",
-              "paramType": "query",
-              "allowMultiple": false
-            },
-            {
-              "name": "captcha",
-              "description": "Service captcha",
               "required": false,
               "type": "string",
+              "defaultValue": "11.12.2014",
               "paramType": "query",
               "allowMultiple": false
             }
