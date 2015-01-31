@@ -19,6 +19,9 @@ var errorHandlers = {
   },
   ServiceUnavailable: {
     class: 'ServiceUnavailableError'
+  },
+  InvalidVehiclePlate: {
+    class: 'BadRequestError'
   }
 };
 
