@@ -160,6 +160,7 @@
             "JAGUAR",
             "KIA",
             "LEXUS",
+            "LAND_ROVER",
             "MERCEDES",
             "MAZDA",
             "MINI",
@@ -168,6 +169,7 @@
             "OPEL",
             "PEUGEOT",
             "RENAULT",
+            "ROLLS_ROYCE",
             "SEAT",
             "SKODA",
             "SUZUKI",
@@ -241,7 +243,8 @@
             "SEDAN",
             "SEDAN",
             "COUPE",
-            "COMBI",
+            "ESTATE",
+            "HEARSE",
             "OTHER"
           ]
         }
@@ -261,8 +264,8 @@
           "required": true,
           "enum": [
             "PETROL",
-            "CNG",
-            "LPG",
+            "GAS",
+            "PETROL/GAS",
             "DIESEL",
             "ETANOL",
             "HYBRID",
