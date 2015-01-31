@@ -37,7 +37,8 @@
         {
           "name": "SEDAN",
           "values": [
-            "sedan"
+            "sedan",
+            "4 door saloon"
           ]
         },
         {
@@ -47,9 +48,16 @@
           ]
         },
         {
-          "name": "COMBI",
+          "name": "ESTATE",
           "values": [
-            "kombi"
+            "kombi",
+            "estate"
+          ]
+        },
+        {
+          "name": "HEARSE",
+          "values": [
+            "hearse"
           ]
         },
         {
@@ -69,21 +77,23 @@
           ]
         },
         {
-          "name": "CNG",
+          "name": "GAS",
           "values": [
-            "cng"
+            "cng",
+            "lpg"
           ]
         },
         {
-          "name": "LPG",
+          "name": "PETROL/GAS",
           "values": [
-            "lpg"
+            "petrol/gas"
           ]
         },
         {
           "name": "DIESEL",
           "values": [
-            "diesel"
+            "diesel",
+            "heavy oil"
           ]
         },
         {
@@ -255,6 +265,12 @@
           ]
         },
         {
+          "name": "LAND_ROVER",
+          "values": [
+            "LAND ROVER"
+          ]
+        },
+        {
           "name": "MERCEDES",
           "values": [
             "MERCEDES"
@@ -300,6 +316,12 @@
           "name": "RENAULT",
           "values": [
             "RENAULT"
+          ]
+        },
+        {
+          "name": "ROLLS_ROYCE",
+          "values": [
+            "rolls royce"
           ]
         },
         {
