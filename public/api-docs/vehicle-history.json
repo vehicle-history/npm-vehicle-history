@@ -264,8 +264,7 @@
           "required": true,
           "enum": [
             "PETROL",
-            "GAS",
-            "PETROL/GAS",
+            "PETROL_GAS",
             "DIESEL",
             "ETANOL",
             "HYBRID",
