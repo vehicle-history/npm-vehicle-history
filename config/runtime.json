@@ -1,0 +1,619 @@
+{
+  "newrelic": {
+    "license_key": "7a9a50d4ff13eee07f471716868e3a8fa5fe1482",
+    "logging": "info"
+  },
+  "resolver": {
+    "variant": {
+      "types": [
+        {
+          "name": "CAR",
+          "values": [
+            "samochód osobowy"
+          ]
+        },
+        {
+          "name": "VAN",
+          "values": [
+            "samochód dostawczy"
+          ]
+        }
+      ],
+      "kinds": [
+        {
+          "name": "HATCHBACK",
+          "values": [
+            "samochód osobowy",
+            "wielozadaniowy",
+            "hatchback"
+          ]
+        },
+        {
+          "name": "LIMOUSINE",
+          "values": [
+            "limousine"
+          ]
+        },
+        {
+          "name": "SEDAN",
+          "values": [
+            "sedan"
+          ]
+        },
+        {
+          "name": "COUPE",
+          "values": [
+            "coupe"
+          ]
+        },
+        {
+          "name": "COMBI",
+          "values": [
+            "kombi"
+          ]
+        },
+        {
+          "name": "OTHER",
+          "values": [
+            "inny"
+          ]
+        }
+      ],
+      "engineFuels": [
+        {
+          "name": "PETROL",
+          "values": [
+            "benzyna",
+            "benzyna bezołowiowa",
+            "petrol"
+          ]
+        },
+        {
+          "name": "CNG",
+          "values": [
+            "cng"
+          ]
+        },
+        {
+          "name": "LPG",
+          "values": [
+            "lpg"
+          ]
+        },
+        {
+          "name": "DIESEL",
+          "values": [
+            "diesel"
+          ]
+        },
+        {
+          "name": "OTHER",
+          "values": [
+            "inny"
+          ]
+        }
+      ],
+      "policyStatus": [
+        {
+          "name": "UPTODATE",
+          "values": [
+            "aktualna"
+          ]
+        },
+        {
+          "name": "OUTDATED",
+          "values": [
+            "nie aktualna"
+          ]
+        }
+      ],
+      "registrationStatus": [
+        {
+          "name": "REGISTERED",
+          "values": [
+            "zarejestrowany"
+          ]
+        },
+        {
+          "name": "OUTDATED",
+          "values": [
+            "nie aktualna"
+          ]
+        }
+      ],
+      "inspectionStatus": [
+        {
+          "name": "UPTODATE",
+          "values": [
+            "aktualne"
+          ]
+        },
+        {
+          "name": "OUTDATED",
+          "values": [
+            "nie aktualne"
+          ]
+        }
+      ],
+      "mileageStatus": [
+        {
+          "name": "KM",
+          "values": [
+            "km"
+          ]
+        },
+        {
+          "name": "MILE",
+          "values": [
+            "mile"
+          ]
+        }
+      ],
+      "countries": [
+        {
+          "name": "PL",
+          "values": [
+            "PL"
+          ]
+        },
+        {
+          "name": "UK",
+          "values": [
+            "UK"
+          ]
+        }
+      ],
+      "makes": [
+        {
+          "name": "AUDI",
+          "values": [
+            "AUDI"
+          ]
+        },
+        {
+          "name": "BMW",
+          "values": [
+            "BMW"
+          ]
+        },
+        {
+          "name": "CHEVROLET",
+          "values": [
+            "CHEVROLET"
+          ]
+        },
+        {
+          "name": "CHRYSLER",
+          "values": [
+            "CHRYSLER"
+          ]
+        },
+        {
+          "name": "CITROEN",
+          "values": [
+            "CITROEN"
+          ]
+        },
+        {
+          "name": "DACIA",
+          "values": [
+            "DACIA"
+          ]
+        },
+        {
+          "name": "DAEWOO",
+          "values": [
+            "DAEWOO"
+          ]
+        },
+        {
+          "name": "FIAT",
+          "values": [
+            "FIAT"
+          ]
+        },
+        {
+          "name": "FSO",
+          "values": [
+            "FSO"
+          ]
+        },
+        {
+          "name": "FORD",
+          "values": [
+            "FORD"
+          ]
+        },
+        {
+          "name": "HONDA",
+          "values": [
+            "HONDA"
+          ]
+        },
+        {
+          "name": "HYUNDAI",
+          "values": [
+            "HYUNDAI"
+          ]
+        },
+        {
+          "name": "JAGUAR",
+          "values": [
+            "JAGUAR"
+          ]
+        },
+        {
+          "name": "KIA",
+          "values": [
+            "KIA"
+          ]
+        },
+        {
+          "name": "LEXUS",
+          "values": [
+            "LEXUS"
+          ]
+        },
+        {
+          "name": "MERCEDES",
+          "values": [
+            "MERCEDES"
+          ]
+        },
+        {
+          "name": "MAZDA",
+          "values": [
+            "MAZDA"
+          ]
+        },
+        {
+          "name": "MINI",
+          "values": [
+            "MINI"
+          ]
+        },
+        {
+          "name": "MITSUBISHI",
+          "values": [
+            "MITSUBISHI"
+          ]
+        },
+        {
+          "name": "NISSAN",
+          "values": [
+            "NISSAN"
+          ]
+        },
+        {
+          "name": "OPEL",
+          "values": [
+            "OPEL"
+          ]
+        },
+        {
+          "name": "PEUGEOT",
+          "values": [
+            "PEUGEOT"
+          ]
+        },
+        {
+          "name": "RENAULT",
+          "values": [
+            "RENAULT"
+          ]
+        },
+        {
+          "name": "SEAT",
+          "values": [
+            "SEAT"
+          ]
+        },
+        {
+          "name": "SKODA",
+          "values": [
+            "SKODA"
+          ]
+        },
+        {
+          "name": "SUZUKI",
+          "values": [
+            "SUZUKI"
+          ]
+        },
+        {
+          "name": "TOYOTA",
+          "values": [
+            "TOYOTA"
+          ]
+        },
+        {
+          "name": "VOLKSWAGEN",
+          "values": [
+            "VOLKSWAGEN"
+          ]
+        },
+        {
+          "name": "VOLVO",
+          "values": [
+            "VOLVO"
+          ]
+        }
+      ]
+    }
+  },
+  "providers": {
+    "uk": {
+      "type": "xml",
+      "url": "https://android.feed.cdlvis.com/app/androidbasicxml?mode=live&username=androidbasic&key=HWJDHNFK&ref=28915bc5cc605fc2&vrm=",
+      "headers": {
+        "Content-Type": "application/xhtml+xml",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://android.feed.cdlvis.com",
+        "Referer": "https://android.feed.cdlvis.com"
+      },
+      "xmlParserOptions": {
+        "object": true,
+        "reversible": false,
+        "coerce": true,
+        "sanitize": true,
+        "trim": true,
+        "arrayNotation": false
+      },
+      "mapper": [
+        {
+          "from": "vrm",
+          "to": "plate.value"
+        },
+        {
+          "from": "make",
+          "to": "name.manufacturer"
+        },
+        {
+          "from": "model",
+          "to": "name.model"
+        },
+        {
+          "from": "body",
+          "to": "variant.kind"
+        },
+        {
+          "from": "fuel",
+          "to": "engine.fuel"
+        },
+        {
+          "from": "engine_size",
+          "to": "engine.cc"
+        },
+        {
+          "from": "first_registered",
+          "to": "registration.firstDate"
+        }
+      ],
+      "mapperDefaults": [
+        {
+          "value": "uk",
+          "to": "plate.country"
+        }
+      ]
+    },
+    "pl": {
+      "type": "web",
+      "example": {
+        "plate": "ABC1234",
+        "vin": "ABC123456789DEF",
+        "url": "https://historiapojazdu.gov.pl/historia-pojazdu-web/przykladowy-raport.xhtml"
+      },
+      "form": {
+        "url": "https://historiapojazdu.gov.pl",
+        "prefix": "_historiapojazduportlet_WAR_historiapojazduportlet_:j_idt6:",
+        "notFoundMessage": "Sprawdź czy wpisałeś poprawne dane",
+        "postUrlHost": "historiapojazdu.gov.pl",
+        "postUrlRegex": "/action=\"(https\\:\/\/historiapojazdu.gov.pl\/strona\\-glowna.+?)\" class/g",
+        "headers": {
+          "Content-Type": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+          "User-Agent": "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36",
+          "Origin": "https://historiapojazdu.gov.pl",
+          "Referer": "https://historiapojazdu.gov.pl/web/guest/strona-glowna"
+        },
+        "fields": [
+          {
+            "fieldName": "_historiapojazduportlet_WAR_historiapojazduportlet_:btnSprawdz",
+            "fieldRegex": null,
+            "fieldDefaultValue": "Sprawdź pojazd »",
+            "searchCarRequestField": null
+          },
+          {
+            "fieldName": "_historiapojazduportlet_WAR_historiapojazduportlet_:formularz",
+            "fieldRegex": null,
+            "fieldDefaultValue": "_historiapojazduportlet_WAR_historiapojazduportlet_:formularz",
+            "searchCarRequestField": null
+          },
+          {
+            "fieldName": "javax.faces.encodedURL",
+            "fieldRegex": "/name=\"javax.faces.encodedURL\" value=\"(.+?)\"/g",
+            "fieldDefaultValue": null,
+            "searchCarRequestField": null
+          },
+          {
+            "fieldName": "javax.faces.ViewState",
+            "fieldRegex": "/id=\"javax.faces.ViewState\" value=\"(.+?)\"/g",
+            "fieldDefaultValue": null,
+            "searchCarRequestField": null
+          },
+          {
+            "fieldName": "_historiapojazduportlet_WAR_historiapojazduportlet_:rej",
+            "fieldRegex": null,
+            "fieldDefaultValue": null,
+            "searchCarRequestField": "plate"
+          },
+          {
+            "fieldName": "_historiapojazduportlet_WAR_historiapojazduportlet_:vin",
+            "fieldRegex": null,
+            "fieldDefaultValue": null,
+            "searchCarRequestField": "vin"
+          },
+          {
+            "fieldName": "_historiapojazduportlet_WAR_historiapojazduportlet_:data",
+            "fieldRegex": null,
+            "fieldDefaultValue": null,
+            "searchCarRequestField": "firstRegistrationDate"
+          }
+        ]
+      },
+      "parser": {
+        "fields": [
+          {
+            "name": "name.manufacturer",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "#marka"
+              }
+            ]
+          },
+          {
+            "name": "name.name",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "span#typ"
+              }
+            ]
+          },
+          {
+            "name": "name.model",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "span#model"
+              }
+            ]
+          },
+          {
+            "name": "variant.type",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "span#rodzaj"
+              }
+            ]
+          },
+          {
+            "name": "variant.kind",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "span#podrodzaj"
+              }
+            ]
+          },
+          {
+            "name": "engine.cc",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "span#pojemnosc"
+              }
+            ]
+          },
+          {
+            "name": "engine.fuel",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "span#paliwo"
+              }
+            ]
+          },
+          {
+            "name": "production.year",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "p.year span.strong"
+              }
+            ]
+          },
+          {
+            "name": "policy.status",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "p.oc span.strong"
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "registration.status",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "p.status span.strong"
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "inspection.status",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "p.tech span.strong"
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "mileage.value",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "mileageeeee"
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "mileage.type",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": "#jednostkaLicznika"
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "status.stolen",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": ".stolen"
+              }
+            ]
+          },
+          {
+            "name": "vin",
+            "stages": [
+              {
+                "type": "selector",
+                "selector": ".vin"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
