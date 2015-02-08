@@ -8,7 +8,7 @@
     "async": "^0.9.0",
     "config": "^1.10.0",
     "http-signature": "^0.10.1",
-    "my-restify-api": "^0.5.3",
+    "my-restify-api": "^0.5.4",
     "newrelic": "^1.15.1",
     "pl-numberplates": "^0.5.2",
     "uk-numberplates": "^0.0.2",
