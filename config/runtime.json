@@ -43,6 +43,13 @@
           ]
         },
         {
+          "name": "CONVERTIBLE",
+          "values": [
+            "convertible",
+            "cabrio"
+          ]
+        },
+        {
           "name": "COUPE",
           "values": [
             "coupe"
@@ -181,6 +188,12 @@
           "name": "AUDI",
           "values": [
             "AUDI"
+          ]
+        },
+        {
+          "name": "BENTLEY",
+          "values": [
+            "BENTLEY"
           ]
         },
         {
@@ -367,6 +380,12 @@
           "name": "VOLVO",
           "values": [
             "VOLVO"
+          ]
+        },
+        {
+          "name": "VAUXHALL",
+          "values": [
+            "VAUXHALL"
           ]
         }
       ]
