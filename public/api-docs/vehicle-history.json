@@ -146,6 +146,7 @@
           "required": true,
           "enum": [
             "AUDI",
+            "BENTLEY",
             "BMW",
             "CHEVROLET",
             "CHRYSLER",
@@ -177,6 +178,7 @@
             "TRIUMPH",
             "VOLKSWAGEN",
             "VOLVO",
+            "VAUXHALL",
             "UNKNOWN"
           ]
         },
@@ -242,7 +244,7 @@
             "HATCHBACK",
             "LIMOUSINE",
             "SEDAN",
-            "SEDAN",
+            "CONVERTIBLE",
             "COUPE",
             "ESTATE",
             "HEARSE",
