@@ -1,10 +1,9 @@
 require('newrelic');
 var myRestifyApi = require('my-restify-api');
 var UnauthorizedError = myRestifyApi.error.UnauthorizedError;
+var oauth = myRestifyApi.plugin.oauth;
 var vehicleHistoryController = require('./lib/controller/vehicleHistory');
 var logger = require('./lib/logger/logger').logger;
-var oauth = require('./lib/auth/oauth');
-
 
 var PATH = '/api/vehicle-history';
 
@@ -37,8 +36,7 @@ var cacheHandler = function (req, res, next) {
 
 var authHandler = function (req, res, next) {
   try {
-    oauth
-      .authorize(req)
+    oauth(req)
       .scope('openid')
       .client('vehiclehistory')
       .user();
