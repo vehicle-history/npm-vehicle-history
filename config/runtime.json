@@ -101,6 +101,12 @@
           ]
         },
         {
+          "name": "HYBRID",
+          "values": [
+            "hybrid electric"
+          ]
+        },
+        {
           "name": "OTHER",
           "values": [
             "inny"
