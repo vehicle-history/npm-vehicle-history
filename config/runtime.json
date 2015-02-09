@@ -25,6 +25,7 @@
           "values": [
             "samochód osobowy",
             "wielozadaniowy",
+            "5 door hatchback",
             "hatchback"
           ]
         },
@@ -369,6 +370,7 @@
     "uk": {
       "type": "xml",
       "url": "https://android.feed.cdlvis.com/app/androidbasicxml?mode=live&username=androidbasic&key=HWJDHNFK&ref=28915bc5cc605fc2&vrm=",
+      "timeout": 5000,
       "headers": {
         "Content-Type": "application/xhtml+xml",
         "User-Agent": "Mozilla/5.0",
@@ -423,6 +425,7 @@
     "pl": {
       "type": "web",
       "example": {
+        "timeout": 5000,
         "plate": "ABC1234",
         "vin": "ABC123456789DEF",
         "url": "https://historiapojazdu.gov.pl/historia-pojazdu-web/przykladowy-raport.xhtml"
@@ -433,6 +436,7 @@
         "notFoundMessage": "Sprawdź czy wpisałeś poprawne dane",
         "postUrlHost": "historiapojazdu.gov.pl",
         "postUrlRegex": "/action=\"(https\\:\/\/historiapojazdu.gov.pl\/strona\\-glowna.+?)\" class/g",
+        "timeout": 5000,
         "headers": {
           "Content-Type": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
           "User-Agent": "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36",
