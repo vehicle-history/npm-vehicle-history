@@ -19,6 +19,12 @@ describe('vehicle history test', function () {
             firstRegistrationDate.should.equal('11.11.2000');
 
             return cb(null, {});
+          },
+          validateParams: function (vin, firstRegistrationDate) {
+            vin.should.equal('ABC123456789DEF');
+            firstRegistrationDate.should.equal('11.11.2000');
+
+            return true;
           }
         });
       }

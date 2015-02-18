@@ -352,14 +352,14 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "car mileage type",
+          "description": "car event type",
           "required": true,
           "enum": [
             "PRODUCTION",
             "REGISTRATION",
             "DEREGISTRATION",
             "CHANGE_OWNER",
-            "INSPECTON",
+            "INSPECTION",
             "UNKNOWN"
           ]
         },
@@ -388,7 +388,8 @@
           "description": "event owner type, used for CHANGE_OWNER event type",
           "required": false,
           "enum": [
-            "PRIVATE"
+            "PRIVATE",
+            "UNKNOWN"
           ]
         },
         "location": {
@@ -399,6 +400,11 @@
         "abroadRegistration": {
           "type": "string",
           "description": "event abroad registration (true/false) information, used for REGISTRATION event type",
+          "required": false
+        },
+        "mileage": {
+          "$ref": "Mileage",
+          "description": "event mileage, used for INSPECTION event type",
           "required": false
         }
       }
