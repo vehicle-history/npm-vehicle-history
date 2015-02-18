@@ -51,7 +51,7 @@
   "license": "MIT",
   "homepage": "https://github.com/vehicle-history/npm-vehicle-history",
   "engines": {
-    "node": ">=0.10.0"
+    "node": "0.10.35"
   },
   "readmeFilename": "README.md",
   "_id": "vehicle-history@0.1.9",
