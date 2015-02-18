@@ -394,6 +394,47 @@
             "VAUXHALL"
           ]
         }
+      ],
+      "owners": [
+        {
+          "name": "PRIVATE",
+          "values": [
+            "osoba fizyczna"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "name": "CHANGE_OWNER",
+          "values": [
+            "/historia-pojazdu-portlet/images/zmiana-wlasciciela.png",
+            "/historia-pojazdu-portlet/images/pierwszy-wlasciciel.png"
+          ]
+        },
+        {
+          "name": "REGISTRATION",
+          "values": [
+            "/historia-pojazdu-portlet/images/pierwsza-rejestracja-w-polsce.png"
+          ]
+        },
+        {
+          "name": "ABROAD_REGISTRATION",
+          "values": [
+            "/historia-pojazdu-portlet/images/pierwsza-rejestracja.png"
+          ]
+        },
+        {
+          "name": "DEREGISTRATION",
+          "values": [
+            "/historia-pojazdu-portlet/images/wyrejestrowanie.png"
+          ]
+        },
+        {
+          "name": "INSPECTON",
+          "values": [
+            "/historia-pojazdu-portlet/images/badanie-techniczne.png"
+          ]
+        }
       ]
     }
   },
@@ -526,7 +567,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "#marka"
+                "opts": ["#marka"]
               }
             ]
           },
@@ -535,7 +576,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "span#typ"
+                "opts": ["span#typ"]
               }
             ]
           },
@@ -544,7 +585,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "span#model"
+                "opts": ["span#model"]
               }
             ]
           },
@@ -553,7 +594,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "span#rodzaj"
+                "opts": ["span#rodzaj"]
               }
             ]
           },
@@ -562,7 +603,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "span#podrodzaj"
+                "opts": ["span#podrodzaj"]
               }
             ]
           },
@@ -571,7 +612,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "span#pojemnosc"
+                "opts": ["span#pojemnosc"]
               }
             ]
           },
@@ -580,7 +621,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "span#paliwo"
+                "opts": ["span#paliwo"]
               }
             ]
           },
@@ -589,7 +630,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "p.year span.strong"
+                "opts": ["p.year span.strong"]
               }
             ]
           },
@@ -598,7 +639,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "p.oc span.strong"
+                "opts": ["p.oc span.strong"]
               },
               {
                 "type": "trim"
@@ -610,7 +651,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "p.status span.strong"
+                "opts": ["p.status span.strong"]
               },
               {
                 "type": "trim"
@@ -622,7 +663,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "p.tech span.strong"
+                "opts": ["p.tech span.strong"]
               },
               {
                 "type": "trim"
@@ -634,7 +675,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "mileageeeee"
+                "opts": ["mileageeeee"]
               },
               {
                 "type": "trim"
@@ -646,7 +687,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": "#jednostkaLicznika"
+                "opts": ["#jednostkaLicznika"]
               },
               {
                 "type": "trim"
@@ -658,7 +699,7 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": ".stolen"
+                "opts": [".stolen"]
               }
             ]
           },
@@ -667,7 +708,89 @@
             "stages": [
               {
                 "type": "selector",
-                "selector": ".vin"
+                "opts": [".vin"]
+              }
+            ]
+          },
+          {
+            "name": "events",
+            "stages": [
+              {
+                "type": "group",
+                "opts": [
+                  {
+                    "context": "table#timeline tbody",
+                    "elements": "tr.event",
+                    "fields": [
+                      {
+                        "name": "date",
+                        "stages": [
+                          {
+                            "type": "selector",
+                            "opts": [".date p"]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "type",
+                        "stages": [
+                          {
+                            "type": "selector",
+                            "opts": ["td.axis img", null, "attr=src"]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "description",
+                        "stages": [
+                          {
+                            "type": "selector",
+                            "opts": [".description p", null, ["first", "text"]]
+                          },
+                          {
+                            "type": "trim"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "owner",
+                        "stages": [
+                          {
+                            "type": "selector",
+                            "opts": [".wlasciciel", null, ["last", "text"]]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "location",
+                        "stages": [
+                          {
+                            "type": "selector",
+                            "opts": [".miejsceRejestracji", null, ["last", "text"]]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "note",
+                        "stages": [
+                          {
+                            "type": "selector",
+                            "opts": [".przyczynaWyrejestrowania", null, ["last", "text"]]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "mileage",
+                        "stages": [
+                          {
+                            "type": "selector",
+                            "opts": [".stanLicznika", null, ["last", "text"]]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
