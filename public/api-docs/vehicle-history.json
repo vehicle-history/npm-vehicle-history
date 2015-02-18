@@ -29,7 +29,7 @@
               "description": "Car plate number",
               "required": true,
               "type": "string",
-              "defaultValue": "ABC1234",
+              "defaultValue": "ABC12345",
               "paramType": "query",
               "allowMultiple": false
             },
