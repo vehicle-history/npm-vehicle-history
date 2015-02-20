@@ -8,7 +8,7 @@
     "async": "^0.9.0",
     "config": "^1.11.0",
     "http-signature": "^0.10.1",
-    "my-restify-api": "Zenedith/npm-my-restify-api#32c4cb83b04053ba98c9844d7619f5159e673a7d",
+    "my-restify-api": "Zenedith/npm-my-restify-api#946c4dea55d4b6cc23e5288c6335f1f119d73ff2",
     "newrelic": "^1.16.2",
     "pl-numberplates": "^0.5.3",
     "uk-numberplates": "^0.0.2",
@@ -52,7 +52,7 @@
   "license": "MIT",
   "homepage": "https://github.com/vehicle-history/npm-vehicle-history",
   "engines": {
-    "node": "0.10.35"
+    "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
   "_id": "vehicle-history@0.1.9",
