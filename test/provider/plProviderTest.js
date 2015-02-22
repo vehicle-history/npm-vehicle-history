@@ -1,6 +1,7 @@
 var options = require('config');
 var chai = require('chai');
 var rewire = require('rewire');
+var SearchCarRequestBuilder = require('vehicle-history-model').model.searchCarRequest.SearchCarRequestBuilder;
 var provider = rewire('../../lib/provider/plProvider');
 var should = chai.should();
 var expect = chai.expect;
@@ -22,10 +23,18 @@ describe('web provider test', function () {
     var plate = 'PWR 17WQ';
     var vin = 'ABC123456789DEF';
     var firstRegistrationDate = 'dd.mm.rrrr';
+    var country = 'PL';
+
+    var searchCarRequest = new SearchCarRequestBuilder()
+      .withPlate(plate)
+      .withVin(vin)
+      .withFirstRegistrationDate(firstRegistrationDate)
+      .withCountry(country)
+      .build();
 
     provider.__set__({
       webProvider: {
-        checkVehicleHistory: function (plate, vin, firstRegistrationDate, opts, callback) {
+        checkVehicleHistory: function (searchCarRequest, opts, callback) {
 
           expect(opts).to.have.ownProperty('resolver');
           expect(opts).to.have.ownProperty('example');
@@ -37,7 +46,7 @@ describe('web provider test', function () {
       }
     });
 
-    provider.checkVehicleHistory(plate, vin, firstRegistrationDate, options, function (err, report) {
+    provider.checkVehicleHistory(searchCarRequest, options, function (err, report) {
       should.not.exist(err);
       should.exist(report);
       done();
