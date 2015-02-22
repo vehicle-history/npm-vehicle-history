@@ -368,6 +368,7 @@
             "DEREGISTRATION",
             "CHANGE_OWNER",
             "INSPECTION",
+            "CO_OWNER",
             "UNKNOWN"
           ]
         },
@@ -393,7 +394,7 @@
         },
         "ownerType": {
           "type": "string",
-          "description": "event owner type, used for CHANGE_OWNER event type",
+          "description": "event owner type, used for CHANGE_OWNER or CO_OWNER event type",
           "required": false,
           "enum": [
             "PRIVATE",
