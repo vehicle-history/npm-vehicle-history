@@ -1,9 +1,9 @@
 var options = require('config');
 var rewire = require('rewire');
+var SearchCarRequestBuilder = require('vehicle-history-model').model.searchCarRequest.SearchCarRequestBuilder;
 var vehicleHistory = rewire('../lib/vehicleHistory');
 var chai = require('chai');
 var should = chai.should();
-var expect = chai.expect;
 
 describe('vehicle history test', function () {
 
@@ -13,18 +13,21 @@ describe('vehicle history test', function () {
         plate.should.equal('pwr 17wq');
 
         return callback(null, {
-          checkVehicleHistory: function (plate, vin, firstRegistrationDate, options, cb) {
-            plate.should.equal('pwr 17wq');
-            vin.should.equal('ABC123456789DEF');
-            firstRegistrationDate.should.equal('11.11.2000');
+          checkVehicleHistory: function (searchCarRequest, options, cb) {
+            searchCarRequest.plate.should.equal('pwr 17wq');
+            searchCarRequest.vin.should.equal('ABC123456789DEF');
+            searchCarRequest.firstRegistrationDate.should.equal('11.11.2000');
 
             return cb(null, {});
           },
-          validateParams: function (vin, firstRegistrationDate) {
-            vin.should.equal('ABC123456789DEF');
-            firstRegistrationDate.should.equal('11.11.2000');
+          validateParams: function (searchCarRequest) {
+            searchCarRequest.vin.should.equal('ABC123456789DEF');
+            searchCarRequest.firstRegistrationDate.should.equal('11.11.2000');
 
             return true;
+          },
+          getCountry: function () {
+            return 'PL';
           }
         });
       }
@@ -36,8 +39,16 @@ describe('vehicle history test', function () {
     var plate = 'pwr 17wq';
     var vin = 'ABC123456789DEF';
     var firstRegistrationDate = '11.11.2000';
+    var country = 'UK';
 
-    vehicleHistory.checkVehicleHistory(plate, vin, firstRegistrationDate, options, function (err, result) {
+    var searchCarRequest = new SearchCarRequestBuilder()
+      .withPlate(plate)
+      .withVin(vin)
+      .withFirstRegistrationDate(firstRegistrationDate)
+      .withCountry(country)
+      .build();
+
+    vehicleHistory.checkVehicleHistory(searchCarRequest, options, function (err, result) {
       should.not.exist(err);
       should.exist(result);
       done();
