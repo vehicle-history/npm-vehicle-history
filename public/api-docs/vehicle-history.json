@@ -49,6 +49,15 @@
               "defaultValue": "11.12.2014",
               "paramType": "query",
               "allowMultiple": false
+            },
+            {
+              "name": "country",
+              "description": "Car registration country",
+              "required": false,
+              "type": "string",
+              "defaultValue": "PL",
+              "paramType": "query",
+              "allowMultiple": false
             }
           ],
           "responseMessages": [
