@@ -683,7 +683,7 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["mileageeeee"]
+                "opts": [".km span"]
               },
               {
                 "type": "trim"
