@@ -436,6 +436,12 @@
             "/historia-pojazdu-portlet/images/badanie-techniczne.png",
             "/documents/10181/0/icon-green-point.png/5c091161-7dce-4f84-b632-0d43d663a2fb"
           ]
+        },
+        {
+          "name": "CO_OWNER",
+          "values": [
+            "/historia-pojazdu-portlet/images/dodanie-wspolwlasciciela.png"
+          ]
         }
       ]
     }
@@ -760,6 +766,15 @@
                           {
                             "type": "selector",
                             "opts": [".wlasciciel", null, ["last", "text"]]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "coowner",
+                        "stages": [
+                          {
+                            "type": "selector",
+                            "opts": [".wspolwlasciciel", null, ["last", "text"]]
                           }
                         ]
                       },
