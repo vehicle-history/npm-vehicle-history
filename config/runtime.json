@@ -3,6 +3,13 @@
     "license_key": "7a9a50d4ff13eee07f471716868e3a8fa5fe1482",
     "logging": "info"
   },
+  "loggly": {
+    "level": "info",
+    "subdomain": "zenedith",
+    "inputToken": "b24d575e-842b-4b4d-ac91-6c0a12b60476",
+    "tags": ["NodeJS"],
+    "json": true
+  },
   "resolver": {
     "variant": {
       "types": [
