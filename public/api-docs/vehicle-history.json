@@ -369,6 +369,7 @@
             "CHANGE_OWNER",
             "INSPECTION",
             "CO_OWNER",
+            "CHANGED_REGISTRATION_LOCATION",
             "UNKNOWN"
           ]
         },
