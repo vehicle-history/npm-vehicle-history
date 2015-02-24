@@ -449,6 +449,12 @@
           "values": [
             "/historia-pojazdu-portlet/images/dodanie-wspolwlasciciela.png"
           ]
+        },
+        {
+          "name": "CHANGED_REGISTRATION_LOCATION",
+          "values": [
+            "/historia-pojazdu-portlet/images/zmiana-miejsca-rejestracji.png"
+          ]
         }
       ]
     }
