@@ -10,7 +10,7 @@
     "http-signature": "^0.10.1",
     "my-restify-api": "Zenedith/npm-my-restify-api#270f6217f0950bf3f69699d0794ab45e9a488997",
     "newrelic": "^1.16.4",
-    "pl-numberplates": "^0.5.3",
+    "pl-numberplates": "^0.5.4",
     "uk-numberplates": "^0.0.2",
     "vehicle-history-model": "vehicle-history/npm-vehicle-history-model#f1bc48f70d9b92d2612dd0eae2436b344946fa26",
     "vehicle-history-provider-web": "^0.9.10",
