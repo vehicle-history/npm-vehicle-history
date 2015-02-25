@@ -20,9 +20,9 @@
           ]
         },
         {
-          "name": "VAN",
+          "name": "MOTORCYCLE",
           "values": [
-            "samochód dostawczy"
+            "motocykl"
           ]
         }
       ],
@@ -73,6 +73,36 @@
           "name": "HEARSE",
           "values": [
             "hearse"
+          ]
+        },
+        {
+          "name": "STANDARD",
+          "values": [
+            "osobowy"
+          ]
+        },
+        {
+          "name": "SPORT",
+          "values": [
+            "sportowy"
+          ]
+        },
+        {
+          "name": "CRUISER",
+          "values": [
+            "cruiser"
+          ]
+        },
+        {
+          "name": "TOURING",
+          "values": [
+            "touring"
+          ]
+        },
+        {
+          "name": "SPORT_TOURING",
+          "values": [
+            "sport_touring"
           ]
         },
         {
