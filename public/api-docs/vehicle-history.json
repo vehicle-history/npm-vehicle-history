@@ -241,7 +241,8 @@
           "required": true,
           "enum": [
             "CAR",
-            "MOTORCYCLE"
+            "MOTORCYCLE",
+            "UNKNOWN"
           ]
         },
         "kind": {
@@ -261,7 +262,8 @@
             "CRUISER",
             "TOURING",
             "SPORT_TOURING",
-            "OTHER"
+            "OTHER",
+            "UNKNOWN"
           ]
         }
       }
@@ -286,7 +288,8 @@
             "HYBRID",
             "ELECTRIC",
             "HYDROGEN",
-            "OTHER"
+            "OTHER",
+            "UNKNOWN"
           ]
         }
       }
@@ -299,9 +302,9 @@
           "description": "car policy status",
           "required": true,
           "enum": [
-            "UNKNOWN",
             "UPTODATE",
-            "OUTDATED"
+            "OUTDATED",
+            "UNKNOWN"
           ]
         }
       }
@@ -329,9 +332,9 @@
           "description": "registration status",
           "required": true,
           "enum": [
-            "UNKNOWN",
             "REGISTERED",
-            "UNREGISTERED"
+            "UNREGISTERED",
+            "UNKNOWN"
           ]
         },
         "firstAt": {
