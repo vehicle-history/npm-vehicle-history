@@ -46,6 +46,7 @@
           "name": "SEDAN",
           "values": [
             "sedan",
+            "kareta (sedan)",
             "4 door saloon"
           ]
         },
@@ -106,7 +107,7 @@
           ]
         },
         {
-          "name": "OTHER",
+          "name": "UNKNOWN",
           "values": [
             "inny"
           ]
