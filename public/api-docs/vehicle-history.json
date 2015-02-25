@@ -241,7 +241,7 @@
           "required": true,
           "enum": [
             "CAR",
-            "VAN"
+            "MOTORCYCLE"
           ]
         },
         "kind": {
@@ -256,6 +256,11 @@
             "COUPE",
             "ESTATE",
             "HEARSE",
+            "STANDARD",
+            "SPORT",
+            "CRUISER",
+            "TOURING",
+            "SPORT_TOURING",
             "OTHER"
           ]
         }
