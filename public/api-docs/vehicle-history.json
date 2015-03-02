@@ -257,6 +257,8 @@
             "COUPE",
             "ESTATE",
             "HEARSE",
+            "OFF_ROAD",
+            "VAN",
             "STANDARD",
             "SPORT",
             "CRUISER",
@@ -407,6 +409,7 @@
           "required": false,
           "enum": [
             "PRIVATE",
+            "COMPANY",
             "UNKNOWN"
           ]
         },
