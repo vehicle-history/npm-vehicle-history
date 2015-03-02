@@ -12,9 +12,9 @@
     "newrelic": "^1.16.4",
     "pl-numberplates": "^0.5.4",
     "uk-numberplates": "^0.0.2",
-    "vehicle-history-model": "vehicle-history/npm-vehicle-history-model#766fcac45ddd9c86d876611ea33eb423f0adf01a",
-    "vehicle-history-provider-web": "^0.9.10",
-    "vehicle-history-provider-xml": "^0.9.8",
+    "vehicle-history-model": "^0.9.24",
+    "vehicle-history-provider-web": "^0.9.11",
+    "vehicle-history-provider-xml": "^0.9.9",
     "winston": "^0.9.0",
     "winston-loggly": "^1.0.2"
   },
