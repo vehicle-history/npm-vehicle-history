@@ -77,6 +77,18 @@
           ]
         },
         {
+          "name": "OFF_ROAD",
+          "values": [
+            "terenowy"
+          ]
+        },
+        {
+          "name": "VAN",
+          "values": [
+            "van"
+          ]
+        },
+        {
           "name": "STANDARD",
           "values": [
             "osobowy"
@@ -438,6 +450,12 @@
           "name": "PRIVATE",
           "values": [
             "osoba fizyczna"
+          ]
+        },
+        {
+          "name": "COMPANY",
+          "values": [
+            "firma lub organizacja"
           ]
         }
       ],
