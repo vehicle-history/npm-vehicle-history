@@ -154,6 +154,7 @@
           "required": true,
           "enum": [
             "AUDI",
+            "ALFA_ROMEO",
             "BENTLEY",
             "BMW",
             "CHEVROLET",
@@ -167,6 +168,7 @@
             "HONDA",
             "HYUNDAI",
             "JAGUAR",
+            "YAMAHA",
             "KIA",
             "LEXUS",
             "LAND_ROVER",
@@ -179,11 +181,16 @@
             "PEUGEOT",
             "RENAULT",
             "ROLLS_ROYCE",
+            "SETRA",
+            "SCANIA",
+            "SPRITE_SPORT",
+            "SAAB",
             "SEAT",
             "SKODA",
             "SUZUKI",
             "TOYOTA",
             "TRIUMPH",
+            "URSUS",
             "VOLKSWAGEN",
             "VOLVO",
             "VAUXHALL",
@@ -242,6 +249,10 @@
           "enum": [
             "CAR",
             "MOTORCYCLE",
+            "BUS",
+            "TRACTOR",
+            "LIGHT_TRAILER",
+            "TRUCK",
             "UNKNOWN"
           ]
         },
@@ -259,11 +270,14 @@
             "HEARSE",
             "OFF_ROAD",
             "VAN",
+            "WAGON",
             "STANDARD",
             "SPORT",
             "CRUISER",
             "TOURING",
             "SPORT_TOURING",
+            "WHEELED",
+            "OTHER_NOT_CAMPING",
             "OTHER",
             "UNKNOWN"
           ]
