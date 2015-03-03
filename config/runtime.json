@@ -78,7 +78,8 @@
           "name": "CONVERTIBLE",
           "values": [
             "convertible",
-            "cabrio"
+            "cabrio",
+            "kabriolet"
           ]
         },
         {
@@ -352,6 +353,13 @@
           "name": "FSO",
           "values": [
             "FSO"
+          ]
+        },
+        {
+          "name": "FSM",
+          "values": [
+            "FSM",
+            "fsm-bielsko biała"
           ]
         },
         {
