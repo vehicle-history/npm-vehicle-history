@@ -24,6 +24,30 @@
           "values": [
             "motocykl"
           ]
+        },
+        {
+          "name": "BUS",
+          "values": [
+            "autobus"
+          ]
+        },
+        {
+          "name": "TRACTOR",
+          "values": [
+            "ciągnik rolniczy"
+          ]
+        },
+        {
+          "name": "LIGHT_TRAILER",
+          "values": [
+            "przyczepa lekka"
+          ]
+        },
+        {
+          "name": "TRUCK",
+          "values": [
+            "samochód ciężarowy"
+          ]
         }
       ],
       "kinds": [
@@ -89,6 +113,18 @@
           ]
         },
         {
+          "name": "WAGON",
+          "values": [
+            "furgon"
+          ]
+        },
+        {
+          "name": "WHEELED",
+          "values": [
+            "kołowy"
+          ]
+        },
+        {
           "name": "STANDARD",
           "values": [
             "osobowy"
@@ -109,7 +145,7 @@
         {
           "name": "TOURING",
           "values": [
-            "touring"
+            "turystyczny"
           ]
         },
         {
@@ -122,6 +158,12 @@
           "name": "OTHER",
           "values": [
             "inny"
+          ]
+        },
+        {
+          "name": "OTHER_NOT_CAMPING",
+          "values": [
+            "inna z wyjątkiem kempingowych"
           ]
         }
       ],
@@ -209,6 +251,12 @@
           "values": [
             "nie aktualne"
           ]
+        },
+        {
+          "name": "UNKNOWN",
+          "values": [
+            "brak informacji o ważnym badaniu technicznym"
+          ]
         }
       ],
       "mileageStatus": [
@@ -244,6 +292,12 @@
           "name": "AUDI",
           "values": [
             "AUDI"
+          ]
+        },
+        {
+          "name": "ALFA_ROMEO",
+          "values": [
+            "alfa romeo"
           ]
         },
         {
@@ -325,6 +379,12 @@
           ]
         },
         {
+          "name": "YAMAHA",
+          "values": [
+            "yamaha"
+          ]
+        },
+        {
           "name": "KIA",
           "values": [
             "KIA"
@@ -345,7 +405,8 @@
         {
           "name": "MERCEDES",
           "values": [
-            "MERCEDES"
+            "MERCEDES",
+            "mercedes-benz"
           ]
         },
         {
@@ -415,6 +476,30 @@
           ]
         },
         {
+          "name": "SETRA",
+          "values": [
+            "setra"
+          ]
+        },
+        {
+          "name": "SCANIA",
+          "values": [
+            "scania"
+          ]
+        },
+        {
+          "name": "SPRITE_SPORT",
+          "values": [
+            "sprite sport"
+          ]
+        },
+        {
+          "name": "SAAB",
+          "values": [
+            "saab"
+          ]
+        },
+        {
           "name": "TOYOTA",
           "values": [
             "TOYOTA"
@@ -424,6 +509,12 @@
           "name": "TRIUMPH",
           "values": [
             "TRIUMPH"
+          ]
+        },
+        {
+          "name": "URSUS",
+          "values": [
+            "ursus"
           ]
         },
         {
