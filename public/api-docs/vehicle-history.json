@@ -28,7 +28,7 @@
               "description": "Car plate number",
               "required": true,
               "type": "string",
-              "defaultValue": "ABC12345",
+              "defaultValue": "BBC12345",
               "paramType": "query",
               "allowMultiple": false
             },
@@ -171,6 +171,7 @@
             "JAGUAR",
             "YAMAHA",
             "KIA",
+            "KAWASAKI",
             "LEXUS",
             "LAND_ROVER",
             "MERCEDES",
@@ -182,6 +183,7 @@
             "PEUGEOT",
             "RENAULT",
             "ROLLS_ROYCE",
+            "ROMET_MOTORS",
             "SETRA",
             "SCANIA",
             "SPRITE_SPORT",
@@ -191,6 +193,7 @@
             "SUZUKI",
             "TOYOTA",
             "TRIUMPH",
+            "TEMA",
             "URSUS",
             "VOLKSWAGEN",
             "VOLVO",
@@ -250,6 +253,7 @@
           "enum": [
             "CAR",
             "MOTORCYCLE",
+            "MOPED",
             "BUS",
             "TRACTOR",
             "LIGHT_TRAILER",
@@ -394,6 +398,7 @@
             "CHANGE_OWNER",
             "INSPECTION",
             "CO_OWNER",
+            "HOLDER",
             "CHANGED_REGISTRATION_LOCATION",
             "UNKNOWN"
           ]
