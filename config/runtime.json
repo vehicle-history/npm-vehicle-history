@@ -26,6 +26,12 @@
           ]
         },
         {
+          "name": "MOPED",
+          "values": [
+            "motorower"
+          ]
+        },
+        {
           "name": "BUS",
           "values": [
             "autobus"
@@ -399,6 +405,12 @@
           ]
         },
         {
+          "name": "KAWASAKI",
+          "values": [
+            "kawasaki"
+          ]
+        },
+        {
           "name": "LEXUS",
           "values": [
             "LEXUS"
@@ -460,6 +472,12 @@
           ]
         },
         {
+          "name": "ROMET_MOTORS",
+          "values": [
+            "romet motors"
+          ]
+        },
+        {
           "name": "ROLLS_ROYCE",
           "values": [
             "rolls royce"
@@ -517,6 +535,12 @@
           "name": "TRIUMPH",
           "values": [
             "TRIUMPH"
+          ]
+        },
+        {
+          "name": "TEMA",
+          "values": [
+            "tema"
           ]
         },
         {
@@ -596,6 +620,12 @@
           "name": "CO_OWNER",
           "values": [
             "/historia-pojazdu-portlet/images/dodanie-wspolwlasciciela.png"
+          ]
+        },
+        {
+          "name": "HOLDER",
+          "values": [
+            "/historia-pojazdu-portlet/images/dodanie-posiadacza.png"
           ]
         },
         {
@@ -963,6 +993,15 @@
                           {
                             "type": "selector",
                             "opts": [".stanLicznika", null, ["last", "text"]]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "holder",
+                        "stages": [
+                          {
+                            "type": "selector",
+                            "opts": [".posiadacz", null, ["last", "text"]]
                           }
                         ]
                       }
