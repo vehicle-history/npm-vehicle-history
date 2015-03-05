@@ -198,6 +198,7 @@
             "VOLKSWAGEN",
             "VOLVO",
             "VAUXHALL",
+            "WANGYE",
             "UNKNOWN"
           ]
         },
@@ -252,6 +253,7 @@
           "required": true,
           "enum": [
             "CAR",
+            "SPECIAL_CAR",
             "MOTORCYCLE",
             "MOPED",
             "BUS",
