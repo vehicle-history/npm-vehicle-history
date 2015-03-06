@@ -172,6 +172,7 @@
             "YAMAHA",
             "KIA",
             "KAWASAKI",
+            "LIAZ",
             "LEXUS",
             "LAND_ROVER",
             "MERCEDES",
@@ -254,6 +255,7 @@
           "enum": [
             "CAR",
             "SPECIAL_CAR",
+            "OTHER_CAR",
             "MOTORCYCLE",
             "MOPED",
             "BUS",
@@ -283,6 +285,7 @@
             "CRUISER",
             "TOURING",
             "SPORT_TOURING",
+            "QUAD",
             "WHEELED",
             "OTHER_NOT_CAMPING",
             "OTHER",
