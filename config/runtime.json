@@ -26,6 +26,12 @@
           ]
         },
         {
+          "name": "OTHER_CAR",
+          "values": [
+            "samochodowy inny"
+          ]
+        },
+        {
           "name": "MOTORCYCLE",
           "values": [
             "motocykl"
@@ -58,7 +64,8 @@
         {
           "name": "TRUCK",
           "values": [
-            "samochód ciężarowy"
+            "samochód ciężarowy",
+            "samochód ciezarowy"
           ]
         }
       ],
@@ -134,7 +141,8 @@
         {
           "name": "WHEELED",
           "values": [
-            "kołowy"
+            "kołowy",
+            "- kolowy"
           ]
         },
         {
@@ -165,6 +173,12 @@
           "name": "SPORT_TOURING",
           "values": [
             "sport_touring"
+          ]
+        },
+        {
+          "name": "QUAD",
+          "values": [
+            "czterokołowiec"
           ]
         },
         {
@@ -246,9 +260,9 @@
           ]
         },
         {
-          "name": "OUTDATED",
+          "name": "UNREGISTERED",
           "values": [
-            "nie aktualna"
+            "wyrejestrowany"
           ]
         }
       ],
@@ -377,7 +391,8 @@
         {
           "name": "FORD",
           "values": [
-            "FORD"
+            "ford",
+            "ford-niemcy"
           ]
         },
         {
@@ -420,6 +435,12 @@
           "name": "LEXUS",
           "values": [
             "LEXUS"
+          ]
+        },
+        {
+          "name": "LIAZ",
+          "values": [
+            "liaz"
           ]
         },
         {
