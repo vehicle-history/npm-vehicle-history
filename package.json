@@ -10,7 +10,7 @@
     "http-signature": "^0.10.1",
     "my-restify-api": "^0.5.6",
     "newrelic": "^1.16.4",
-    "pl-numberplates": "^0.5.4",
+    "pl-numberplates": "^0.5.5",
     "uk-numberplates": "^0.0.2",
     "vehicle-history-model": "^0.9.30",
     "vehicle-history-provider-web": "^0.9.11",
