@@ -1,8 +1,8 @@
 {
   "apiVersion": "1.0.0",
   "swaggerVersion": "1.2",
-  "basePath1": "http://localhost:3000",
-  "basePath": "https://vehicle-history.io",
+  "basePath": "http://localhost:3000",
+  "basePath1": "https://vehicle-history.io",
   "resourcePath": "/api/vehicle-history",
   "apis": [
     {
@@ -25,7 +25,7 @@
           "parameters": [
             {
               "name": "plate",
-              "description": "Car plate number",
+              "description": "Vehicle plate number",
               "required": true,
               "type": "string",
               "defaultValue": "BBC12345",
@@ -34,7 +34,7 @@
             },
             {
               "name": "vin",
-              "description": "Car vin number",
+              "description": "Vehicle vin number",
               "required": false,
               "type": "string",
               "defaultValue": "ABC123456789DEF",
@@ -43,7 +43,7 @@
             },
             {
               "name": "firstRegistrationDate",
-              "description": "Car first registration date",
+              "description": "Vehicle first registration date",
               "required": false,
               "type": "string",
               "defaultValue": "11.12.2014",
@@ -52,7 +52,7 @@
             },
             {
               "name": "country",
-              "description": "Car registration country",
+              "description": "Vehicle registration country",
               "required": false,
               "type": "string",
               "defaultValue": "PL",
@@ -75,7 +75,7 @@
       "id": "Response",
       "properties": {
         "car": {
-          "$ref": "Car"
+          "$ref": "Vehicle"
         },
         "events": {
           "type": "Array",
@@ -85,43 +85,43 @@
         }
       }
     },
-    "Car": {
-      "id": "Car",
+    "Vehicle": {
+      "id": "Vehicle",
       "properties": {
         "name": {
           "$ref": "Name",
           "required": false,
-          "description": "car name"
+          "description": "Vehicle name"
         },
         "type": {
           "$ref": "Type",
           "required": false,
-          "description": "car type"
+          "description": "Vehicle type"
         },
         "engine": {
           "$ref": "Engine",
           "required": false,
-          "description": "car engine"
+          "description": "Vehicle engine"
         },
         "production": {
           "$ref": "Production",
-          "description": "car production",
+          "description": "Vehicle production",
           "required": false
         },
         "policy": {
           "$ref": "Policy",
           "required": false,
-          "description": "car policy"
+          "description": "Vehicle policy"
         },
         "registration": {
           "$ref": "Registration",
           "required": false,
-          "description": "car registration"
+          "description": "Vehicle registration"
         },
         "inspection": {
           "$ref": "Inspection",
           "required": false,
-          "description": "car inspection"
+          "description": "Vehicle inspection"
         },
         "mileage": {
           "$ref": "Mileage",
@@ -130,17 +130,17 @@
         },
         "stolen": {
           "type": "boolean",
-          "description": "is car stolen",
+          "description": "is Vehicle stolen",
           "required": false
         },
         "plate": {
           "$ref": "Plate",
-          "description": "car plate",
+          "description": "Vehicle plate",
           "required": false
         },
         "vin": {
           "type": "string",
-          "description": "car vin number",
+          "description": "Vehicle vin number",
           "required": false
         }
       }
@@ -150,7 +150,7 @@
       "properties": {
         "make": {
           "type": "string",
-          "description": "car make",
+          "description": "Vehicle make",
           "required": true,
           "enum": [
             "AUDI",
@@ -162,13 +162,17 @@
             "CITROEN",
             "DACIA",
             "DAEWOO",
+            "DODGE",
+            "DAIMLER",
             "FIAT",
+            "FERRO",
             "FSO",
             "FSM",
             "FORD",
             "HONDA",
             "HYUNDAI",
             "JAGUAR",
+            "JEEP",
             "YAMAHA",
             "KIA",
             "KAWASAKI",
@@ -183,6 +187,7 @@
             "OPEL",
             "PEUGEOT",
             "RENAULT",
+            "ROVER",
             "ROLLS_ROYCE",
             "ROMET_MOTORS",
             "SETRA",
@@ -200,17 +205,18 @@
             "VOLVO",
             "VAUXHALL",
             "WANGYE",
+            "WAZ",
             "UNKNOWN"
           ]
         },
         "name": {
           "type": "string",
-          "description": "car name",
+          "description": "Vehicle name",
           "required": false
         },
         "model": {
           "type": "string",
-          "description": "car model",
+          "description": "Vehicle model",
           "required": true
         }
       }
@@ -250,7 +256,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "car type",
+          "description": "Vehicle type",
           "required": true,
           "enum": [
             "CAR",
@@ -267,7 +273,7 @@
         },
         "kind": {
           "type": "string",
-          "description": "car kind",
+          "description": "Vehicle kind",
           "required": true,
           "enum": [
             "HATCHBACK",
@@ -287,6 +293,7 @@
             "SPORT_TOURING",
             "QUAD",
             "WHEELED",
+            "TRAILER",
             "OTHER_NOT_CAMPING",
             "OTHER",
             "UNKNOWN"
@@ -299,17 +306,18 @@
       "properties": {
         "cubicCapacity": {
           "type": "string",
-          "description": "car cubic capacity (cm³)",
+          "description": "Vehicle cubic capacity (cm³)",
           "required": false
         },
         "fuel": {
           "type": "string",
-          "description": "car engine fuel type",
+          "description": "Vehicle engine fuel type",
           "required": true,
           "enum": [
             "PETROL",
             "PETROL_GAS",
             "DIESEL",
+            "MIXED_FUEL_OIL",
             "ETANOL",
             "HYBRID",
             "ELECTRIC",
@@ -325,7 +333,7 @@
       "properties": {
         "status": {
           "type": "string",
-          "description": "car policy status",
+          "description": "Vehicle policy status",
           "required": true,
           "enum": [
             "UPTODATE",
@@ -340,7 +348,7 @@
       "properties": {
         "status": {
           "type": "string",
-          "description": "car inspection status",
+          "description": "Vehicle inspection status",
           "required": true,
           "enum": [
             "UPTODATE",
@@ -375,12 +383,12 @@
       "properties": {
         "value": {
           "type": "string",
-          "description": "car mileage value",
+          "description": "Vehicle mileage value",
           "required": false
         },
         "type": {
           "type": "string",
-          "description": "car mileage type",
+          "description": "Vehicle mileage type",
           "required": true,
           "enum": [
             "KM",
@@ -394,7 +402,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "car event type",
+          "description": "Vehicle event type",
           "required": true,
           "enum": [
             "PRODUCTION",
