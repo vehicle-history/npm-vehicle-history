@@ -146,6 +146,12 @@
           ]
         },
         {
+          "name": "TRAILER",
+          "values": [
+            "skrzynia"
+          ]
+        },
+        {
           "name": "STANDARD",
           "values": [
             "osobowy"
@@ -200,6 +206,7 @@
           "values": [
             "benzyna",
             "benzyna bezołowiowa",
+            "benzyna uniwersalna",
             "petrol"
           ]
         },
@@ -216,7 +223,14 @@
           "values": [
             "diesel",
             "olej napędowy",
-            "heavy oil"
+            "heavy oil",
+            "oil"
+          ]
+        },
+        {
+          "name": "MIXED_FUEL_OIL",
+          "values": [
+            "mieszane paliwo-olej"
           ]
         },
         {
@@ -364,15 +378,33 @@
           ]
         },
         {
+          "name": "DAIMLER",
+          "values": [
+            "DAIMLER"
+          ]
+        },
+        {
           "name": "DAEWOO",
           "values": [
             "DAEWOO"
           ]
         },
         {
+          "name": "DODGE",
+          "values": [
+            "DODGE"
+          ]
+        },
+        {
           "name": "FIAT",
           "values": [
             "FIAT"
+          ]
+        },
+        {
+          "name": "FERRO",
+          "values": [
+            "FERRO"
           ]
         },
         {
@@ -392,7 +424,8 @@
           "name": "FORD",
           "values": [
             "ford",
-            "ford-niemcy"
+            "ford-niemcy",
+            "ford-rfn"
           ]
         },
         {
@@ -411,6 +444,12 @@
           "name": "JAGUAR",
           "values": [
             "JAGUAR"
+          ]
+        },
+        {
+          "name": "JEEP",
+          "values": [
+            "jeep"
           ]
         },
         {
@@ -496,6 +535,12 @@
           "name": "RENAULT",
           "values": [
             "RENAULT"
+          ]
+        },
+        {
+          "name": "ROVER",
+          "values": [
+            "rover"
           ]
         },
         {
@@ -598,6 +643,12 @@
           "name": "WANGYE",
           "values": [
             "wangye"
+          ]
+        },
+        {
+          "name": "WAZ",
+          "values": [
+            "waz"
           ]
         }
       ],
