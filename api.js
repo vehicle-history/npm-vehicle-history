@@ -37,7 +37,7 @@ var errorHandlers = {
 };
 
 var cacheHandler = function (req, res, next) {
-  res.cache('public', {maxAge: 60});
+  res.cache('public', {maxAge: 600});
   res.header('Vary', 'Accept-Language, Accept-Encoding, Accept, Content-Type');
 //    res.header('Last-Modified', new Date());
   return next();
