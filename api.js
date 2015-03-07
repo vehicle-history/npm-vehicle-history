@@ -12,7 +12,16 @@ var options = {
   swagger: {
     enabled: true,
     apiDocsDir: __dirname + '/public/'
-  }
+  },
+  authorization: {
+    authHeaderPrefix: 'x-auth-',
+    key: null,
+    noVerify: true
+  },
+  acceptable: [
+    'application/vnd.vehicle-history.v1+json',
+    'application/vnd.vehicle-history.v1+xml'
+  ]
 };
 
 var errorHandlers = {
