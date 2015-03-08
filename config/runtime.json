@@ -3,6 +3,10 @@
     "license_key": "7a9a50d4ff13eee07f471716868e3a8fa5fe1482",
     "logging": "info"
   },
+  "keen": {
+    "projectId": "54fb71cf90e4bd7d1f0af764",
+    "writeKey": "6df02c4befdc925c668e567709205e03f61c348bd41ed8b3a7619a53ca612c49f0e85f846f89eb6e811eeba9a77d4de4445499feb8151641963d6940af88f822ad0e8bb600d2efa76db30fce363188d4ff005273d28385d0a73233df4aa2196535f39665fbbeee291cba4b6cd775ddb3"
+  },
   "loggly": {
     "level": "info",
     "subdomain": "zenedith",
