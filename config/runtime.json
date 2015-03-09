@@ -67,9 +67,16 @@
           ]
         },
         {
+          "name": "HEAVY_TRAILER",
+          "values": [
+            "przyczepa ciężarowa"
+          ]
+        },
+        {
           "name": "TRUCK",
           "values": [
             "samochód ciężarowy",
+            "ciągnik samochodowy",
             "samochód ciezarowy"
           ]
         }
@@ -159,6 +166,12 @@
           ]
         },
         {
+          "name": "TROLLEY",
+          "values": [
+            "wywrotka"
+          ]
+        },
+        {
           "name": "STANDARD",
           "values": [
             "osobowy"
@@ -197,7 +210,9 @@
         {
           "name": "OTHER",
           "values": [
-            "inny"
+            "inny",
+            "inna",
+            "siodłowy"
           ]
         },
         {
@@ -391,6 +406,12 @@
           ]
         },
         {
+          "name": "CASE_IH",
+          "values": [
+            "case ih"
+          ]
+        },
+        {
           "name": "DACIA",
           "values": [
             "DACIA"
@@ -443,7 +464,8 @@
           "name": "FSM",
           "values": [
             "FSM",
-            "fsm-bielsko biała"
+            "fsm-bielsko biała",
+            "fsm-bielsko b."
           ]
         },
         {
@@ -515,6 +537,12 @@
           ]
         },
         {
+          "name": "LDV",
+          "values": [
+            "ldv"
+          ]
+        },
+        {
           "name": "LEXUS",
           "values": [
             "LEXUS"
@@ -567,6 +595,12 @@
           "name": "NISSAN",
           "values": [
             "NISSAN"
+          ]
+        },
+        {
+          "name": "NIEWIADOW",
+          "values": [
+            "niewiadow"
           ]
         },
         {
@@ -696,6 +730,12 @@
           ]
         },
         {
+          "name": "THULE",
+          "values": [
+            "thule"
+          ]
+        },
+        {
           "name": "TEMA",
           "values": [
             "tema"
@@ -705,6 +745,12 @@
           "name": "URSUS",
           "values": [
             "ursus"
+          ]
+        },
+        {
+          "name": "UAZ",
+          "values": [
+            "uaz"
           ]
         },
         {
@@ -735,6 +781,12 @@
           "name": "WAZ",
           "values": [
             "waz"
+          ]
+        },
+        {
+          "name": "WSK",
+          "values": [
+            "wsk"
           ]
         },
         {
