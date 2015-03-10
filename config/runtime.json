@@ -366,7 +366,8 @@
         {
           "name": "ALFA_ROMEO",
           "values": [
-            "alfa romeo"
+            "alfa romeo",
+            "alfa-romeo"
           ]
         },
         {
