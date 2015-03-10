@@ -430,6 +430,12 @@
           ]
         },
         {
+          "name": "DAIHATSU",
+          "values": [
+            "daihatsu"
+          ]
+        },
+        {
           "name": "DAEWOO",
           "values": [
             "daewoo",
@@ -483,6 +489,12 @@
           ]
         },
         {
+          "name": "GNIOTPOL",
+          "values": [
+            "GNIOTPOL"
+          ]
+        },
+        {
           "name": "HONDA",
           "values": [
             "HONDA"
@@ -501,6 +513,12 @@
           ]
         },
         {
+          "name": "IVECO",
+          "values": [
+            "iveco"
+          ]
+        },
+        {
           "name": "JAGUAR",
           "values": [
             "JAGUAR"
@@ -510,6 +528,12 @@
           "name": "JEEP",
           "values": [
             "jeep"
+          ]
+        },
+        {
+          "name": "JONWAY",
+          "values": [
+            "jonway"
           ]
         },
         {
@@ -721,6 +745,12 @@
           "name": "SMART",
           "values": [
             "smart"
+          ]
+        },
+        {
+          "name": "TATA",
+          "values": [
+            "TATA"
           ]
         },
         {
