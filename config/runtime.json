@@ -433,7 +433,8 @@
         {
           "name": "DAIMLER",
           "values": [
-            "DAIMLER"
+            "daimler",
+            "daimler-benz"
           ]
         },
         {
