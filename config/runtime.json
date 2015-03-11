@@ -69,7 +69,8 @@
         {
           "name": "HEAVY_TRAILER",
           "values": [
-            "przyczepa ciężarowa"
+            "przyczepa ciężarowa",
+            "naczepa ciężarowa"
           ]
         },
         {
@@ -413,6 +414,12 @@
           ]
         },
         {
+          "name": "COLES",
+          "values": [
+            "coles"
+          ]
+        },
+        {
           "name": "CASE_IH",
           "values": [
             "case ih"
@@ -434,7 +441,8 @@
           "name": "DAIMLER",
           "values": [
             "daimler",
-            "daimler-benz"
+            "daimler-benz",
+            "daimlerchrysler"
           ]
         },
         {
@@ -539,6 +547,12 @@
           ]
         },
         {
+          "name": "JUNAK",
+          "values": [
+            "junak"
+          ]
+        },
+        {
           "name": "JONWAY",
           "values": [
             "jonway"
@@ -560,6 +574,12 @@
           "name": "KAWASAKI",
           "values": [
             "kawasaki"
+          ]
+        },
+        {
+          "name": "KYMCO",
+          "values": [
+            "kymco"
           ]
         },
         {
@@ -654,6 +674,12 @@
           ]
         },
         {
+          "name": "PIAGGIO",
+          "values": [
+            "piaggio"
+          ]
+        },
+        {
           "name": "PEUGEOT",
           "values": [
             "PEUGEOT"
@@ -675,6 +701,12 @@
           "name": "ROMET_MOTORS",
           "values": [
             "romet motors"
+          ]
+        },
+        {
+          "name": "ROUTER",
+          "values": [
+            "router"
           ]
         },
         {
@@ -729,6 +761,12 @@
           "name": "SCANIA",
           "values": [
             "scania"
+          ]
+        },
+        {
+          "name": "SCHMITZ_CARGOBULL",
+          "values": [
+            "schmitz cargobull ag"
           ]
         },
         {
