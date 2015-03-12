@@ -70,7 +70,8 @@
           "name": "HEAVY_TRAILER",
           "values": [
             "przyczepa ciężarowa",
-            "naczepa ciężarowa"
+            "naczepa ciężarowa",
+            "przycz.specjalizowana"
           ]
         },
         {
@@ -164,6 +165,12 @@
             "skrzynia",
             "- ciezarowa",
             "ciężarowa"
+          ]
+        },
+        {
+          "name": "LOAD_CAPACITY_OF_8_TONS",
+          "values": [
+            "o ladownosci do 8t - inna"
           ]
         },
         {
@@ -467,7 +474,8 @@
         {
           "name": "FIAT",
           "values": [
-            "FIAT"
+            "fiat",
+            "fiat/izotermy-tim"
           ]
         },
         {
@@ -488,6 +496,12 @@
             "FSM",
             "fsm-bielsko biała",
             "fsm-bielsko b."
+          ]
+        },
+        {
+          "name": "FS_LUBLIN",
+          "values": [
+            "fs lublin"
           ]
         },
         {
@@ -531,7 +545,8 @@
         {
           "name": "IVECO",
           "values": [
-            "iveco"
+            "iveco",
+            "iveco/ipl"
           ]
         },
         {
@@ -550,6 +565,12 @@
           "name": "JUNAK",
           "values": [
             "junak"
+          ]
+        },
+        {
+          "name": "JOHN_DEERE",
+          "values": [
+            "john deere"
           ]
         },
         {
@@ -583,6 +604,12 @@
           ]
         },
         {
+          "name": "KOCH",
+          "values": [
+            "koch"
+          ]
+        },
+        {
           "name": "LANCIA",
           "values": [
             "lancia"
@@ -607,9 +634,21 @@
           ]
         },
         {
+          "name": "LEXUS",
+          "values": [
+            "lexus"
+          ]
+        },
+        {
+          "name": "LONGJIA",
+          "values": [
+            "longjia"
+          ]
+        },
+        {
           "name": "LAND_ROVER",
           "values": [
-            "LAND ROVER"
+            "land rover"
           ]
         },
         {
@@ -653,6 +692,12 @@
           "name": "NIEWIADOW",
           "values": [
             "niewiadow"
+          ]
+        },
+        {
+          "name": "MG",
+          "values": [
+            "mg"
           ]
         },
         {
@@ -700,6 +745,7 @@
         {
           "name": "ROMET_MOTORS",
           "values": [
+            "arkus&romet group",
             "romet motors"
           ]
         },
