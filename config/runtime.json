@@ -143,7 +143,8 @@
         {
           "name": "VAN",
           "values": [
-            "van"
+            "van",
+            "ciezarowo-osobowy"
           ]
         },
         {
@@ -379,9 +380,21 @@
           ]
         },
         {
+          "name": "APRILIA",
+          "values": [
+            "aprilia"
+          ]
+        },
+        {
           "name": "BENTLEY",
           "values": [
             "BENTLEY"
+          ]
+        },
+        {
+          "name": "BENZHOU",
+          "values": [
+            "benzhou"
           ]
         },
         {
@@ -397,6 +410,18 @@
           ]
         },
         {
+          "name": "BOVA",
+          "values": [
+            "bova"
+          ]
+        },
+        {
+          "name": "BAOTIAN",
+          "values": [
+            "baotian"
+          ]
+        },
+        {
           "name": "BMW",
           "values": [
             "BMW"
@@ -406,6 +431,12 @@
           "name": "CHEVROLET",
           "values": [
             "CHEVROLET"
+          ]
+        },
+        {
+          "name": "CAN_AM",
+          "values": [
+            "can am"
           ]
         },
         {
@@ -475,7 +506,8 @@
           "name": "FIAT",
           "values": [
             "fiat",
-            "fiat/izotermy-tim"
+            "fiat/izotermy-tim",
+            "polski fiat"
           ]
         },
         {
@@ -505,6 +537,12 @@
           ]
         },
         {
+          "name": "FUXIANDA",
+          "values": [
+            "fuxianda"
+          ]
+        },
+        {
           "name": "FORD",
           "values": [
             "ford",
@@ -525,9 +563,21 @@
           ]
         },
         {
+          "name": "HAOTIAN",
+          "values": [
+            "haotian"
+          ]
+        },
+        {
           "name": "HONDA",
           "values": [
             "HONDA"
+          ]
+        },
+        {
+          "name": "HUONIAO",
+          "values": [
+            "huoniao"
           ]
         },
         {
@@ -546,13 +596,26 @@
           "name": "IVECO",
           "values": [
             "iveco",
-            "iveco/ipl"
+            "iveco/ipl",
+            "iveco/konar"
+          ]
+        },
+        {
+          "name": "INTERNATIONAL",
+          "values": [
+            "international"
           ]
         },
         {
           "name": "JAGUAR",
           "values": [
-            "JAGUAR"
+            "jaguar"
+          ]
+        },
+        {
+          "name": "JAWA",
+          "values": [
+            "jawa"
           ]
         },
         {
@@ -583,6 +646,12 @@
           "name": "YAMAHA",
           "values": [
             "yamaha"
+          ]
+        },
+        {
+          "name": "KANGDA",
+          "values": [
+            "kangda"
           ]
         },
         {
@@ -710,6 +779,12 @@
           "name": "MAN",
           "values": [
             "man"
+          ]
+        },
+        {
+          "name": "OGAR",
+          "values": [
+            "ogar"
           ]
         },
         {
@@ -842,7 +917,13 @@
         {
           "name": "TATA",
           "values": [
-            "TATA"
+            "tata"
+          ]
+        },
+        {
+          "name": "TOROS",
+          "values": [
+            "toros"
           ]
         },
         {
@@ -918,9 +999,21 @@
           ]
         },
         {
+          "name": "YINMU",
+          "values": [
+            "yinmu"
+          ]
+        },
+        {
           "name": "YAMASAKI",
           "values": [
             "yamasaki"
+          ]
+        },
+        {
+          "name": "ZIPP",
+          "values": [
+            "zipp"
           ]
         }
       ],
@@ -988,6 +1081,12 @@
           "name": "CHANGED_REGISTRATION_LOCATION",
           "values": [
             "/historia-pojazdu-portlet/images/zmiana-miejsca-rejestracji.png"
+          ]
+        },
+        {
+          "name": "STOLEN",
+          "values": [
+            "/historia-pojazdu-portlet/images/kradziez.png"
           ]
         }
       ]
