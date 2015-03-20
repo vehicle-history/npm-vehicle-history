@@ -145,7 +145,8 @@
           "values": [
             "van",
             "light van",
-            "ciezarowo-osobowy"
+            "ciezarowo-osobowy",
+            "nadwozie wymienne"
           ]
         },
         {
@@ -223,6 +224,12 @@
             "inny",
             "inna",
             "siodłowy"
+          ]
+        },
+        {
+          "name": "LOADER",
+          "values": [
+            "niskopodwoziowa"
           ]
         },
         {
@@ -514,7 +521,8 @@
           "name": "DAEWOO",
           "values": [
             "daewoo",
-            "daewoo motor pol."
+            "daewoo motor pol.",
+            "daewoo-fso motor"
           ]
         },
         {
@@ -600,6 +608,12 @@
           "name": "HAILI",
           "values": [
             "haili"
+          ]
+        },
+        {
+          "name": "HARLEY_DAVIDSON",
+          "values": [
+            "harley davidson"
           ]
         },
         {
@@ -782,7 +796,8 @@
           "name": "MERCEDES",
           "values": [
             "MERCEDES",
-            "mercedes-benz"
+            "mercedes-benz",
+            "mercedes-benz/mbpl"
           ]
         },
         {
@@ -1037,7 +1052,8 @@
         {
           "name": "VOLKSWAGEN",
           "values": [
-            "VOLKSWAGEN"
+            "volkswagen",
+            "volkswagen/volkswagen-poznań"
           ]
         },
         {
@@ -1089,9 +1105,21 @@
           ]
         },
         {
+          "name": "YIBEN",
+          "values": [
+            "yiben"
+          ]
+        },
+        {
           "name": "YAMASAKI",
           "values": [
             "yamasaki"
+          ]
+        },
+        {
+          "name": "ZASŁAW",
+          "values": [
+            "zasław"
           ]
         },
         {
