@@ -144,6 +144,7 @@
           "name": "VAN",
           "values": [
             "van",
+            "light van",
             "ciezarowo-osobowy"
           ]
         },
@@ -234,6 +235,20 @@
           "name": "CITY",
           "values": [
             "miejski"
+          ]
+        },
+        {
+          "name": "INTERCITY",
+          "values": [
+            "międzymiastowy"
+          ]
+        },
+        {
+          "name": "CRANE",
+          "values": [
+            "skrzynia/żuraw",
+            "urządzenie ładunkowe hakowe",
+            "urządzenie hakowe"
           ]
         }
       ],
@@ -373,6 +388,12 @@
           ]
         },
         {
+          "name": "ALTRAD",
+          "values": [
+            "spomasz-bialystok"
+          ]
+        },
+        {
           "name": "ALFA_ROMEO",
           "values": [
             "alfa romeo",
@@ -497,9 +518,15 @@
           ]
         },
         {
+          "name": "DERBI",
+          "values": [
+            "derbi"
+          ]
+        },
+        {
           "name": "DODGE",
           "values": [
-            "DODGE"
+            "dodge"
           ]
         },
         {
@@ -513,13 +540,13 @@
         {
           "name": "FERRO",
           "values": [
-            "FERRO"
+            "ferro"
           ]
         },
         {
           "name": "FSO",
           "values": [
-            "FSO"
+            "fso"
           ]
         },
         {
@@ -533,7 +560,8 @@
         {
           "name": "FS_LUBLIN",
           "values": [
-            "fs lublin"
+            "fs lublin",
+            "fs-lublin"
           ]
         },
         {
@@ -559,7 +587,7 @@
         {
           "name": "GNIOTPOL",
           "values": [
-            "GNIOTPOL"
+            "gniotpol"
           ]
         },
         {
@@ -569,9 +597,15 @@
           ]
         },
         {
+          "name": "HAILI",
+          "values": [
+            "haili"
+          ]
+        },
+        {
           "name": "HONDA",
           "values": [
-            "HONDA"
+            "honda"
           ]
         },
         {
@@ -589,7 +623,7 @@
         {
           "name": "HYUNDAI",
           "values": [
-            "HYUNDAI"
+            "hyundai"
           ]
         },
         {
@@ -631,6 +665,12 @@
           ]
         },
         {
+          "name": "JINCHENG",
+          "values": [
+            "jincheng"
+          ]
+        },
+        {
           "name": "JUNAK",
           "values": [
             "junak"
@@ -663,7 +703,7 @@
         {
           "name": "KIA",
           "values": [
-            "KIA"
+            "kia"
           ]
         },
         {
@@ -712,6 +752,12 @@
           "name": "LIAZ",
           "values": [
             "liaz"
+          ]
+        },
+        {
+          "name": "LINGBEN",
+          "values": [
+            "lingben"
           ]
         },
         {
@@ -790,7 +836,8 @@
         {
           "name": "MAN",
           "values": [
-            "man"
+            "man",
+            "man/man truck"
           ]
         },
         {
@@ -833,7 +880,8 @@
           "name": "ROMET_MOTORS",
           "values": [
             "arkus&romet group",
-            "romet motors"
+            "romet motors",
+            "romet"
           ]
         },
         {
@@ -858,6 +906,12 @@
           "name": "SAM",
           "values": [
             "sam"
+          ]
+        },
+        {
+          "name": "SIAMOTO",
+          "values": [
+            "siamoto"
           ]
         },
         {
@@ -957,6 +1011,12 @@
           ]
         },
         {
+          "name": "TGB",
+          "values": [
+            "tgb"
+          ]
+        },
+        {
           "name": "TEMA",
           "values": [
             "tema"
@@ -1005,6 +1065,18 @@
           ]
         },
         {
+          "name": "WIOLA",
+          "values": [
+            "wiola"
+          ]
+        },
+        {
+          "name": "WLADIMIREC",
+          "values": [
+            "wladimirec"
+          ]
+        },
+        {
           "name": "WSK",
           "values": [
             "wsk"
@@ -1026,6 +1098,12 @@
           "name": "ZIPP",
           "values": [
             "zipp"
+          ]
+        },
+        {
+          "name": "ZETOR",
+          "values": [
+            "zetor"
           ]
         }
       ],
