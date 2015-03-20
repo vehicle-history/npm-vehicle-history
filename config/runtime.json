@@ -1158,7 +1158,8 @@
         {
           "name": "CO_OWNER",
           "values": [
-            "/historia-pojazdu-portlet/images/dodanie-wspolwlasciciela.png"
+            "/historia-pojazdu-portlet/images/dodanie-wspolwlasciciela.png",
+            "/documents/10181/0/icon-coowner.png/d8483e20-70de-4707-831f-c6a857603cf6"
           ]
         },
         {
@@ -1176,7 +1177,8 @@
         {
           "name": "STOLEN",
           "values": [
-            "/historia-pojazdu-portlet/images/kradziez.png"
+            "/historia-pojazdu-portlet/images/kradziez.png",
+            "/documents/10181/0/icon-red-point.png/24880cad-f2af-4f65-a1a2-add7251560a7"
           ]
         }
       ]
