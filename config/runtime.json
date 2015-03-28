@@ -71,7 +71,8 @@
           "values": [
             "przyczepa ciężarowa",
             "naczepa ciężarowa",
-            "przycz.specjalizowana"
+            "przycz.specjalizowana",
+            "przyczepa ciężarowa rolnicza"
           ]
         },
         {
@@ -146,6 +147,7 @@
             "van",
             "light van",
             "ciezarowo-osobowy",
+            "ciężarowo-osobowy",
             "nadwozie wymienne"
           ]
         },
@@ -223,13 +225,20 @@
           "values": [
             "inny",
             "inna",
-            "siodłowy"
+            "siodłowy",
+            "---"
           ]
         },
         {
           "name": "LOADER",
           "values": [
             "niskopodwoziowa"
+          ]
+        },
+        {
+          "name": "CISTERN",
+          "values": [
+            "cysterna"
           ]
         },
         {
@@ -391,7 +400,7 @@
         {
           "name": "AUDI",
           "values": [
-            "AUDI"
+            "audi"
           ]
         },
         {
@@ -416,7 +425,7 @@
         {
           "name": "BENTLEY",
           "values": [
-            "BENTLEY"
+            "bentley"
           ]
         },
         {
@@ -452,13 +461,13 @@
         {
           "name": "BMW",
           "values": [
-            "BMW"
+            "bmw"
           ]
         },
         {
           "name": "CHEVROLET",
           "values": [
-            "CHEVROLET"
+            "chevrolet"
           ]
         },
         {
@@ -470,19 +479,25 @@
         {
           "name": "CHRYSLER",
           "values": [
-            "CHRYSLER"
+            "chrysler"
           ]
         },
         {
           "name": "CITROEN",
           "values": [
-            "CITROEN"
+            "citroen"
           ]
         },
         {
           "name": "COLES",
           "values": [
             "coles"
+          ]
+        },
+        {
+          "name": "CPI",
+          "values": [
+            "cpi"
           ]
         },
         {
@@ -494,7 +509,7 @@
         {
           "name": "DACIA",
           "values": [
-            "DACIA"
+            "dacia"
           ]
         },
         {
@@ -526,6 +541,12 @@
           ]
         },
         {
+          "name": "DAVID_BROWN",
+          "values": [
+            "david brown"
+          ]
+        },
+        {
           "name": "DERBI",
           "values": [
             "derbi"
@@ -542,6 +563,7 @@
           "values": [
             "fiat",
             "fiat/izotermy-tim",
+            "fiat/tramp",
             "polski fiat"
           ]
         },
@@ -554,13 +576,14 @@
         {
           "name": "FSO",
           "values": [
-            "fso"
+            "fso",
+            "fso-warszawa"
           ]
         },
         {
           "name": "FSM",
           "values": [
-            "FSM",
+            "fsm",
             "fsm-bielsko biała",
             "fsm-bielsko b."
           ]
@@ -569,7 +592,8 @@
           "name": "FS_LUBLIN",
           "values": [
             "fs lublin",
-            "fs-lublin"
+            "fs-lublin",
+            "lublin"
           ]
         },
         {
@@ -655,6 +679,12 @@
           ]
         },
         {
+          "name": "INCA",
+          "values": [
+            "inca"
+          ]
+        },
+        {
           "name": "INTERNATIONAL",
           "values": [
             "international"
@@ -727,6 +757,18 @@
           ]
         },
         {
+          "name": "KAESSBOHRER",
+          "values": [
+            "kaessbohrer"
+          ]
+        },
+        {
+          "name": "KEEWAY",
+          "values": [
+            "keeway"
+          ]
+        },
+        {
           "name": "KYMCO",
           "values": [
             "kymco"
@@ -751,6 +793,12 @@
           ]
         },
         {
+          "name": "LANDINI",
+          "values": [
+            "landini"
+          ]
+        },
+        {
           "name": "LDV",
           "values": [
             "ldv"
@@ -759,7 +807,7 @@
         {
           "name": "LEXUS",
           "values": [
-            "LEXUS"
+            "lexus"
           ]
         },
         {
@@ -795,9 +843,10 @@
         {
           "name": "MERCEDES",
           "values": [
-            "MERCEDES",
+            "mercedes",
             "mercedes-benz",
-            "mercedes-benz/mbpl"
+            "mercedes-benz/mbpl",
+            "mercedes-benz polska"
           ]
         },
         {
@@ -827,7 +876,7 @@
         {
           "name": "NISSAN",
           "values": [
-            "NISSAN"
+            "nissan"
           ]
         },
         {
@@ -864,7 +913,7 @@
         {
           "name": "OPEL",
           "values": [
-            "OPEL"
+            "opel"
           ]
         },
         {
@@ -876,13 +925,13 @@
         {
           "name": "PEUGEOT",
           "values": [
-            "PEUGEOT"
+            "peugeot"
           ]
         },
         {
           "name": "RENAULT",
           "values": [
-            "RENAULT"
+            "renault"
           ]
         },
         {
@@ -924,6 +973,12 @@
           ]
         },
         {
+          "name": "SANOK",
+          "values": [
+            "sanok"
+          ]
+        },
+        {
           "name": "SIAMOTO",
           "values": [
             "siamoto"
@@ -938,19 +993,19 @@
         {
           "name": "SEAT",
           "values": [
-            "SEAT"
+            "seat"
           ]
         },
         {
           "name": "SKODA",
           "values": [
-            "SKODA"
+            "skoda"
           ]
         },
         {
           "name": "SUZUKI",
           "values": [
-            "SUZUKI"
+            "suzuki"
           ]
         },
         {
@@ -969,6 +1024,18 @@
           "name": "SCHMITZ_CARGOBULL",
           "values": [
             "schmitz cargobull ag"
+          ]
+        },
+        {
+          "name": "SCHWARZMUELLER",
+          "values": [
+            "schwarzmueller"
+          ]
+        },
+        {
+          "name": "SHINERAY",
+          "values": [
+            "shineray"
           ]
         },
         {
@@ -996,6 +1063,12 @@
           ]
         },
         {
+          "name": "SOMMER",
+          "values": [
+            "sommer"
+          ]
+        },
+        {
           "name": "TATA",
           "values": [
             "tata"
@@ -1010,13 +1083,13 @@
         {
           "name": "TOYOTA",
           "values": [
-            "TOYOTA"
+            "toyota"
           ]
         },
         {
           "name": "TRIUMPH",
           "values": [
-            "TRIUMPH"
+            "triumph"
           ]
         },
         {
@@ -1034,7 +1107,8 @@
         {
           "name": "TEMA",
           "values": [
-            "tema"
+            "tema",
+            "tema świdnik"
           ]
         },
         {
@@ -1059,13 +1133,13 @@
         {
           "name": "VOLVO",
           "values": [
-            "VOLVO"
+            "volvo"
           ]
         },
         {
           "name": "VAUXHALL",
           "values": [
-            "VAUXHALL"
+            "vauxhall"
           ]
         },
         {
@@ -1078,6 +1152,13 @@
           "name": "WAZ",
           "values": [
             "waz"
+          ]
+        },
+        {
+          "name": "WESTFALIA",
+          "values": [
+            "westfalia",
+            "westfalia-werke"
           ]
         },
         {
@@ -1102,6 +1183,12 @@
           "name": "YINMU",
           "values": [
             "yinmu"
+          ]
+        },
+        {
+          "name": "YINXIANG",
+          "values": [
+            "yinxiang"
           ]
         },
         {
@@ -1132,6 +1219,12 @@
           "name": "ZETOR",
           "values": [
             "zetor"
+          ]
+        },
+        {
+          "name": "ZNEN",
+          "values": [
+            "znen"
           ]
         }
       ],
