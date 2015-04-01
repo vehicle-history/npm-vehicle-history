@@ -541,7 +541,7 @@
           "required": false
         },
         "abroadRegistration": {
-          "type": "string",
+          "type": "boolean",
           "description": "event abroad registration (true/false) information, used for REGISTRATION event type",
           "required": false
         },
