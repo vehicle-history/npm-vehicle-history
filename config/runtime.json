@@ -78,6 +78,7 @@
         {
           "name": "TRUCK",
           "values": [
+            "sam.cięż. uniwersalny",
             "samochód ciężarowy",
             "ciągnik samochodowy",
             "samochód ciezarowy"
@@ -179,6 +180,12 @@
           ]
         },
         {
+          "name": "LOAD_CAPACITY_OF_2_TONS",
+          "values": [
+            "o ladownosci do 2t"
+          ]
+        },
+        {
           "name": "TROLLEY",
           "values": [
             "wywrotka"
@@ -226,6 +233,7 @@
             "inny",
             "inna",
             "siodłowy",
+            "pojemnik",
             "---"
           ]
         },
@@ -310,7 +318,8 @@
         {
           "name": "OTHER",
           "values": [
-            "inny"
+            "inny",
+            "inne"
           ]
         }
       ],
@@ -675,7 +684,8 @@
           "values": [
             "iveco",
             "iveco/ipl",
-            "iveco/konar"
+            "iveco/konar",
+            "iveco/plandex"
           ]
         },
         {
@@ -778,6 +788,12 @@
           "name": "KOCH",
           "values": [
             "koch"
+          ]
+        },
+        {
+          "name": "KRONE",
+          "values": [
+            "krone"
           ]
         },
         {
@@ -1039,9 +1055,27 @@
           ]
         },
         {
+          "name": "SHENKE",
+          "values": [
+            "shenke"
+          ]
+        },
+        {
           "name": "SPRITE_SPORT",
           "values": [
             "sprite sport"
+          ]
+        },
+        {
+          "name": "SSANGYONG",
+          "values": [
+            "ssangyong"
+          ]
+        },
+        {
+          "name": "STAR",
+          "values": [
+            "star"
           ]
         },
         {
