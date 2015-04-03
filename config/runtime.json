@@ -80,6 +80,7 @@
           "values": [
             "sam.cięż. uniwersalny",
             "samochód ciężarowy",
+            "samochód ciężarowy specjalizowany",
             "ciągnik samochodowy",
             "samochód ciezarowy"
           ]
@@ -92,6 +93,7 @@
             "samochód osobowy",
             "wielozadaniowy",
             "5 door hatchback",
+            "3 door hatchback",
             "hatchback"
           ]
         },
@@ -177,6 +179,12 @@
           "name": "LOAD_CAPACITY_OF_8_TONS",
           "values": [
             "o ladownosci do 8t - inna"
+          ]
+        },
+        {
+          "name": "LOAD_CAPACITY_MORE_THAN_8_TONS",
+          "values": [
+            "o ładowności powyżej 8 t - inny"
           ]
         },
         {
@@ -510,6 +518,12 @@
           ]
         },
         {
+          "name": "CASE",
+          "values": [
+            "case"
+          ]
+        },
+        {
           "name": "CASE_IH",
           "values": [
             "case ih"
@@ -568,6 +582,12 @@
           ]
         },
         {
+          "name": "DOLL",
+          "values": [
+            "doll"
+          ]
+        },
+        {
           "name": "FIAT",
           "values": [
             "fiat",
@@ -583,6 +603,12 @@
           ]
         },
         {
+          "name": "FLIEGL",
+          "values": [
+            "fliegl"
+          ]
+        },
+        {
           "name": "FSO",
           "values": [
             "fso",
@@ -595,6 +621,12 @@
             "fsm",
             "fsm-bielsko biała",
             "fsm-bielsko b."
+          ]
+        },
+        {
+          "name": "FSR",
+          "values": [
+            "fsr-poznan"
           ]
         },
         {
@@ -791,6 +823,12 @@
           ]
         },
         {
+          "name": "KRAZ",
+          "values": [
+            "kraz"
+          ]
+        },
+        {
           "name": "KRONE",
           "values": [
             "krone"
@@ -839,12 +877,6 @@
           ]
         },
         {
-          "name": "LEXUS",
-          "values": [
-            "lexus"
-          ]
-        },
-        {
           "name": "LONGJIA",
           "values": [
             "longjia"
@@ -854,6 +886,12 @@
           "name": "LAND_ROVER",
           "values": [
             "land rover"
+          ]
+        },
+        {
+          "name": "LADA",
+          "values": [
+            "łada"
           ]
         },
         {
@@ -942,6 +980,18 @@
           "name": "PEUGEOT",
           "values": [
             "peugeot"
+          ]
+        },
+        {
+          "name": "PLYMOUTH",
+          "values": [
+            "plymouth"
+          ]
+        },
+        {
+          "name": "PORSCHE",
+          "values": [
+            "porsche"
           ]
         },
         {
