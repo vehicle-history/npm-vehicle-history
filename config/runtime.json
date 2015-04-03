@@ -1211,6 +1211,7 @@
           "name": "VOLKSWAGEN",
           "values": [
             "volkswagen",
+            "volkswagen/amz-kutno",
             "volkswagen/volkswagen-poznań"
           ]
         },
