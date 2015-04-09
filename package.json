@@ -7,22 +7,21 @@
     "assert-plus": "^0.1.5",
     "async": "^0.9.0",
     "config": "^1.12.0",
-    "http-signature": "^0.10.1",
     "keen-js": "^3.2.4",
     "my-restify-api": "Zenedith/npm-my-restify-api#702d950bcd06d4f1bcdc2ad18abec0ffb482861c",
-    "newrelic": "^1.17.3",
+    "newrelic": "^1.18.2",
     "pl-numberplates": "^0.5.5",
     "uk-numberplates": "^0.0.2",
     "vehicle-history-model": "^0.9.40",
     "vehicle-history-provider-web": "^0.9.11",
     "vehicle-history-provider-xml": "^0.9.9",
     "winston": "^0.9.0",
-    "winston-loggly": "^1.0.4"
+    "winston-loggly": "^1.0.5"
   },
   "devDependencies": {
-    "chai": "^2.1.2",
-    "istanbul": "^0.3.8",
-    "mocha": "^2.2.1",
+    "chai": "^2.2.0",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.4",
     "rewire": "^2.3.1"
   },
   "scripts": {
