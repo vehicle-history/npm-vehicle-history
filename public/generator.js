@@ -47,7 +47,7 @@ var countries = getEnumValues(config.resolver.variant.countries, true);
 output.models.Location.properties.country.enum = countries;
 output.models.Plate.properties.country.enum = countries;
 
-var makes = getEnumValues(config.resolver.variant.makes, true);
+var makes = getEnumValues(config.resolver.variant.makes);
 output.models.Name.properties.make.enum = makes;
 
 var owners = getEnumValues(config.resolver.variant.owners, true);
