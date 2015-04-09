@@ -57,6 +57,7 @@
         {
           "name": "TRACTOR",
           "values": [
+            "ciagnik rolniczy",
             "ciągnik rolniczy"
           ]
         },
@@ -78,6 +79,9 @@
         {
           "name": "TRUCK",
           "values": [
+            "samochód sanitarny",
+            "sam.cięż.specjalizow.",
+            "sam.ciez. uniwersalny",
             "sam.cięż. uniwersalny",
             "samochód ciężarowy",
             "samochód ciężarowy specjalizowany",
@@ -178,6 +182,7 @@
         {
           "name": "LOAD_CAPACITY_OF_8_TONS",
           "values": [
+            "o ładowności powyżej 2 t do 8 t",
             "o ladownosci do 8t - inna"
           ]
         },
@@ -190,7 +195,8 @@
         {
           "name": "LOAD_CAPACITY_OF_2_TONS",
           "values": [
-            "o ladownosci do 2t"
+            "o ladownosci do 2t",
+            "o ladownosci do 2t - furgon"
           ]
         },
         {
@@ -242,6 +248,8 @@
             "inna",
             "siodłowy",
             "pojemnik",
+            "platforma-kurtyny boczne",
+            "specjalna",
             "---"
           ]
         },
@@ -415,9 +423,21 @@
       ],
       "makes": [
         {
+          "name": "ACCESS",
+          "values": [
+            "access"
+          ]
+        },
+        {
           "name": "AUDI",
           "values": [
             "audi"
+          ]
+        },
+        {
+          "name": "AUTOSAN",
+          "values": [
+            "autosan"
           ]
         },
         {
@@ -609,6 +629,14 @@
           ]
         },
         {
+          "name": "FSC",
+          "values": [
+            "fsc",
+            "fsc-lublin",
+            "fsc-starachowic"
+          ]
+        },
+        {
           "name": "FSO",
           "values": [
             "fso",
@@ -619,6 +647,7 @@
           "name": "FSM",
           "values": [
             "fsm",
+            "fsm bielsko biała",
             "fsm-bielsko biała",
             "fsm-bielsko b."
           ]
@@ -700,6 +729,12 @@
           ]
         },
         {
+          "name": "HURRICANE",
+          "values": [
+            "hurricane"
+          ]
+        },
+        {
           "name": "HYUNDAI",
           "values": [
             "hyundai"
@@ -733,9 +768,16 @@
           ]
         },
         {
+          "name": "ISUZU",
+          "values": [
+            "isuzu"
+          ]
+        },
+        {
           "name": "JAGUAR",
           "values": [
-            "jaguar"
+            "jaguar",
+            "jaguar land rover limited"
           ]
         },
         {
@@ -823,6 +865,12 @@
           ]
         },
         {
+          "name": "KOEGEL",
+          "values": [
+            "koegel"
+          ]
+        },
+        {
           "name": "KRAZ",
           "values": [
             "kraz"
@@ -871,6 +919,12 @@
           ]
         },
         {
+          "name": "LINCOLN",
+          "values": [
+            "lincoln"
+          ]
+        },
+        {
           "name": "LINGBEN",
           "values": [
             "lingben"
@@ -891,7 +945,8 @@
         {
           "name": "LADA",
           "values": [
-            "łada"
+            "łada",
+            "lada"
           ]
         },
         {
@@ -928,15 +983,9 @@
           ]
         },
         {
-          "name": "NISSAN",
+          "name": "M_72",
           "values": [
-            "nissan"
-          ]
-        },
-        {
-          "name": "NIEWIADOW",
-          "values": [
-            "niewiadow"
+            "m-72"
           ]
         },
         {
@@ -956,6 +1005,37 @@
           "values": [
             "man",
             "man/man truck"
+          ]
+        },
+        {
+          "name": "MBK",
+          "values": [
+            "mbk"
+          ]
+        },
+        {
+          "name": "MASSEY_FERGUSON",
+          "values": [
+            "massey ferguson"
+          ]
+        },
+        {
+          "name": "MULTICAR",
+          "values": [
+            "multicar"
+          ]
+        },
+        {
+          "name": "NISSAN",
+          "values": [
+            "nissan"
+          ]
+        },
+        {
+          "name": "NIEWIADOW",
+          "values": [
+            "niewiadow",
+            "niewiadów"
           ]
         },
         {
@@ -979,7 +1059,8 @@
         {
           "name": "PEUGEOT",
           "values": [
-            "peugeot"
+            "peugeot",
+            "peugeot/gefco"
           ]
         },
         {
@@ -997,7 +1078,8 @@
         {
           "name": "RENAULT",
           "values": [
-            "renault"
+            "renault",
+            "renault/carpol"
           ]
         },
         {
@@ -1089,6 +1171,7 @@
         {
           "name": "SCHMITZ_CARGOBULL",
           "values": [
+            "schmitz",
             "schmitz cargobull ag"
           ]
         },
@@ -1129,6 +1212,13 @@
           ]
         },
         {
+          "name": "SLUPSK",
+          "values": [
+            "slupsk",
+            "słupsk"
+          ]
+        },
+        {
           "name": "SAAB",
           "values": [
             "saab"
@@ -1153,9 +1243,21 @@
           ]
         },
         {
+          "name": "SWIDNIK_TRADE",
+          "values": [
+            "świdnik trade"
+          ]
+        },
+        {
           "name": "TATA",
           "values": [
             "tata"
+          ]
+        },
+        {
+          "name": "TASSO",
+          "values": [
+            "tasso"
           ]
         },
         {
@@ -1168,6 +1270,12 @@
           "name": "TOYOTA",
           "values": [
             "toyota"
+          ]
+        },
+        {
+          "name": "TRABANT",
+          "values": [
+            "trabant"
           ]
         },
         {
@@ -1310,6 +1418,13 @@
           "name": "ZNEN",
           "values": [
             "znen"
+          ]
+        },
+        {
+          "name": "UNKNOWN",
+          "values": [
+            "w.n.p. m.suski",
+            "brak"
           ]
         }
       ],
