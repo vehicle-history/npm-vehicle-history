@@ -1,151 +1,131 @@
 {
-  "apiVersion": "1.0.0",
-  "swaggerVersion": "1.2",
-  "basePath1": "http://localhost:3000",
-  "basePath": "https://vehicle-history.io",
-  "resourcePath": "/api/vehicle-history",
-  "apis": [
+  "swagger": "2.0",
+  "host": "vehicle-history.io",
+  "basePath": "/api",
+  "tags": [
     {
-      "path": "/api/vehicle-history",
-      "operations": [
-        {
-          "produces": [
-            "application/vnd.vehicle-history.v1+json"
-          ],
-          "consumes": [
-            "application/json"
-          ],
-          "method": "GET",
-          "summary": "Find vehicle history",
-          "notes": "Returns a vehicle info and history",
-          "type": "Response",
-          "nickname": "postVehicleHistory",
-          "authorizations": {},
-          "parameters": [
-            {
-              "name": "plate",
-              "description": "Vehicle plate number",
-              "required": true,
-              "type": "string",
-              "defaultValue": "BBC12345",
-              "paramType": "query",
-              "allowMultiple": false
-            },
-            {
-              "name": "vin",
-              "description": "Vehicle vin number",
-              "required": false,
-              "type": "string",
-              "defaultValue": "ABC123456789DEF",
-              "paramType": "query",
-              "allowMultiple": false
-            },
-            {
-              "name": "firstRegistrationDate",
-              "description": "Vehicle first registration date",
-              "required": false,
-              "type": "string",
-              "defaultValue": "11.12.2014",
-              "paramType": "query",
-              "allowMultiple": false
-            },
-            {
-              "name": "country",
-              "description": "Vehicle registration country",
-              "required": false,
-              "type": "string",
-              "defaultValue": "PL",
-              "paramType": "query",
-              "allowMultiple": false
-            }
-          ],
-          "responseMessages": [
-            {
-              "code": 404,
-              "message": "Unable to find vehicle history"
-            }
-          ]
-        }
-      ]
+      "name": "vehicle-history",
+      "description": "Operation about vehicle histories"
     }
   ],
-  "models": {
-    "Response": {
-      "id": "Response",
-      "properties": {
-        "car": {
-          "$ref": "Vehicle"
-        },
-        "events": {
-          "type": "Array",
-          "items": {
-            "$ref": "Event"
+  "schemes": ["http", "https"],
+  "paths": {
+    "/vehicle-history": {
+      "get": {
+        "tags": ["vehicle-history"],
+        "summary": "Find vehicle history",
+        "description": "Returns a vehicle data and vehicle history",
+        "operationId": "getVehicleHistory",
+        "consumes": ["application/json"],
+        "produces": ["application/vnd.vehicle-history.v1+json"],
+        "authorizations": {},
+        "parameters": [
+          {
+            "name": "plate",
+            "description": "Vehicle plate integer",
+            "required": true,
+            "type": "string",
+            "defaultValue": "BBC12345",
+            "in": "query",
+            "allowMultiple": false
+          },
+          {
+            "name": "vin",
+            "description": "Vehicle vin integer",
+            "required": false,
+            "type": "string",
+            "defaultValue": "ABC123456789DEF",
+            "in": "query",
+            "allowMultiple": false
+          },
+          {
+            "name": "firstRegistrationDate",
+            "description": "Vehicle first registration date",
+            "required": false,
+            "type": "string",
+            "defaultValue": "11.12.2014",
+            "in": "query",
+            "allowMultiple": false
+          },
+          {
+            "name": "country",
+            "description": "Vehicle registration country",
+            "required": false,
+            "type": "string",
+            "defaultValue": "PL",
+            "in": "query",
+            "allowMultiple": false
           }
-        }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Vehicle not found"
+          }
+        },
+        "security": [
+          {
+            "auth": [
+            ],
+            "bearerToken": [
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "securityDefinitions": {
+    "auth": {
+      "type": "oauth2",
+      "authorizationUrl": "https://vehicle-history.io/oauth/token",
+      "flow": "password",
+      "scopes": {
       }
     },
-    "Vehicle": {
-      "id": "Vehicle",
+    "bearerToken": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "Location": {
+      "id": "Location",
+      "required": [
+        "country"
+      ],
       "properties": {
-        "name": {
-          "$ref": "Name",
-          "required": false,
-          "description": "Vehicle name"
-        },
-        "type": {
-          "$ref": "Type",
-          "required": false,
-          "description": "Vehicle type"
-        },
-        "engine": {
-          "$ref": "Engine",
-          "required": false,
-          "description": "Vehicle engine"
-        },
-        "production": {
-          "$ref": "Production",
-          "description": "Vehicle production",
-          "required": false
-        },
-        "policy": {
-          "$ref": "Policy",
-          "required": false,
-          "description": "Vehicle policy"
-        },
-        "registration": {
-          "$ref": "Registration",
-          "required": false,
-          "description": "Vehicle registration"
-        },
-        "inspection": {
-          "$ref": "Inspection",
-          "required": false,
-          "description": "Vehicle inspection"
-        },
-        "mileage": {
-          "$ref": "Mileage",
-          "description": "Mileage can be null value",
-          "required": false
-        },
-        "stolen": {
-          "type": "boolean",
-          "description": "is Vehicle stolen",
-          "required": false
-        },
-        "plate": {
-          "$ref": "Plate",
-          "description": "Vehicle plate",
-          "required": false
-        },
-        "vin": {
+        "country": {
           "type": "string",
-          "description": "Vehicle vin number",
+          "description": "location country",
+          "required": true,
+          "enum": [
+            "PL",
+            "UK",
+            "UNKNOWN"
+          ]
+        },
+        "state": {
+          "type": "string",
+          "description": "location state",
           "required": false
         }
       }
     },
     "Name": {
       "id": "Name",
+      "required": [
+        "make",
+        "model"
+      ],
       "properties": {
         "make": {
           "type": "string",
@@ -329,6 +309,9 @@
     },
     "Production": {
       "id": "Production",
+      "required": [
+        "year"
+      ],
       "properties": {
         "year": {
           "type": "string",
@@ -339,6 +322,10 @@
     },
     "Plate": {
       "id": "Plate",
+      "required": [
+        "value",
+        "country"
+      ],
       "properties": {
         "value": {
           "type": "string",
@@ -359,6 +346,10 @@
     },
     "Type": {
       "id": "Type",
+      "required": [
+        "type",
+        "kind"
+      ],
       "properties": {
         "type": {
           "type": "string",
@@ -419,11 +410,15 @@
     },
     "Engine": {
       "id": "Engine",
+      "required": [
+        "cubicCapacity",
+        "fuel"
+      ],
       "properties": {
         "cubicCapacity": {
-          "type": "string",
+          "type": "integer",
           "description": "Vehicle cubic capacity (cm³)",
-          "required": false
+          "required": true
         },
         "fuel": {
           "type": "string",
@@ -447,6 +442,9 @@
     },
     "Policy": {
       "id": "Policy",
+      "required": [
+        "status"
+      ],
       "properties": {
         "status": {
           "type": "string",
@@ -462,6 +460,9 @@
     },
     "Inspection": {
       "id": "Inspection",
+      "required": [
+        "status"
+      ],
       "properties": {
         "status": {
           "type": "string",
@@ -477,6 +478,9 @@
     },
     "Registration": {
       "id": "Registration",
+      "required": [
+        "status"
+      ],
       "properties": {
         "status": {
           "type": "string",
@@ -499,23 +503,28 @@
       "id": "Mileage",
       "properties": {
         "value": {
-          "type": "string",
+          "type": "integer",
           "description": "Vehicle mileage value",
           "required": false
         },
         "type": {
           "type": "string",
           "description": "Vehicle mileage type",
-          "required": true,
+          "required": false,
           "enum": [
             "KM",
-            "MILE"
+            "MILE",
+            "UNKNOWN"
           ]
         }
       }
     },
     "Event": {
       "id": "Event",
+      "required": [
+        "type",
+        "createdAt"
+      ],
       "properties": {
         "type": {
           "type": "string",
@@ -565,7 +574,7 @@
           ]
         },
         "location": {
-          "$ref": "Location",
+          "$ref": "#/definitions/Location",
           "description": "event location, used for CHANGE_OWNER event type",
           "required": false
         },
@@ -575,29 +584,98 @@
           "required": false
         },
         "mileage": {
-          "$ref": "Mileage",
+          "$ref": "#/definitions/Mileage",
           "description": "event mileage, used for INSPECTION event type",
           "required": false
         }
       }
     },
-    "Location": {
-      "id": "Location",
+    "Vehicle": {
+      "id": "Vehicle",
+      "required": [
+        "name",
+        "type",
+        "engine",
+        "production",
+        "plate"
+      ],
       "properties": {
-        "country": {
-          "type": "string",
-          "description": "location country",
+        "name": {
+          "$ref": "#/definitions/Name",
           "required": true,
-          "enum": [
-            "PL",
-            "UK",
-            "UNKNOWN"
-          ]
+          "description": "Vehicle name"
         },
-        "state": {
-          "type": "string",
-          "description": "location state",
+        "type": {
+          "$ref": "#/definitions/Type",
+          "required": true,
+          "description": "Vehicle type"
+        },
+        "engine": {
+          "$ref": "#/definitions/Engine",
+          "required": true,
+          "description": "Vehicle engine"
+        },
+        "production": {
+          "$ref": "#/definitions/Production",
+          "description": "Vehicle production",
+          "required": true
+        },
+        "policy": {
+          "$ref": "#/definitions/Policy",
+          "required": false,
+          "description": "Vehicle policy"
+        },
+        "registration": {
+          "$ref": "#/definitions/Registration",
+          "required": false,
+          "description": "Vehicle registration"
+        },
+        "inspection": {
+          "$ref": "#/definitions/Inspection",
+          "required": false,
+          "description": "Vehicle inspection"
+        },
+        "mileage": {
+          "$ref": "#/definitions/Mileage",
+          "description": "Mileage can be null value",
           "required": false
+        },
+        "stolen": {
+          "type": "boolean",
+          "description": "is Vehicle stolen",
+          "required": false
+        },
+        "plate": {
+          "$ref": "#/definitions/Plate",
+          "description": "Vehicle plate",
+          "required": true
+        },
+        "vin": {
+          "type": "string",
+          "description": "Vehicle vin integer",
+          "required": false
+        }
+      }
+    },
+    "Response": {
+      "id": "Response",
+      "required": [
+        "vehicle",
+        "events"
+      ],
+      "properties": {
+        "vehicle": {
+          "$ref": "#/definitions/Vehicle",
+          "required": true,
+          "description": "Vehicle data"
+        },
+        "events": {
+          "type": "array",
+          "required": true,
+          "description": "Vehicle events",
+          "items": {
+            "$ref": "#/definitions/Event"
+          }
         }
       }
     }
