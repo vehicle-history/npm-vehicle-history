@@ -8,7 +8,7 @@
     "async": "^0.9.0",
     "config": "^1.12.0",
     "keen-js": "^3.2.4",
-    "my-restify-api": "Zenedith/npm-my-restify-api#c633f3e2670d1d0dfa3115e40288483666f389f6",
+    "my-restify-api": "Zenedith/npm-my-restify-api#6d467485726bf1002508f1433e4ee267c7d7ccd1",
     "newrelic": "^1.18.2",
     "pl-numberplates": "^0.5.5",
     "uk-numberplates": "^0.0.2",
