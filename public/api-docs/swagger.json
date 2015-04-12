@@ -1,6 +1,5 @@
 {
   "swagger": "2.0",
-  "host1": "localhost:3000",
   "host": "vehicle-history.io",
   "basePath": "/api",
   "tags": [
