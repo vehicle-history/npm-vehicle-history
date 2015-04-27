@@ -73,6 +73,8 @@
             "przyczepa ciężarowa",
             "naczepa ciężarowa",
             "przycz.specjalizowana",
+            "przyczepa specjalizowana",
+            "przyczepa specjalna",
             "przyczepa ciężarowa rolnicza"
           ]
         },
@@ -85,6 +87,7 @@
             "sam.cięż. uniwersalny",
             "samochód ciężarowy",
             "samochód ciężarowy specjalizowany",
+            "sam.ciez.specjalizow.",
             "ciągnik samochodowy",
             "samochód ciezarowy"
           ]
@@ -183,7 +186,8 @@
           "name": "LOAD_CAPACITY_OF_8_TONS",
           "values": [
             "o ładowności powyżej 2 t do 8 t",
-            "o ladownosci do 8t - inna"
+            "o ladownosci do 8t - inna",
+            "o ładowności do 8t - inna"
           ]
         },
         {
@@ -202,7 +206,8 @@
         {
           "name": "TROLLEY",
           "values": [
-            "wywrotka"
+            "wywrotka",
+            "wywrotka,przewóz kontenerów"
           ]
         },
         {
@@ -263,6 +268,12 @@
           "name": "CISTERN",
           "values": [
             "cysterna"
+          ]
+        },
+        {
+          "name": "PLATFORM",
+          "values": [
+            "platforma"
           ]
         },
         {
@@ -460,6 +471,12 @@
           ]
         },
         {
+          "name": "ASTON_MARTIN",
+          "values": [
+            "aston martin"
+          ]
+        },
+        {
           "name": "BENTLEY",
           "values": [
             "bentley"
@@ -613,7 +630,8 @@
             "fiat",
             "fiat/izotermy-tim",
             "fiat/tramp",
-            "polski fiat"
+            "polski fiat",
+            "fiat/partner"
           ]
         },
         {
@@ -677,7 +695,15 @@
           "values": [
             "ford",
             "ford-niemcy",
-            "ford-rfn"
+            "ford-rfn",
+            "ford/ford polska",
+            "ford/ats"
+          ]
+        },
+        {
+          "name": "GILERA",
+          "values": [
+            "gilera"
           ]
         },
         {
@@ -711,9 +737,21 @@
           ]
         },
         {
+          "name": "HOBBY",
+          "values": [
+            "hobby"
+          ]
+        },
+        {
           "name": "HONDA",
           "values": [
             "honda"
+          ]
+        },
+        {
+          "name": "HUSQVARNA",
+          "values": [
+            "husqvarna"
           ]
         },
         {
@@ -787,6 +825,12 @@
           ]
         },
         {
+          "name": "JELCZ",
+          "values": [
+            "jelcz"
+          ]
+        },
+        {
           "name": "JEEP",
           "values": [
             "jeep"
@@ -831,7 +875,8 @@
         {
           "name": "KIA",
           "values": [
-            "kia"
+            "kia",
+            "kia/pryzmat"
           ]
         },
         {
@@ -946,6 +991,7 @@
           "name": "LADA",
           "values": [
             "łada",
+            "lada-vaz",
             "lada"
           ]
         },
@@ -1127,6 +1173,12 @@
           ]
         },
         {
+          "name": "SANYANG",
+          "values": [
+            "sanyang"
+          ]
+        },
+        {
           "name": "SIAMOTO",
           "values": [
             "siamoto"
@@ -1208,7 +1260,14 @@
         {
           "name": "STAR",
           "values": [
+            "star/man-star trucks",
             "star"
+          ]
+        },
+        {
+          "name": "STOPEXIM",
+          "values": [
+            "stopexim"
           ]
         },
         {
@@ -1246,6 +1305,12 @@
           "name": "SWIDNIK_TRADE",
           "values": [
             "świdnik trade"
+          ]
+        },
+        {
+          "name": "SYLAND",
+          "values": [
+            "syland"
           ]
         },
         {
@@ -1355,6 +1420,12 @@
           ]
         },
         {
+          "name": "WIELTON",
+          "values": [
+            "wielton"
+          ]
+        },
+        {
           "name": "WIOLA",
           "values": [
             "wiola"
@@ -1364,6 +1435,19 @@
           "name": "WLADIMIREC",
           "values": [
             "wladimirec"
+          ]
+        },
+        {
+          "name": "WNP_SUSKI",
+          "values": [
+            "w.n.p. m.suski",
+            "wnp-suski"
+          ]
+        },
+        {
+          "name": "WONJAN",
+          "values": [
+            "wonjan"
           ]
         },
         {
@@ -1388,6 +1472,12 @@
           "name": "YIBEN",
           "values": [
             "yiben"
+          ]
+        },
+        {
+          "name": "YIYING",
+          "values": [
+            "yiying"
           ]
         },
         {
@@ -1423,7 +1513,6 @@
         {
           "name": "UNKNOWN",
           "values": [
-            "w.n.p. m.suski",
             "brak"
           ]
         }
