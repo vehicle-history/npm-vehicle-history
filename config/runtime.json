@@ -119,17 +119,17 @@
           ]
         },
         {
+          "name": "COUPE",
+          "values": [
+            "coupe"
+          ]
+        },
+        {
           "name": "CONVERTIBLE",
           "values": [
             "convertible",
             "cabrio",
             "kabriolet"
-          ]
-        },
-        {
-          "name": "COUPE",
-          "values": [
-            "coupe"
           ]
         },
         {
@@ -318,6 +318,7 @@
           "values": [
             "cng",
             "lpg",
+            "gaz płynny (propan butan)",
             "petrol/gas"
           ]
         },
@@ -477,6 +478,12 @@
           ]
         },
         {
+          "name": "AWO",
+          "values": [
+            "awo"
+          ]
+        },
+        {
           "name": "BENTLEY",
           "values": [
             "bentley"
@@ -525,6 +532,12 @@
           ]
         },
         {
+          "name": "CADILLAC",
+          "values": [
+            "cadillac"
+          ]
+        },
+        {
           "name": "CAN_AM",
           "values": [
             "can am"
@@ -539,7 +552,8 @@
         {
           "name": "CITROEN",
           "values": [
-            "citroen"
+            "citroen",
+            "citroen/d.a.c."
           ]
         },
         {
@@ -563,7 +577,8 @@
         {
           "name": "CASE_IH",
           "values": [
-            "case ih"
+            "case ih",
+            "case international harvester"
           ]
         },
         {
@@ -576,6 +591,12 @@
           "name": "DAF",
           "values": [
             "daf"
+          ]
+        },
+        {
+          "name": "DAFIER",
+          "values": [
+            "dafier"
           ]
         },
         {
@@ -597,7 +618,9 @@
           "values": [
             "daewoo",
             "daewoo motor pol.",
-            "daewoo-fso motor"
+            "daewoo motor polska",
+            "daewoo-fso motor",
+            "gm daewoo"
           ]
         },
         {
@@ -631,6 +654,8 @@
             "fiat/izotermy-tim",
             "fiat/tramp",
             "polski fiat",
+            "fiat/bautex",
+            "fiat/carpol",
             "fiat/partner"
           ]
         },
@@ -691,6 +716,12 @@
           ]
         },
         {
+          "name": "FUXIN",
+          "values": [
+            "fuxin"
+          ]
+        },
+        {
           "name": "FORD",
           "values": [
             "ford",
@@ -698,6 +729,12 @@
             "ford-rfn",
             "ford/ford polska",
             "ford/ats"
+          ]
+        },
+        {
+          "name": "GENERAL_TRAILERS",
+          "values": [
+            "general trailers"
           ]
         },
         {
@@ -716,6 +753,12 @@
           "name": "GNIOTPOL",
           "values": [
             "gniotpol"
+          ]
+        },
+        {
+          "name": "HANGLONG",
+          "values": [
+            "hanglong"
           ]
         },
         {
@@ -819,9 +862,21 @@
           ]
         },
         {
+          "name": "JANMIL",
+          "values": [
+            "janmil"
+          ]
+        },
+        {
           "name": "JAWA",
           "values": [
             "jawa"
+          ]
+        },
+        {
+          "name": "JEEP",
+          "values": [
+            "jeep"
           ]
         },
         {
@@ -831,9 +886,9 @@
           ]
         },
         {
-          "name": "JEEP",
+          "name": "JIAJI",
           "values": [
-            "jeep"
+            "jiaji"
           ]
         },
         {
@@ -846,6 +901,12 @@
           "name": "JUNAK",
           "values": [
             "junak"
+          ]
+        },
+        {
+          "name": "JMSTAR",
+          "values": [
+            "jmstar"
           ]
         },
         {
@@ -876,7 +937,8 @@
           "name": "KIA",
           "values": [
             "kia",
-            "kia/pryzmat"
+            "kia/pryzmat",
+            "kia/z.t.włodarczyk"
           ]
         },
         {
@@ -996,6 +1058,25 @@
           ]
         },
         {
+          "name": "MAN",
+          "values": [
+            "man",
+            "man/man truck"
+          ]
+        },
+        {
+          "name": "MASSEY_FERGUSON",
+          "values": [
+            "massey_ferguson"
+          ]
+        },
+        {
+          "name": "MAZDA",
+          "values": [
+            "MAZDA"
+          ]
+        },
+        {
           "name": "MERCEDES",
           "values": [
             "mercedes",
@@ -1005,9 +1086,9 @@
           ]
         },
         {
-          "name": "MAZDA",
+          "name": "METAL_FACH",
           "values": [
-            "MAZDA"
+            "metal-fach"
           ]
         },
         {
@@ -1047,28 +1128,21 @@
           ]
         },
         {
-          "name": "MAN",
-          "values": [
-            "man",
-            "man/man truck"
-          ]
-        },
-        {
           "name": "MBK",
           "values": [
             "mbk"
           ]
         },
         {
-          "name": "MASSEY_FERGUSON",
-          "values": [
-            "massey ferguson"
-          ]
-        },
-        {
           "name": "MULTICAR",
           "values": [
             "multicar"
+          ]
+        },
+        {
+          "name": "NEW_HOLLAND",
+          "values": [
+            "new holland"
           ]
         },
         {
@@ -1093,7 +1167,9 @@
         {
           "name": "OPEL",
           "values": [
-            "opel"
+            "opel",
+            "opel/vauxhall",
+            "vauxhall"
           ]
         },
         {
@@ -1122,10 +1198,17 @@
           ]
         },
         {
+          "name": "PROTON",
+          "values": [
+            "proton"
+          ]
+        },
+        {
           "name": "RENAULT",
           "values": [
             "renault",
-            "renault/carpol"
+            "renault/carpol",
+            "renault/motowektor"
           ]
         },
         {
@@ -1152,6 +1235,18 @@
           "name": "RIEJU",
           "values": [
             "rieju"
+          ]
+        },
+        {
+          "name": "RIYA",
+          "values": [
+            "riya"
+          ]
+        },
+        {
+          "name": "RYDWAN",
+          "values": [
+            "rydwan"
           ]
         },
         {
@@ -1200,6 +1295,12 @@
           "name": "SKODA",
           "values": [
             "skoda"
+          ]
+        },
+        {
+          "name": "SUPERBYKE",
+          "values": [
+            "superbyke"
           ]
         },
         {
@@ -1305,6 +1406,12 @@
           "name": "SWIDNIK_TRADE",
           "values": [
             "świdnik trade"
+          ]
+        },
+        {
+          "name": "SWIFT",
+          "values": [
+            "swift"
           ]
         },
         {
@@ -1454,6 +1561,12 @@
           "name": "WSK",
           "values": [
             "wsk"
+          ]
+        },
+        {
+          "name": "QINGQI",
+          "values": [
+            "qingqi"
           ]
         },
         {
