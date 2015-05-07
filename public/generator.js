@@ -4,8 +4,6 @@ var path = require('path'),
 
 var output = JSON.parse(fs.readFileSync(path.resolve(__dirname, '', 'api-docs', 'swagger.json'), 'utf8'));
 
-console.log(output);
-
 var getEnumValues = function (values, addUnknown, skipName) {
   var result = [];
 
