@@ -75,7 +75,8 @@
             "przycz.specjalizowana",
             "przyczepa specjalizowana",
             "przyczepa specjalna",
-            "przyczepa ciężarowa rolnicza"
+            "przyczepa ciężarowa rolnicza",
+            "przyczepa rolnicza ciężarowa uniwersalna"
           ]
         },
         {
@@ -274,6 +275,12 @@
           "name": "PLATFORM",
           "values": [
             "platforma"
+          ]
+        },
+        {
+          "name": "MPV",
+          "values": [
+            "mpv"
           ]
         },
         {
@@ -496,6 +503,19 @@
           ]
         },
         {
+          "name": "BETA",
+          "values": [
+            "beta"
+          ]
+        },
+        {
+          "name": "BIALORUS",
+          "values": [
+            "bialorus",
+            "białoruś"
+          ]
+        },
+        {
           "name": "BRENDERUP",
           "values": [
             "brenderup"
@@ -514,6 +534,12 @@
           ]
         },
         {
+          "name": "BURSTNER",
+          "values": [
+            "burstner"
+          ]
+        },
+        {
           "name": "BAOTIAN",
           "values": [
             "baotian"
@@ -523,6 +549,12 @@
           "name": "BMW",
           "values": [
             "bmw"
+          ]
+        },
+        {
+          "name": "BELARUS",
+          "values": [
+            "belarus"
           ]
         },
         {
@@ -554,6 +586,12 @@
           "values": [
             "citroen",
             "citroen/d.a.c."
+          ]
+        },
+        {
+          "name": "CI_CARAVANS",
+          "values": [
+            "ci caravans"
           ]
         },
         {
@@ -620,7 +658,8 @@
             "daewoo motor pol.",
             "daewoo motor polska",
             "daewoo-fso motor",
-            "gm daewoo"
+            "gm daewoo",
+            "daewoo-fso"
           ]
         },
         {
@@ -645,6 +684,18 @@
           "name": "DOLL",
           "values": [
             "doll"
+          ]
+        },
+        {
+          "name": "DUCATI",
+          "values": [
+            "ducati"
+          ]
+        },
+        {
+          "name": "EGLMOTOR",
+          "values": [
+            "eglmotor"
           ]
         },
         {
@@ -706,6 +757,7 @@
           "values": [
             "fs lublin",
             "fs-lublin",
+            "fs-lublin/bumar-koszalin",
             "lublin"
           ]
         },
@@ -729,6 +781,12 @@
             "ford-rfn",
             "ford/ford polska",
             "ford/ats"
+          ]
+        },
+        {
+          "name": "GAZ",
+          "values": [
+            "gaz"
           ]
         },
         {
@@ -792,6 +850,12 @@
           ]
         },
         {
+          "name": "HUATIAN",
+          "values": [
+            "huatian"
+          ]
+        },
+        {
           "name": "HUSQVARNA",
           "values": [
             "husqvarna"
@@ -828,9 +892,16 @@
           ]
         },
         {
+          "name": "IFA",
+          "values": [
+            "ifa"
+          ]
+        },
+        {
           "name": "IVECO",
           "values": [
             "iveco",
+            "iveco/uni-truck",
             "iveco/ipl",
             "iveco/konar",
             "iveco/plandex"
@@ -984,6 +1055,12 @@
           ]
         },
         {
+          "name": "KREIDLER",
+          "values": [
+            "kreidler"
+          ]
+        },
+        {
           "name": "KRONE",
           "values": [
             "krone"
@@ -993,6 +1070,12 @@
           "name": "KTM",
           "values": [
             "ktm"
+          ]
+        },
+        {
+          "name": "LAMBORGHINI",
+          "values": [
+            "lamborghini"
           ]
         },
         {
@@ -1023,6 +1106,12 @@
           "name": "LIAZ",
           "values": [
             "liaz"
+          ]
+        },
+        {
+          "name": "LIFAN",
+          "values": [
+            "lifan"
           ]
         },
         {
@@ -1065,6 +1154,12 @@
           ]
         },
         {
+          "name": "MALAGUTI",
+          "values": [
+            "malaguti"
+          ]
+        },
+        {
           "name": "MASSEY_FERGUSON",
           "values": [
             "massey_ferguson"
@@ -1074,6 +1169,12 @@
           "name": "MAZDA",
           "values": [
             "MAZDA"
+          ]
+        },
+        {
+          "name": "MBK_INDUSTRIE",
+          "values": [
+            "mbk industrie"
           ]
         },
         {
@@ -1116,6 +1217,12 @@
           ]
         },
         {
+          "name": "MCC",
+          "values": [
+            "mcc"
+          ]
+        },
+        {
           "name": "MG",
           "values": [
             "mg"
@@ -1143,6 +1250,12 @@
           "name": "NEW_HOLLAND",
           "values": [
             "new holland"
+          ]
+        },
+        {
+          "name": "NEPTUN",
+          "values": [
+            "neptun"
           ]
         },
         {
@@ -1207,8 +1320,15 @@
           "name": "RENAULT",
           "values": [
             "renault",
+            "renault/d.a.c.",
             "renault/carpol",
             "renault/motowektor"
+          ]
+        },
+        {
+          "name": "RHON",
+          "values": [
+            "rhon"
           ]
         },
         {
@@ -1259,6 +1379,12 @@
           "name": "SAM",
           "values": [
             "sam"
+          ]
+        },
+        {
+          "name": "SAMPO",
+          "values": [
+            "sampo"
           ]
         },
         {
@@ -1403,6 +1529,18 @@
           ]
         },
         {
+          "name": "SONIK",
+          "values": [
+            "sonik"
+          ]
+        },
+        {
+          "name": "STEYR",
+          "values": [
+            "steyr"
+          ]
+        },
+        {
           "name": "SWIDNIK_TRADE",
           "values": [
             "świdnik trade"
@@ -1430,6 +1568,12 @@
           "name": "TASSO",
           "values": [
             "tasso"
+          ]
+        },
+        {
+          "name": "TAOTAO",
+          "values": [
+            "taotao"
           ]
         },
         {
@@ -1533,6 +1677,12 @@
           ]
         },
         {
+          "name": "WILK",
+          "values": [
+            "wilk"
+          ]
+        },
+        {
           "name": "WIOLA",
           "values": [
             "wiola"
@@ -1618,9 +1768,28 @@
           ]
         },
         {
+          "name": "ZHWEKI",
+          "values": [
+            "zhweki"
+          ]
+        },
+        {
+          "name": "ZIL",
+          "values": [
+            "ził",
+            "zil"
+          ]
+        },
+        {
           "name": "ZNEN",
           "values": [
             "znen"
+          ]
+        },
+        {
+          "name": "ZUMICO",
+          "values": [
+            "zumico"
           ]
         },
         {
