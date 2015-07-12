@@ -1,6 +1,6 @@
 {
   "name": "vehicle-history",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Check vehicle history based on vin number.",
   "main": "./lib/vehicleHistory.js",
   "dependencies": {
@@ -55,6 +55,6 @@
     "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
-  "_id": "vehicle-history@0.1.9",
-  "_from": "vehicle-history@^0.1.9"
+  "_id": "vehicle-history@0.2.0",
+  "_from": "vehicle-history@^0.2.0"
 }
