@@ -1,0 +1,745 @@
+{
+  "swagger": "2.0",
+  "host": "vehicle-history.io",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "vehicle-history",
+      "description": "Operation about vehicle histories"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/vehicle-history": {
+      "get": {
+        "tags": [
+          "vehicle-history"
+        ],
+        "summary": "Find vehicle history",
+        "description": "Returns a vehicle data and vehicle history",
+        "operationId": "getVehicleHistory",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/vnd.vehicle-history.v1+json"
+        ],
+        "authorizations": {},
+        "parameters": [
+          {
+            "name": "plate",
+            "description": "Vehicle plate number",
+            "required": true,
+            "type": "string",
+            "defaultValue": "BBC12345",
+            "in": "query",
+            "allowMultiple": false
+          },
+          {
+            "name": "vin",
+            "description": "Vehicle vin number",
+            "required": false,
+            "type": "string",
+            "defaultValue": "ABC123456789DEF",
+            "in": "query",
+            "allowMultiple": false
+          },
+          {
+            "name": "firstRegistrationDate",
+            "description": "Vehicle first registration date",
+            "required": false,
+            "type": "string",
+            "defaultValue": "11.12.2014",
+            "in": "query",
+            "allowMultiple": false
+          },
+          {
+            "name": "country",
+            "description": "Vehicle registration country",
+            "required": false,
+            "type": "string",
+            "defaultValue": "PL",
+            "in": "query",
+            "allowMultiple": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Vehicle not found"
+          }
+        },
+        "security": [
+          {
+            "auth": [],
+            "bearerToken": []
+          }
+        ]
+      }
+    }
+  },
+  "securityDefinitions": {
+    "auth": {
+      "type": "oauth2",
+      "authorizationUrl": "https://vehicle-history.io/oauth/token",
+      "flow": "password",
+      "scopes": {}
+    },
+    "bearerToken": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "Location": {
+      "id": "Location",
+      "required": [
+        "country"
+      ],
+      "properties": {
+        "country": {
+          "type": "string",
+          "description": "location country",
+          "required": true,
+          "enum": [
+            "PL",
+            "UK",
+            "UNKNOWN"
+          ]
+        },
+        "state": {
+          "type": "string",
+          "description": "location state",
+          "required": false
+        }
+      }
+    },
+    "Name": {
+      "id": "Name",
+      "required": [
+        "make",
+        "model"
+      ],
+      "properties": {
+        "make": {
+          "type": "string",
+          "description": "Vehicle make",
+          "required": true,
+          "enum": [
+            "ACCESS",
+            "AUDI",
+            "AUTOSAN",
+            "ALTRAD",
+            "ALFA_ROMEO",
+            "APRILIA",
+            "ASTON_MARTIN",
+            "AWO",
+            "BENTLEY",
+            "BENZHOU",
+            "BETA",
+            "BIALORUS",
+            "BRENDERUP",
+            "BORO",
+            "BOVA",
+            "BURSTNER",
+            "BAOTIAN",
+            "BMW",
+            "BELARUS",
+            "CHEVROLET",
+            "CADILLAC",
+            "CAN_AM",
+            "CHRYSLER",
+            "CITROEN",
+            "CI_CARAVANS",
+            "COLES",
+            "CPI",
+            "CASE",
+            "CASE_IH",
+            "DACIA",
+            "DAF",
+            "DAFIER",
+            "DAIMLER",
+            "DAIHATSU",
+            "DAEWOO",
+            "DAVID_BROWN",
+            "DERBI",
+            "DODGE",
+            "DOLL",
+            "DUCATI",
+            "EGLMOTOR",
+            "FIAT",
+            "FERRO",
+            "FLIEGL",
+            "FSC",
+            "FSO",
+            "FSM",
+            "FSR",
+            "FS_LUBLIN",
+            "FUXIANDA",
+            "FUXIN",
+            "FORD",
+            "GAZ",
+            "GENERAL_TRAILERS",
+            "GILERA",
+            "GMC",
+            "GNIOTPOL",
+            "HANGLONG",
+            "HAOTIAN",
+            "HAILI",
+            "HARLEY_DAVIDSON",
+            "HOBBY",
+            "HONDA",
+            "HUATIAN",
+            "HUSQVARNA",
+            "HUONIAO",
+            "HUEFFERMANN",
+            "HURRICANE",
+            "HYUNDAI",
+            "HYOSUNG",
+            "IFA",
+            "IVECO",
+            "INCA",
+            "INTERNATIONAL",
+            "ISUZU",
+            "JAGUAR",
+            "JANMIL",
+            "JAWA",
+            "JEEP",
+            "JELCZ",
+            "JIAJI",
+            "JINCHENG",
+            "JUNAK",
+            "JMSTAR",
+            "JOHN_DEERE",
+            "JONWAY",
+            "YAMAHA",
+            "KANGDA",
+            "KIA",
+            "KAWASAKI",
+            "KAESSBOHRER",
+            "KEEWAY",
+            "KYMCO",
+            "KOCH",
+            "KOEGEL",
+            "KRAZ",
+            "KREIDLER",
+            "KRONE",
+            "KTM",
+            "LAMBORGHINI",
+            "LANCIA",
+            "LANDINI",
+            "LDV",
+            "LEXUS",
+            "LIAZ",
+            "LIFAN",
+            "LINCOLN",
+            "LINGBEN",
+            "LONGJIA",
+            "LAND_ROVER",
+            "LADA",
+            "MAN",
+            "MALAGUTI",
+            "MASSEY_FERGUSON",
+            "MAZDA",
+            "MBK_INDUSTRIE",
+            "MERCEDES",
+            "METAL_FACH",
+            "MINI",
+            "MITSUBISHI",
+            "MAJESTIC_AUTO",
+            "M_72",
+            "MCC",
+            "MG",
+            "MZ",
+            "MBK",
+            "MULTICAR",
+            "NEW_HOLLAND",
+            "NEPTUN",
+            "NISSAN",
+            "NIEWIADOW",
+            "OGAR",
+            "OPEL",
+            "PIAGGIO",
+            "PEUGEOT",
+            "PLYMOUTH",
+            "PORSCHE",
+            "PROTON",
+            "RENAULT",
+            "RHON",
+            "ROVER",
+            "ROMET_MOTORS",
+            "ROUTER",
+            "RIEJU",
+            "RIYA",
+            "RYDWAN",
+            "ROLLS_ROYCE",
+            "SAM",
+            "SAMPO",
+            "SANOK",
+            "SANYANG",
+            "SIAMOTO",
+            "SIMSON",
+            "SEAT",
+            "SKODA",
+            "SUPERBYKE",
+            "SUZUKI",
+            "SETRA",
+            "SCANIA",
+            "SCHMITZ_CARGOBULL",
+            "SCHWARZMUELLER",
+            "SHINERAY",
+            "SHENKE",
+            "SPRITE_SPORT",
+            "SSANGYONG",
+            "STAR",
+            "STOPEXIM",
+            "SLUPSK",
+            "SAAB",
+            "SUBARU",
+            "SMART",
+            "SOMMER",
+            "SONIK",
+            "STEYR",
+            "SWIDNIK_TRADE",
+            "SWIFT",
+            "SYLAND",
+            "TATA",
+            "TASSO",
+            "TAOTAO",
+            "TOROS",
+            "TOYOTA",
+            "TRABANT",
+            "TRIUMPH",
+            "THULE",
+            "TGB",
+            "TEMA",
+            "URSUS",
+            "UAZ",
+            "VOLKSWAGEN",
+            "VOLVO",
+            "VAUXHALL",
+            "WANGYE",
+            "WAZ",
+            "WESTFALIA",
+            "WIELTON",
+            "WILK",
+            "WIOLA",
+            "WLADIMIREC",
+            "WNP_SUSKI",
+            "WONJAN",
+            "WSK",
+            "QINGQI",
+            "YINMU",
+            "YINXIANG",
+            "YIBEN",
+            "YIYING",
+            "YAMASAKI",
+            "ZASLAW",
+            "ZIPP",
+            "ZETOR",
+            "ZHWEKI",
+            "ZIL",
+            "ZNEN",
+            "ZUMICO",
+            "UNKNOWN"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "description": "Vehicle name",
+          "required": false
+        },
+        "model": {
+          "type": "string",
+          "description": "Vehicle model",
+          "required": true
+        }
+      }
+    },
+    "Production": {
+      "id": "Production",
+      "required": [
+        "year"
+      ],
+      "properties": {
+        "year": {
+          "type": "string",
+          "description": "production year",
+          "required": true
+        }
+      }
+    },
+    "Plate": {
+      "id": "Plate",
+      "required": [
+        "value",
+        "country"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "description": "plate value",
+          "required": true
+        },
+        "country": {
+          "type": "string",
+          "description": "plate country",
+          "required": true,
+          "enum": [
+            "PL",
+            "UK",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "Type": {
+      "id": "Type",
+      "required": [
+        "type",
+        "kind"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Vehicle type",
+          "required": true,
+          "enum": [
+            "CAR",
+            "SPECIAL_CAR",
+            "OTHER_CAR",
+            "MOTORCYCLE",
+            "MOPED",
+            "BUS",
+            "TRACTOR",
+            "LIGHT_TRAILER",
+            "HEAVY_TRAILER",
+            "TRUCK",
+            "UNKNOWN"
+          ]
+        },
+        "kind": {
+          "type": "string",
+          "description": "Vehicle kind",
+          "required": true,
+          "enum": [
+            "HATCHBACK",
+            "LIMOUSINE",
+            "SEDAN",
+            "COUPE",
+            "CONVERTIBLE",
+            "ESTATE",
+            "HEARSE",
+            "OFF_ROAD",
+            "VAN",
+            "WAGON",
+            "WHEELED",
+            "TRAILER",
+            "LOAD_CAPACITY_OF_8_TONS",
+            "LOAD_CAPACITY_MORE_THAN_8_TONS",
+            "LOAD_CAPACITY_OF_2_TONS",
+            "TROLLEY",
+            "STANDARD",
+            "SPORT",
+            "CRUISER",
+            "TOURING",
+            "SPORT_TOURING",
+            "QUAD",
+            "OTHER",
+            "LOADER",
+            "CISTERN",
+            "PLATFORM",
+            "MPV",
+            "OTHER_NOT_CAMPING",
+            "CITY",
+            "INTERCITY",
+            "CRANE",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "Engine": {
+      "id": "Engine",
+      "required": [
+        "cubicCapacity",
+        "fuel"
+      ],
+      "properties": {
+        "cubicCapacity": {
+          "type": "integer",
+          "description": "Vehicle cubic capacity (cm³)",
+          "required": true
+        },
+        "fuel": {
+          "type": "string",
+          "description": "Vehicle engine fuel type",
+          "required": true,
+          "enum": [
+            "PETROL",
+            "PETROL_GAS",
+            "DIESEL",
+            "MIXED_FUEL_OIL",
+            "ETANOL",
+            "HYBRID",
+            "ELECTRIC",
+            "HYDROGEN",
+            "HYBRID",
+            "OTHER",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "Policy": {
+      "id": "Policy",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Vehicle policy status",
+          "required": true,
+          "enum": [
+            "UPTODATE",
+            "OUTDATED",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "Inspection": {
+      "id": "Inspection",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Vehicle inspection status",
+          "required": true,
+          "enum": [
+            "UPTODATE",
+            "OUTDATED",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "Registration": {
+      "id": "Registration",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "registration status",
+          "required": true,
+          "enum": [
+            "REGISTERED",
+            "UNREGISTERED",
+            "UNKNOWN"
+          ]
+        },
+        "firstAt": {
+          "type": "string",
+          "description": "registration first at date",
+          "required": false
+        }
+      }
+    },
+    "Mileage": {
+      "id": "Mileage",
+      "properties": {
+        "value": {
+          "type": "integer",
+          "description": "Vehicle mileage value",
+          "required": false
+        },
+        "type": {
+          "type": "string",
+          "description": "Vehicle mileage type",
+          "required": false,
+          "enum": [
+            "KM",
+            "MILE",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "Event": {
+      "id": "Event",
+      "required": [
+        "type",
+        "createdAt"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Vehicle event type",
+          "required": true,
+          "enum": [
+            "PRODUCTION",
+            "CHANGE_OWNER",
+            "REGISTRATION",
+            "DEREGISTRATION",
+            "INSPECTION",
+            "CO_OWNER",
+            "HOLDER",
+            "CHANGED_REGISTRATION_LOCATION",
+            "STOLEN",
+            "UNKNOWN"
+          ]
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "event created at date",
+          "required": true
+        },
+        "expireAt": {
+          "type": "string",
+          "description": "event expire at date, used for INSPECTION event type",
+          "required": false
+        },
+        "note": {
+          "type": "string",
+          "description": "event note, used for DEREGISTRATION event type",
+          "required": false
+        },
+        "firstOwner": {
+          "type": "string",
+          "description": "event first owner (true/false) information, used for CHANGE_OWNER event type",
+          "required": false
+        },
+        "ownerType": {
+          "type": "string",
+          "description": "event owner type, used for CHANGE_OWNER or CO_OWNER event type",
+          "required": false,
+          "enum": [
+            "PRIVATE",
+            "COMPANY",
+            "UNKNOWN"
+          ]
+        },
+        "location": {
+          "$ref": "#/definitions/Location",
+          "description": "event location, used for CHANGE_OWNER event type",
+          "required": false
+        },
+        "abroadRegistration": {
+          "type": "boolean",
+          "description": "event abroad registration (true/false) information, used for REGISTRATION event type",
+          "required": false
+        },
+        "mileage": {
+          "$ref": "#/definitions/Mileage",
+          "description": "event mileage, used for INSPECTION event type",
+          "required": false
+        }
+      }
+    },
+    "Vehicle": {
+      "id": "Vehicle",
+      "required": [
+        "name",
+        "type",
+        "engine",
+        "production",
+        "plate"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/definitions/Name",
+          "required": true,
+          "description": "Vehicle name"
+        },
+        "type": {
+          "$ref": "#/definitions/Type",
+          "required": true,
+          "description": "Vehicle type"
+        },
+        "engine": {
+          "$ref": "#/definitions/Engine",
+          "required": true,
+          "description": "Vehicle engine"
+        },
+        "production": {
+          "$ref": "#/definitions/Production",
+          "description": "Vehicle production",
+          "required": true
+        },
+        "policy": {
+          "$ref": "#/definitions/Policy",
+          "required": false,
+          "description": "Vehicle policy"
+        },
+        "registration": {
+          "$ref": "#/definitions/Registration",
+          "required": false,
+          "description": "Vehicle registration"
+        },
+        "inspection": {
+          "$ref": "#/definitions/Inspection",
+          "required": false,
+          "description": "Vehicle inspection"
+        },
+        "mileage": {
+          "$ref": "#/definitions/Mileage",
+          "description": "Mileage can be null value",
+          "required": false
+        },
+        "stolen": {
+          "type": "boolean",
+          "description": "is Vehicle stolen",
+          "required": false
+        },
+        "plate": {
+          "$ref": "#/definitions/Plate",
+          "description": "Vehicle plate",
+          "required": true
+        },
+        "vin": {
+          "type": "string",
+          "description": "Vehicle vin integer",
+          "required": false
+        }
+      }
+    },
+    "Response": {
+      "id": "Response",
+      "required": [
+        "vehicle",
+        "events"
+      ],
+      "properties": {
+        "vehicle": {
+          "$ref": "#/definitions/Vehicle",
+          "required": true,
+          "description": "Vehicle data"
+        },
+        "events": {
+          "type": "array",
+          "required": true,
+          "description": "Vehicle events",
+          "items": {
+            "$ref": "#/definitions/Event"
+          }
+        }
+      }
+    }
+  }
+}

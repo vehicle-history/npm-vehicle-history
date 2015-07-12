@@ -2,6 +2,7 @@
 [![npm version](https://badge.fury.io/js/vehicle-history.svg)](http://badge.fury.io/js/vehicle-history)
 [![Coverage Status](https://coveralls.io/repos/vehicle-history/npm-vehicle-history/badge.png?branch=master)](https://coveralls.io/r/vehicle-history/npm-vehicle-history?branch=master)
 [![Build Status](https://travis-ci.org/vehicle-history/npm-vehicle-history.svg?branch=master)](https://travis-ci.org/vehicle-history/npm-vehicle-history)
+[![Dependency Status](https://david-dm.org/Zenedith/npm-my-restify-api.svg)](https://david-dm.org/Zenedith/npm-my-restify-api)
 
 [![NPM](https://nodei.co/npm/vehicle-history.png?downloads=true&stars=true)](https://nodei.co/npm/vehicle-history/)
 

@@ -16,7 +16,7 @@ exports.config = {
    */
   license_key: config.newrelic.license_key,
   ssl: true,
-  agent_enabled: true,
+  agent_enabled: config.newrelic.license_key? true : false,
   logging: {
     /**
      * Level at which to log. 'trace' is most useful to New Relic when diagnosing

@@ -1,4 +1,6 @@
 {
+  "esnext":     true,
+  "bitwise":    false,
   "asi":        false,
   "browser":    false,
   "camelcase":  true,
@@ -29,5 +31,7 @@
   "supernew":   true,
   "trailing":   true,
   "undef":      true,
-  "unused":     true
+  "unused":     true,
+  "maxlen":     100,
+  "latedef":    true
 }
