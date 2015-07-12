@@ -33,13 +33,13 @@ fs.readFile('config/public.key', function (err, data) {
 
   var errorHandlers = {
     VehicleNotFound: {
-      class: 'NotFoundError'
+      className: 'NotFoundError'
     },
     ServiceUnavailable: {
-      class: 'ServiceUnavailableError'
+      className: 'ServiceUnavailableError'
     },
     InvalidVehiclePlate: {
-      class: 'BadRequestError'
+      className: 'BadRequestError'
     }
   };
 
@@ -77,7 +77,9 @@ fs.readFile('config/public.key', function (err, data) {
     ]
   };
 
-  myRestifyApi.runServer(routes, errorHandlers, options, function (err, port) {
+  var server = myRestifyApi.createServer(routes, errorHandlers, options);
+
+  myRestifyApi.runServer(server, options, function (err, port) {
     logger.debug('myRestifyApi running on port: %d', port);
   });
 
