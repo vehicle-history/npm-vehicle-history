@@ -1,0 +1,10 @@
+---
+applications:
+- name: vh-app
+  memory: 256M
+  disk_quota: 1024M
+  command: node api.js
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  instances: 1
+  env:
+    NODE_ENV: production
