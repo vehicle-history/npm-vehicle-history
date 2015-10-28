@@ -1938,7 +1938,7 @@
         "timeout": 5000,
         "plate": "ABC12345",
         "vin": "ABC123456789DEF",
-        "url": "https://historiapojazdu.gov.pl/historia-pojazdu-web/przykladowy-raport.xhtml"
+        "url": "https://historiapojazdu.gov.pl/zobacz-przykladowy-raport"
       },
       "form": {
         "url": "https://historiapojazdu.gov.pl",
