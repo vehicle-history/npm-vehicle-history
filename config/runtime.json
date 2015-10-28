@@ -1942,7 +1942,7 @@
       },
       "form": {
         "url": "https://historiapojazdu.gov.pl",
-        "prefix": "_historiapojazduportlet_WAR_historiapojazduportlet_:j_idt6:",
+        "prefix": "_historiapojazduportlet_WAR_historiapojazduportlet_:j_idt7:",
         "notFoundMessage": "Sprawdź czy wpisałeś poprawne dane",
         "postUrlHost": "historiapojazdu.gov.pl",
         "postUrlRegex": "/action=\"(https\\:\/\/historiapojazdu.gov.pl\/strona\\-glowna.+?)\" class/g",
