@@ -1,4 +1,4 @@
-//require('newrelic');
+require('newrelic');
 var app = require('./lib/app');
 var logger = require('./lib/logger/logger').logger;
 
