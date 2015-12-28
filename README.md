@@ -8,7 +8,7 @@
 
 [![NPM](https://nodei.co/npm/vehicle-history.png?downloads=true&stars=true)](https://nodei.co/npm/vehicle-history/)
 
-Check vehicle history based on vin number.
+Check vehicle history based on vin number, plate number and first registration date.
 
 ## Installation
 
