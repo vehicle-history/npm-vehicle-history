@@ -5,22 +5,22 @@
   "main": "./lib/vehicleHistory.js",
   "dependencies": {
     "assert-plus": "^0.2.0",
-    "async": "^1.5.0",
-    "config": "^1.17.1",
+    "async": "^1.5.2",
+    "config": "^1.19.0",
     "keen-js": "^3.4.0-rc2",
-    "my-restify-api": "Zenedith/npm-my-restify-api#79f07871356d31c69482242c71c2a09995a3d463",
-    "newrelic": "^1.24.0",
+    "my-restify-api": "0.5.12",
+    "newrelic": "^1.24.1",
     "pl-numberplates": "^0.6.0",
     "uk-numberplates": "^0.0.2",
     "vehicle-history-model": "^0.9.48",
     "vehicle-history-provider-web": "^0.9.16",
-    "vehicle-history-provider-xml": "^0.9.13",
+    "vehicle-history-provider-xml": "^0.9.14",
     "winston": "^2.1.1",
     "winston-loggly": "^1.2.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
-    "istanbul": "^0.4.1",
+    "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "rewire": "^2.5.1"
   },
