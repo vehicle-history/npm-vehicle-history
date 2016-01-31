@@ -4,7 +4,7 @@
   "description": "Check vehicle history based on vin number.",
   "main": "./lib/vehicleHistory.js",
   "dependencies": {
-    "assert-plus": "^0.2.0",
+    "assert-plus": "^1.0.0",
     "async": "^1.5.2",
     "config": "^1.19.0",
     "keen-js": "^3.4.0-rc2",
