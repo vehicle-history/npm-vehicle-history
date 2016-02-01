@@ -10,7 +10,7 @@
     "keen-js": "^3.4.0-rc2",
     "my-restify-api": "0.5.13",
     "newrelic": "^1.25.1",
-    "pl-numberplates": "^0.6.0",
+    "pl-numberplates": "^1.0.0",
     "uk-numberplates": "^0.0.2",
     "vehicle-history-model": "^0.9.49",
     "vehicle-history-provider-web": "^0.9.17",
