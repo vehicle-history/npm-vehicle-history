@@ -1825,7 +1825,8 @@
           "name": "REGISTRATION",
           "values": [
             "/historia-pojazdu-portlet/images/pierwsza-rejestracja-w-polsce.png",
-            "/documents/10181/0/icon-owner.png/9dc19f58-7b45-43ba-aae6-0984e4515516"
+            "/documents/10181/0/icon-owner.png/9dc19f58-7b45-43ba-aae6-0984e4515516",
+            "/documents/10181/0/icon-owner.png/9dc19f58-7b45-43ba-aae6-0984e4515516?t=1407825344454"
           ]
         },
         {
@@ -1844,14 +1845,16 @@
           "name": "INSPECTION",
           "values": [
             "/historia-pojazdu-portlet/images/badanie-techniczne.png",
-            "/documents/10181/0/icon-green-point.png/5c091161-7dce-4f84-b632-0d43d663a2fb"
+            "/documents/10181/0/icon-green-point.png/5c091161-7dce-4f84-b632-0d43d663a2fb",
+            "/documents/10181/0/icon-green-point.png/5c091161-7dce-4f84-b632-0d43d663a2fb?t=1407825344233"
           ]
         },
         {
           "name": "CO_OWNER",
           "values": [
             "/historia-pojazdu-portlet/images/dodanie-wspolwlasciciela.png",
-            "/documents/10181/0/icon-coowner.png/d8483e20-70de-4707-831f-c6a857603cf6"
+            "/documents/10181/0/icon-coowner.png/d8483e20-70de-4707-831f-c6a857603cf6",
+            "/documents/10181/0/icon-coowner.png/d8483e20-70de-4707-831f-c6a857603cf6?t=1407825343998"
           ]
         },
         {
@@ -1870,7 +1873,8 @@
           "name": "STOLEN",
           "values": [
             "/historia-pojazdu-portlet/images/kradziez.png",
-            "/documents/10181/0/icon-red-point.png/24880cad-f2af-4f65-a1a2-add7251560a7"
+            "/documents/10181/0/icon-red-point.png/24880cad-f2af-4f65-a1a2-add7251560a7",
+            "/documents/10181/0/icon-red-point.png/24880cad-f2af-4f65-a1a2-add7251560a7?t=1407825344685"
           ]
         }
       ]
@@ -1936,7 +1940,7 @@
       "type": "web",
       "example": {
         "timeout": 5000,
-        "plate": "ABC12345",
+        "plate": "BBC12345",
         "vin": "ABC123456789DEF",
         "url": "https://historiapojazdu.gov.pl/zobacz-przykladowy-raport"
       },
