@@ -4,25 +4,26 @@
   "basePath": "/api",
   "tags": [
     {
-      "name": "vehicle-history",
-      "description": "Operation about vehicle histories"
+      "name": "vehicles",
+      "description": "Vehicle reports"
+    },
+    {
+      "name": "buses",
+      "description": "Buses reports"
     }
   ],
   "schemes": [
     "https"
   ],
   "paths": {
-    "/vehicle-history": {
+    "/vehicles/:plate/reports": {
       "get": {
         "tags": [
-          "vehicle-history"
+          "vehicles"
         ],
-        "summary": "Find vehicle history",
-        "description": "Returns a vehicle data and vehicle history",
-        "operationId": "getVehicleHistory",
-        "consumes": [
-          "application/json"
-        ],
+        "summary": "Get vehicle history report",
+        "description": "Returns a vehicle history report",
+        "operationId": "getVehicleHistoryReport",
         "produces": [
           "application/vnd.vehicle-history.v1+json"
         ],
@@ -34,7 +35,7 @@
             "required": true,
             "type": "string",
             "defaultValue": "BBC12345",
-            "in": "query",
+            "in": "path",
             "allowMultiple": false
           },
           {
@@ -51,7 +52,7 @@
             "description": "Vehicle first registration date",
             "required": false,
             "type": "string",
-            "defaultValue": "11.12.2014",
+            "defaultValue": "11.12.2015",
             "in": "query",
             "allowMultiple": false
           },
@@ -77,6 +78,51 @@
           },
           "404": {
             "description": "Vehicle not found"
+          }
+        },
+        "security": [
+          {
+            "auth": [],
+            "bearerToken": []
+          }
+        ]
+      }
+    },
+    "/buses/:plate/reports": {
+      "get": {
+        "tags": [
+          "buses"
+        ],
+        "summary": "Get bus report",
+        "description": "Returns a bus report",
+        "operationId": "getBusReport",
+        "produces": [
+          "application/vnd.vehicle-history.v1+json"
+        ],
+        "authorizations": {},
+        "parameters": [
+          {
+            "name": "plate",
+            "description": "Bus plate number",
+            "required": true,
+            "type": "string",
+            "defaultValue": "SBE12345",
+            "in": "path",
+            "allowMultiple": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Bus not found"
           }
         },
         "security": [

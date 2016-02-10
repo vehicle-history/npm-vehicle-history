@@ -10,3 +10,7 @@ test/
 *.ipr
 *.iws
 .idea
+Dockerfile
+newrelic_agent.log
+release.sh
+config/runtimes.json
