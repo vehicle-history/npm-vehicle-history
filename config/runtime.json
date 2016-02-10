@@ -1825,6 +1825,7 @@
           "name": "REGISTRATION",
           "values": [
             "/historia-pojazdu-portlet/images/pierwsza-rejestracja-w-polsce.png",
+            "/historia-pojazdu-portlet/images/ponowna-rejestracja.png",
             "/documents/10181/0/icon-owner.png/9dc19f58-7b45-43ba-aae6-0984e4515516",
             "/documents/10181/0/icon-owner.png/9dc19f58-7b45-43ba-aae6-0984e4515516?t=1407825344454"
           ]
@@ -1838,7 +1839,8 @@
         {
           "name": "DEREGISTRATION",
           "values": [
-            "/historia-pojazdu-portlet/images/wyrejestrowanie.png"
+            "/historia-pojazdu-portlet/images/wyrejestrowanie.png",
+            "/historia-pojazdu-portlet/images/koniec-rejestracji-czasowej.png"
           ]
         },
         {
