@@ -61,7 +61,7 @@
     "pl": {
       "type": "web",
       "example": {
-        "plate": "ABC12345",
+        "plate": "BBC12345",
         "vin": "ABC123456789DEF",
         "url": "https://"
       },
