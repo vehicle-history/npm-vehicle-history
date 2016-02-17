@@ -11,7 +11,9 @@
     "level": "info",
     "subdomain": "zenedith",
     "inputToken": "b24d575e-842b-4b4d-ac91-6c0a12b60476",
-    "tags": ["NodeJS"],
+    "tags": [
+      "NodeJS"
+    ],
     "json": true
   },
   "resolver": {
@@ -2011,7 +2013,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["#marka"]
+                "opts": [
+                  "#marka"
+                ]
               }
             ]
           },
@@ -2020,7 +2024,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["span#typ"]
+                "opts": [
+                  "span#typ"
+                ]
               }
             ]
           },
@@ -2029,7 +2035,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["span#model"]
+                "opts": [
+                  "span#model"
+                ]
               }
             ]
           },
@@ -2038,7 +2046,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["span#rodzaj"]
+                "opts": [
+                  "span#rodzaj"
+                ]
               }
             ]
           },
@@ -2047,7 +2057,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["span#podrodzaj"]
+                "opts": [
+                  "span#podrodzaj"
+                ]
               }
             ]
           },
@@ -2056,7 +2068,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["span#pojemnosc"]
+                "opts": [
+                  "span#pojemnosc"
+                ]
               }
             ]
           },
@@ -2065,7 +2079,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["span#paliwo"]
+                "opts": [
+                  "span#paliwo"
+                ]
               }
             ]
           },
@@ -2074,7 +2090,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["p.year span.strong"]
+                "opts": [
+                  "p.year span.strong"
+                ]
               }
             ]
           },
@@ -2083,7 +2101,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["p.oc span.strong"]
+                "opts": [
+                  "p.oc span.strong"
+                ]
               },
               {
                 "type": "trim"
@@ -2095,7 +2115,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["p.status span.strong"]
+                "opts": [
+                  "p.status span.strong"
+                ]
               },
               {
                 "type": "trim"
@@ -2107,7 +2129,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["p.tech span.strong"]
+                "opts": [
+                  "p.tech span.strong"
+                ]
               },
               {
                 "type": "trim"
@@ -2119,7 +2143,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": [".km span"]
+                "opts": [
+                  ".km span"
+                ]
               },
               {
                 "type": "trim"
@@ -2131,7 +2157,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": ["#jednostkaLicznika"]
+                "opts": [
+                  "#jednostkaLicznika"
+                ]
               },
               {
                 "type": "trim"
@@ -2143,7 +2171,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": [".stolen"]
+                "opts": [
+                  ".stolen"
+                ]
               }
             ]
           },
@@ -2152,7 +2182,9 @@
             "stages": [
               {
                 "type": "selector",
-                "opts": [".vin"]
+                "opts": [
+                  ".vin"
+                ]
               }
             ]
           },
@@ -2171,7 +2203,9 @@
                         "stages": [
                           {
                             "type": "selector",
-                            "opts": [".date p"]
+                            "opts": [
+                              ".date p"
+                            ]
                           }
                         ]
                       },
@@ -2180,7 +2214,11 @@
                         "stages": [
                           {
                             "type": "selector",
-                            "opts": ["td.axis img", null, "attr=src"]
+                            "opts": [
+                              "td.axis img",
+                              null,
+                              "attr=src"
+                            ]
                           }
                         ]
                       },
@@ -2189,7 +2227,14 @@
                         "stages": [
                           {
                             "type": "selector",
-                            "opts": [".description p", null, ["first", "text"]]
+                            "opts": [
+                              ".description p",
+                              null,
+                              [
+                                "first",
+                                "text"
+                              ]
+                            ]
                           },
                           {
                             "type": "trim"
@@ -2201,7 +2246,14 @@
                         "stages": [
                           {
                             "type": "selector",
-                            "opts": [".wlasciciel", null, ["last", "text"]]
+                            "opts": [
+                              ".wlasciciel",
+                              null,
+                              [
+                                "last",
+                                "text"
+                              ]
+                            ]
                           }
                         ]
                       },
@@ -2210,7 +2262,14 @@
                         "stages": [
                           {
                             "type": "selector",
-                            "opts": [".wspolwlasciciel", null, ["last", "text"]]
+                            "opts": [
+                              ".wspolwlasciciel",
+                              null,
+                              [
+                                "last",
+                                "text"
+                              ]
+                            ]
                           }
                         ]
                       },
@@ -2219,7 +2278,14 @@
                         "stages": [
                           {
                             "type": "selector",
-                            "opts": [".miejsceRejestracji", null, ["last", "text"]]
+                            "opts": [
+                              ".miejsceRejestracji",
+                              null,
+                              [
+                                "last",
+                                "text"
+                              ]
+                            ]
                           }
                         ]
                       },
@@ -2228,7 +2294,14 @@
                         "stages": [
                           {
                             "type": "selector",
-                            "opts": [".przyczynaWyrejestrowania", null, ["last", "text"]]
+                            "opts": [
+                              ".przyczynaWyrejestrowania",
+                              null,
+                              [
+                                "last",
+                                "text"
+                              ]
+                            ]
                           }
                         ]
                       },
@@ -2237,7 +2310,14 @@
                         "stages": [
                           {
                             "type": "selector",
-                            "opts": [".stanLicznika", null, ["last", "text"]]
+                            "opts": [
+                              ".stanLicznika",
+                              null,
+                              [
+                                "last",
+                                "text"
+                              ]
+                            ]
                           }
                         ]
                       },
@@ -2246,13 +2326,259 @@
                         "stages": [
                           {
                             "type": "selector",
-                            "opts": [".posiadacz", null, ["last", "text"]]
+                            "opts": [
+                              ".posiadacz",
+                              null,
+                              [
+                                "last",
+                                "text"
+                              ]
+                            ]
                           }
                         ]
                       }
                     ]
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bus-pl": {
+      "type": "web",
+      "example": {
+        "timeout": 5000,
+        "plate": "SBE12345",
+        "url": "https://bezpiecznyautobus.gov.pl/zobacz-przykladowy-raport"
+      },
+      "form": {
+        "url": "https://bezpiecznyautobus.gov.pl",
+        "prefix": "_bezpiecznyautobusportlet_WAR_bezpiecznyautobusportlet_:",
+        "notFoundMessage": "Sprawdź czy wpisałeś poprawne dane",
+        "postUrlHost": "bezpiecznyautobus.gov.pl",
+        "postUrlRegex": "/action=\"(https\\:\/\/historiapojazdu.gov.pl\/strona\\-glowna.+?)\" class/g",
+        "timeout": 5000,
+        "headers": {
+          "Content-Type": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+          "User-Agent": "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36",
+          "Origin": "https://bezpiecznyautobus.gov.pl",
+          "Referer": "https://bezpiecznyautobus.gov.pl/web/guest/strona-glowna"
+        },
+        "fields": [
+          {
+            "fieldName": "_bezpiecznyautobusportlet_WAR_bezpiecznyautobusportlet_:wyszukajPojazd",
+            "fieldRegex": null,
+            "fieldDefaultValue": "Sprawdź pojazd »",
+            "searchCarRequestField": null
+          },
+          {
+            "fieldName": "_bezpiecznyautobusportlet_WAR_bezpiecznyautobusportlet_:formularzWyszukiwania",
+            "fieldRegex": null,
+            "fieldDefaultValue": "_bezpiecznyautobusportlet_WAR_bezpiecznyautobusportlet_:formularzWyszukiwania",
+            "searchCarRequestField": null
+          },
+          {
+            "fieldName": "javax.faces.encodedURL",
+            "fieldRegex": "/name=\"javax.faces.encodedURL\" value=\"(.+?)\"/g",
+            "fieldDefaultValue": null,
+            "searchCarRequestField": null
+          },
+          {
+            "fieldName": "javax.faces.ViewState",
+            "fieldRegex": "/id=\"javax.faces.ViewState\" value=\"(.+?)\"/g",
+            "fieldDefaultValue": null,
+            "searchCarRequestField": null
+          },
+          {
+            "fieldName": "_bezpiecznyautobusportlet_WAR_bezpiecznyautobusportlet_:nrRejestracyjny",
+            "fieldRegex": null,
+            "fieldDefaultValue": null,
+            "searchCarRequestField": "plate"
+          }
+        ]
+      },
+      "parser": {
+        "fields": [
+          {
+            "name": "name.manufacturer",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "#marka"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "name.model",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "span#model"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "variant.type",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "span#rodzaj"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "variant.kind",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "span#podrodzaj"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "production.year",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "div[class='Rok produkcji'] span.value"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "policy.status",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "div.civil-insurance span.value"
+                ]
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "registration.status",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "span#statusRejestracji"
+                ]
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "inspection.status",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "div.tech-inspection span.value"
+                ]
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "mileage.value",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "div[class='Ostatni zarejestrowany stan licznika'] span.value"
+                ]
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "mileage.type",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "#jednostkaLicznika"
+                ]
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "vin",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "div.VIN span.value"
+                ]
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "registration.location.state",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "div[class='Województwo, w którym pojazd zarejestrowano'] span.value span.lowercase"
+                ]
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "inspection.createdAt",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "span#badanieTechniczneDataWykonania"
+                ]
+              },
+              {
+                "type": "trim"
+              }
+            ]
+          },
+          {
+            "name": "registration.createdAt",
+            "stages": [
+              {
+                "type": "selector",
+                "opts": [
+                  "div[class='Data wydania aktualnego dowodu rejestracyjnego'] span.value"
+                ]
+              },
+              {
+                "type": "trim"
               }
             ]
           }
