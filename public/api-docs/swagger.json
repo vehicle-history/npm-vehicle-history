@@ -21,8 +21,8 @@
         "tags": [
           "vehicles"
         ],
-        "summary": "Get vehicle history report",
-        "description": "Returns a vehicle history report",
+        "summary": "Get vehicles history reports",
+        "description": "Returns a vehicles history reports",
         "operationId": "getVehicleHistoryReport",
         "produces": [
           "application/vnd.vehicle-history.v1+json"
@@ -70,14 +70,11 @@
           "200": {
             "description": "successful operation",
             "schema": {
-              "$ref": "#/definitions/Response"
+              "$ref": "#/definitions/VehicleReportsCollection"
             }
           },
           "401": {
             "description": "Unauthorized"
-          },
-          "404": {
-            "description": "Vehicle not found"
           }
         },
         "security": [
@@ -783,6 +780,28 @@
           "description": "Vehicle events",
           "items": {
             "$ref": "#/definitions/Event"
+          }
+        }
+      }
+    },
+    "VehicleReportsCollection": {
+      "id": "VehicleReportsCollection",
+      "required": [
+        "count",
+        "vehicleReports"
+      ],
+      "properties": {
+        "count": {
+          "type": "string",
+          "required": true,
+          "description": "Count all results"
+        },
+        "vehicleReports": {
+          "type": "array",
+          "required": true,
+          "description": "Vehicle reports collection",
+          "items": {
+            "$ref": "#/definitions/Response"
           }
         }
       }

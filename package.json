@@ -4,25 +4,25 @@
   "description": "Check vehicle history based on vin number.",
   "main": "./lib/vehicleHistory.js",
   "dependencies": {
-    "assert-plus": "^1.0.0",
-    "async": "^1.5.2",
-    "config": "^1.19.0",
-    "keen-js": "^3.4.0-rc2",
+    "assert-plus": "1.0.0",
+    "async": "1.5.2",
+    "config": "1.19.0",
+    "keen-js": "3.4.0-rc2",
     "my-restify-api": "0.5.13",
-    "newrelic": "^1.25.1",
-    "pl-numberplates": "^1.0.0",
-    "uk-numberplates": "^0.0.2",
-    "vehicle-history-model": "^0.9.49",
-    "vehicle-history-provider-web": "^0.9.17",
-    "vehicle-history-provider-xml": "^0.9.16",
-    "winston": "^2.1.1",
-    "winston-loggly": "^1.3.1"
+    "newrelic": "1.25.1",
+    "pl-numberplates": "1.0.0",
+    "uk-numberplates": "0.0.2",
+    "vehicle-history-model": "0.10.0",
+    "vehicle-history-provider-web": "0.10.0",
+    "vehicle-history-provider-xml": "0.9.16",
+    "winston": "2.1.1",
+    "winston-loggly": "1.3.1"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "istanbul": "^0.4.2",
-    "mocha": "^2.4.5",
-    "rewire": "^2.5.1"
+    "chai": "3.5.0",
+    "istanbul": "0.4.2",
+    "mocha": "2.4.5",
+    "rewire": "2.5.1"
   },
   "scripts": {
     "prepublish": "npm prune",
