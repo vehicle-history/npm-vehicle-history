@@ -1,6 +1,8 @@
-var path = require('path'),
-  fs = require('fs'),
-  config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '', '../config', 'runtime.json'), 'utf8'));
+'use strict';
+
+var path = require('path');
+var fs = require('fs');
+var config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '', '../config', 'runtime.json'), 'utf8'));
 
 var output = JSON.parse(fs.readFileSync(path.resolve(__dirname, '', 'api-docs', 'swagger.json'), 'utf8'));
 
