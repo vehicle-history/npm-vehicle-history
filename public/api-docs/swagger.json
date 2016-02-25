@@ -4,25 +4,26 @@
   "basePath": "/api",
   "tags": [
     {
-      "name": "vehicle-history",
-      "description": "Operation about vehicle histories"
+      "name": "vehicles",
+      "description": "Vehicle reports"
+    },
+    {
+      "name": "buses",
+      "description": "Buses reports"
     }
   ],
   "schemes": [
     "https"
   ],
   "paths": {
-    "/vehicle-history": {
+    "/vehicle-reports": {
       "get": {
         "tags": [
-          "vehicle-history"
+          "vehicles"
         ],
-        "summary": "Find vehicle history",
-        "description": "Returns a vehicle data and vehicle history",
-        "operationId": "getVehicleHistory",
-        "consumes": [
-          "application/json"
-        ],
+        "summary": "Get vehicles history reports",
+        "description": "Returns a vehicles history reports",
+        "operationId": "getVehicleHistoryReport",
         "produces": [
           "application/vnd.vehicle-history.v1+json"
         ],
@@ -51,7 +52,7 @@
             "description": "Vehicle first registration date",
             "required": false,
             "type": "string",
-            "defaultValue": "11.12.2014",
+            "defaultValue": "11.12.2015",
             "in": "query",
             "allowMultiple": false
           },
@@ -69,6 +70,48 @@
           "200": {
             "description": "successful operation",
             "schema": {
+              "$ref": "#/definitions/VehicleReportsCollection"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        },
+        "security": [
+          {
+            "auth": [],
+            "bearerToken": []
+          }
+        ]
+      }
+    },
+    "/bus-reports/:plate": {
+      "get": {
+        "tags": [
+          "buses"
+        ],
+        "summary": "Get bus report",
+        "description": "Returns a bus report",
+        "operationId": "getBusReport",
+        "produces": [
+          "application/vnd.vehicle-history.v1+json"
+        ],
+        "authorizations": {},
+        "parameters": [
+          {
+            "name": "plate",
+            "description": "Bus plate number",
+            "required": true,
+            "type": "string",
+            "defaultValue": "SBE12345",
+            "in": "path",
+            "allowMultiple": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
               "$ref": "#/definitions/Response"
             }
           },
@@ -76,7 +119,7 @@
             "description": "Unauthorized"
           },
           "404": {
-            "description": "Vehicle not found"
+            "description": "Bus not found"
           }
         },
         "security": [
@@ -737,6 +780,28 @@
           "description": "Vehicle events",
           "items": {
             "$ref": "#/definitions/Event"
+          }
+        }
+      }
+    },
+    "VehicleReportsCollection": {
+      "id": "VehicleReportsCollection",
+      "required": [
+        "count",
+        "vehicleReports"
+      ],
+      "properties": {
+        "count": {
+          "type": "string",
+          "required": true,
+          "description": "Count all results"
+        },
+        "vehicleReports": {
+          "type": "array",
+          "required": true,
+          "description": "Vehicle reports collection",
+          "items": {
+            "$ref": "#/definitions/Response"
           }
         }
       }

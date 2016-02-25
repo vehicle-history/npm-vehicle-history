@@ -61,7 +61,36 @@
     "pl": {
       "type": "web",
       "example": {
-        "plate": "ABC12345",
+        "plate": "BBC12345",
+        "vin": "ABC123456789DEF",
+        "url": "https://"
+      },
+      "form": {
+        "url": "https://",
+        "prefix": "",
+        "notFoundMessage": "",
+        "postUrlHost": "",
+        "postUrlRegex": "/regex/g",
+        "headers": {
+          "Content-Type": "",
+          "User-Agent": "",
+          "Origin": "",
+          "Referer": ""
+        },
+        "fields": [
+
+        ]
+      },
+      "parser": {
+        "fields": [
+
+        ]
+      }
+    },
+    "bus-pl": {
+      "type": "web",
+      "example": {
+        "plate": "BBC12345",
         "vin": "ABC123456789DEF",
         "url": "https://"
       },
