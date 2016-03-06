@@ -16,7 +16,7 @@
     "vehicle-history-model": "0.13.0",
     "vehicle-history-provider-web": "0.10.0",
     "vehicle-history-provider-xml": "0.10.0",
-    "winston": "2.2.0",
+    "winston": "2.1.1",
     "winston-loggly": "1.3.1"
   },
   "devDependencies": {
