@@ -4,6 +4,7 @@ cache:
   directories:
     - node_modules
 notifications:
+  slack: vehicle-history:SKcpyDevstQaov9UMzwuns12
   email: true
 node_js:
   - '5'
