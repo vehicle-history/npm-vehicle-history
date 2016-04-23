@@ -2,6 +2,10 @@
   "swagger": "2.0",
   "host": "vehicle-history.io",
   "basePath": "/api",
+  "info": {
+    "version": "1.0.0",
+    "title": "vehicle-history"
+  },
   "tags": [
     {
       "name": "vehicles",
@@ -696,7 +700,6 @@
       }
     },
     "Vehicle": {
-      "id": "Vehicle",
       "required": [
         "name",
         "type",
@@ -763,7 +766,6 @@
       }
     },
     "Response": {
-      "id": "Response",
       "required": [
         "vehicle",
         "events"
@@ -785,7 +787,6 @@
       }
     },
     "VehicleReportsCollection": {
-      "id": "VehicleReportsCollection",
       "required": [
         "count",
         "vehicleReports"
