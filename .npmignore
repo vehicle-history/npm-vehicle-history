@@ -13,4 +13,5 @@ test/
 Dockerfile
 newrelic_agent.log
 release.sh
+config/runtime.json
 config/runtimes.json
