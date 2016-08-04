@@ -78,7 +78,8 @@
             "przyczepa specjalizowana",
             "przyczepa specjalna",
             "przyczepa ciężarowa rolnicza",
-            "przyczepa rolnicza ciężarowa uniwersalna"
+            "przyczepa rolnicza ciężarowa uniwersalna",
+            "przycz.r.uniwersalna"
           ]
         },
         {
@@ -151,7 +152,8 @@
         {
           "name": "OFF_ROAD",
           "values": [
-            "terenowy"
+            "terenowy",
+            "pick-up"
           ]
         },
         {
@@ -246,7 +248,8 @@
         {
           "name": "QUAD",
           "values": [
-            "czterokołowiec"
+            "czterokołowiec",
+            "czterokołowiec lekki"
           ]
         },
         {
@@ -484,6 +487,12 @@
           "name": "ASTON_MARTIN",
           "values": [
             "aston martin"
+          ]
+        },
+        {
+          "name": "AIXAM",
+          "values": [
+            "aixam"
           ]
         },
         {
@@ -906,7 +915,8 @@
             "iveco/uni-truck",
             "iveco/ipl",
             "iveco/konar",
-            "iveco/plandex"
+            "iveco/plandex",
+            "iveco/lamar"
           ]
         },
         {
@@ -1543,6 +1553,12 @@
           ]
         },
         {
+          "name": "STEMA",
+          "values": [
+            "stema"
+          ]
+        },
+        {
           "name": "SWIDNIK_TRADE",
           "values": [
             "świdnik trade"
@@ -1558,6 +1574,12 @@
           "name": "SYLAND",
           "values": [
             "syland"
+          ]
+        },
+        {
+          "name": "SYM",
+          "values": [
+            "sym"
           ]
         },
         {
