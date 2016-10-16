@@ -5,11 +5,11 @@
   "main": "./lib/vehicleHistory.js",
   "dependencies": {
     "assert-plus": "1.0.0",
-    "async": "2.0.1",
+    "async": "2.1.1",
     "config": "1.21.0",
     "moment": "2.15.1",
     "my-restify-api": "0.6.3",
-    "newrelic": "1.30.5",
+    "newrelic": "1.31.0",
     "pl-numberplates": "1.0.0",
     "uk-numberplates": "0.0.2",
     "vehicle-history-model": "1.0.0",
