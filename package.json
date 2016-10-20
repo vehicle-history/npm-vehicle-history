@@ -9,7 +9,7 @@
     "config": "1.21.0",
     "moment": "2.15.1",
     "my-restify-api": "0.6.3",
-    "newrelic": "1.31.0",
+    "newrelic": "1.32.0",
     "pl-numberplates": "1.0.0",
     "uk-numberplates": "0.0.2",
     "vehicle-history-model": "1.0.0",
