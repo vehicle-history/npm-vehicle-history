@@ -6,16 +6,17 @@
   "dependencies": {
     "assert-plus": "1.0.0",
     "async": "2.1.2",
-    "config": "1.21.0",
+    "config": "1.24.0",
+    "keen-js": "3.4.1",
     "moment": "2.15.2",
     "my-restify-api": "0.6.3",
-    "newrelic": "1.32.0",
+    "newrelic": "1.33.0",
     "pl-numberplates": "1.0.0",
     "uk-numberplates": "0.0.2",
     "vehicle-history-model": "1.0.0",
     "vehicle-history-provider-web": "1.0.3",
     "vehicle-history-provider-xml": "1.0.1",
-    "winston": "2.2.0",
+    "winston": "2.3.0",
     "winston-loggly": "1.3.1"
   },
   "devDependencies": {
