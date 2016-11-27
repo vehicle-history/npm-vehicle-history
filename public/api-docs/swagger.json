@@ -31,43 +31,38 @@
         "produces": [
           "application/vnd.vehicle-history.v1+json"
         ],
-        "authorizations": {},
         "parameters": [
           {
             "name": "plate",
             "description": "Vehicle plate number",
             "required": true,
             "type": "string",
-            "defaultValue": "BBC12345",
-            "in": "query",
-            "allowMultiple": false
+            "default": "BBC12345",
+            "in": "query"
           },
           {
             "name": "vin",
             "description": "Vehicle vin number",
             "required": false,
             "type": "string",
-            "defaultValue": "ABC123456789DEF",
-            "in": "query",
-            "allowMultiple": false
+            "default": "ABC123456789DEF",
+            "in": "query"
           },
           {
             "name": "firstRegistrationDate",
             "description": "Vehicle first registration date",
             "required": false,
             "type": "string",
-            "defaultValue": "11.12.2015",
-            "in": "query",
-            "allowMultiple": false
+            "default": "11.12.2015",
+            "in": "query"
           },
           {
             "name": "country",
             "description": "Vehicle registration country",
             "required": false,
             "type": "string",
-            "defaultValue": "PL",
-            "in": "query",
-            "allowMultiple": false
+            "default": "PL",
+            "in": "query"
           }
         ],
         "responses": {
@@ -83,13 +78,14 @@
         },
         "security": [
           {
-            "auth": [],
-            "bearerToken": []
+            "bearerToken": [
+              "vehicle:report:get"
+            ]
           }
         ]
       }
     },
-    "/bus-reports/:plate": {
+    "/bus-reports/{plate}": {
       "get": {
         "tags": [
           "buses"
@@ -100,16 +96,14 @@
         "produces": [
           "application/vnd.vehicle-history.v1+json"
         ],
-        "authorizations": {},
         "parameters": [
           {
             "name": "plate",
             "description": "Bus plate number",
             "required": true,
             "type": "string",
-            "defaultValue": "SBE12345",
-            "in": "path",
-            "allowMultiple": false
+            "default": "SBE12345",
+            "in": "path"
           }
         ],
         "responses": {
@@ -128,29 +122,27 @@
         },
         "security": [
           {
-            "auth": [],
-            "bearerToken": []
+            "bearerToken": [
+              "bus:report:get"
+            ]
           }
         ]
       }
     }
   },
   "securityDefinitions": {
-    "auth": {
+    "bearerToken": {
       "type": "oauth2",
       "authorizationUrl": "https://vehicle-history.io/oauth/token",
-      "flow": "password",
-      "scopes": {}
-    },
-    "bearerToken": {
-      "type": "apiKey",
-      "name": "Authorization",
-      "in": "header"
+      "flow": "implicit",
+      "scopes": {
+        "bus:report:get": "get bus report",
+        "vehicle:report:get": "get vehicle report"
+      }
     }
   },
   "definitions": {
     "Location": {
-      "id": "Location",
       "required": [
         "country"
       ],
@@ -158,7 +150,6 @@
         "country": {
           "type": "string",
           "description": "location country",
-          "required": true,
           "enum": [
             "PL",
             "UK",
@@ -167,13 +158,11 @@
         },
         "state": {
           "type": "string",
-          "description": "location state",
-          "required": false
+          "description": "location state"
         }
       }
     },
     "Name": {
-      "id": "Name",
       "required": [
         "make",
         "model"
@@ -182,7 +171,6 @@
         "make": {
           "type": "string",
           "description": "Vehicle make",
-          "required": true,
           "enum": [
             "ACCESS",
             "AUDI",
@@ -404,31 +392,26 @@
         },
         "name": {
           "type": "string",
-          "description": "Vehicle name",
-          "required": false
+          "description": "Vehicle name"
         },
         "model": {
           "type": "string",
-          "description": "Vehicle model",
-          "required": true
+          "description": "Vehicle model"
         }
       }
     },
     "Production": {
-      "id": "Production",
       "required": [
         "year"
       ],
       "properties": {
         "year": {
           "type": "string",
-          "description": "production year",
-          "required": true
+          "description": "production year"
         }
       }
     },
     "Plate": {
-      "id": "Plate",
       "required": [
         "value",
         "country"
@@ -436,13 +419,11 @@
       "properties": {
         "value": {
           "type": "string",
-          "description": "plate value",
-          "required": true
+          "description": "plate value"
         },
         "country": {
           "type": "string",
           "description": "plate country",
-          "required": true,
           "enum": [
             "PL",
             "UK",
@@ -452,7 +433,6 @@
       }
     },
     "Type": {
-      "id": "Type",
       "required": [
         "type",
         "kind"
@@ -461,7 +441,6 @@
         "type": {
           "type": "string",
           "description": "Vehicle type",
-          "required": true,
           "enum": [
             "CAR",
             "SPECIAL_CAR",
@@ -479,7 +458,6 @@
         "kind": {
           "type": "string",
           "description": "Vehicle kind",
-          "required": true,
           "enum": [
             "HATCHBACK",
             "LIMOUSINE",
@@ -518,7 +496,6 @@
       }
     },
     "Engine": {
-      "id": "Engine",
       "required": [
         "cubicCapacity",
         "fuel"
@@ -526,20 +503,17 @@
       "properties": {
         "cubicCapacity": {
           "type": "integer",
-          "description": "Vehicle cubic capacity (cm³)",
-          "required": true
+          "description": "Vehicle cubic capacity (cm³)"
         },
         "fuel": {
           "type": "string",
           "description": "Vehicle engine fuel type",
-          "required": true,
           "enum": [
             "PETROL",
             "PETROL_GAS",
             "DIESEL",
             "MIXED_FUEL_OIL",
             "ETANOL",
-            "HYBRID",
             "ELECTRIC",
             "HYDROGEN",
             "HYBRID",
@@ -550,7 +524,6 @@
       }
     },
     "Policy": {
-      "id": "Policy",
       "required": [
         "status"
       ],
@@ -558,7 +531,6 @@
         "status": {
           "type": "string",
           "description": "Vehicle policy status",
-          "required": true,
           "enum": [
             "UPTODATE",
             "OUTDATED",
@@ -568,7 +540,6 @@
       }
     },
     "Inspection": {
-      "id": "Inspection",
       "required": [
         "status"
       ],
@@ -576,7 +547,6 @@
         "status": {
           "type": "string",
           "description": "Vehicle inspection status",
-          "required": true,
           "enum": [
             "UPTODATE",
             "OUTDATED",
@@ -586,7 +556,6 @@
       }
     },
     "Registration": {
-      "id": "Registration",
       "required": [
         "status"
       ],
@@ -594,7 +563,6 @@
         "status": {
           "type": "string",
           "description": "registration status",
-          "required": true,
           "enum": [
             "REGISTERED",
             "UNREGISTERED",
@@ -603,23 +571,19 @@
         },
         "firstAt": {
           "type": "string",
-          "description": "registration first at date",
-          "required": false
+          "description": "registration first at date"
         }
       }
     },
     "Mileage": {
-      "id": "Mileage",
       "properties": {
         "value": {
           "type": "integer",
-          "description": "Vehicle mileage value",
-          "required": false
+          "description": "Vehicle mileage value"
         },
         "type": {
           "type": "string",
           "description": "Vehicle mileage type",
-          "required": false,
           "enum": [
             "KM",
             "MILE",
@@ -629,7 +593,6 @@
       }
     },
     "Event": {
-      "id": "Event",
       "required": [
         "type",
         "createdAt"
@@ -638,7 +601,6 @@
         "type": {
           "type": "string",
           "description": "Vehicle event type",
-          "required": true,
           "enum": [
             "PRODUCTION",
             "CHANGE_OWNER",
@@ -654,28 +616,23 @@
         },
         "createdAt": {
           "type": "string",
-          "description": "event created at date",
-          "required": true
+          "description": "event created at date"
         },
         "expireAt": {
           "type": "string",
-          "description": "event expire at date, used for INSPECTION event type",
-          "required": false
+          "description": "event expire at date, used for INSPECTION event type"
         },
         "note": {
           "type": "string",
-          "description": "event note, used for DEREGISTRATION event type",
-          "required": false
+          "description": "event note, used for DEREGISTRATION event type"
         },
         "firstOwner": {
           "type": "string",
-          "description": "event first owner (true/false) information, used for CHANGE_OWNER event type",
-          "required": false
+          "description": "event first owner (true/false) information, used for CHANGE_OWNER event type"
         },
         "ownerType": {
           "type": "string",
           "description": "event owner type, used for CHANGE_OWNER or CO_OWNER event type",
-          "required": false,
           "enum": [
             "PRIVATE",
             "COMPANY",
@@ -683,19 +640,14 @@
           ]
         },
         "location": {
-          "$ref": "#/definitions/Location",
-          "description": "event location, used for CHANGE_OWNER event type",
-          "required": false
+          "$ref": "#/definitions/Location"
         },
         "abroadRegistration": {
           "type": "boolean",
-          "description": "event abroad registration (true/false) information, used for REGISTRATION event type",
-          "required": false
+          "description": "event abroad registration (true/false) information, used for REGISTRATION event type"
         },
         "mileage": {
-          "$ref": "#/definitions/Mileage",
-          "description": "event mileage, used for INSPECTION event type",
-          "required": false
+          "$ref": "#/definitions/Mileage"
         }
       }
     },
@@ -709,59 +661,39 @@
       ],
       "properties": {
         "name": {
-          "$ref": "#/definitions/Name",
-          "required": true,
-          "description": "Vehicle name"
+          "$ref": "#/definitions/Name"
         },
         "type": {
-          "$ref": "#/definitions/Type",
-          "required": true,
-          "description": "Vehicle type"
+          "$ref": "#/definitions/Type"
         },
         "engine": {
-          "$ref": "#/definitions/Engine",
-          "required": true,
-          "description": "Vehicle engine"
+          "$ref": "#/definitions/Engine"
         },
         "production": {
-          "$ref": "#/definitions/Production",
-          "description": "Vehicle production",
-          "required": true
+          "$ref": "#/definitions/Production"
         },
         "policy": {
-          "$ref": "#/definitions/Policy",
-          "required": false,
-          "description": "Vehicle policy"
+          "$ref": "#/definitions/Policy"
         },
         "registration": {
-          "$ref": "#/definitions/Registration",
-          "required": false,
-          "description": "Vehicle registration"
+          "$ref": "#/definitions/Registration"
         },
         "inspection": {
-          "$ref": "#/definitions/Inspection",
-          "required": false,
-          "description": "Vehicle inspection"
+          "$ref": "#/definitions/Inspection"
         },
         "mileage": {
-          "$ref": "#/definitions/Mileage",
-          "description": "Mileage can be null value",
-          "required": false
+          "$ref": "#/definitions/Mileage"
         },
         "stolen": {
           "type": "boolean",
-          "description": "is Vehicle stolen",
-          "required": false
+          "description": "is Vehicle stolen"
         },
         "plate": {
-          "$ref": "#/definitions/Plate",
-          "description": "Vehicle plate",
-          "required": true
+          "$ref": "#/definitions/Plate"
         },
         "vin": {
           "type": "string",
-          "description": "Vehicle vin integer",
-          "required": false
+          "description": "Vehicle vin integer"
         }
       }
     },
@@ -772,14 +704,14 @@
       ],
       "properties": {
         "vehicle": {
-          "$ref": "#/definitions/Vehicle",
-          "required": true,
-          "description": "Vehicle data"
+          "$ref": "#/definitions/Vehicle"
         },
         "events": {
           "type": "array",
-          "required": true,
-          "description": "Vehicle events",
+          "xml": {
+            "name": "event",
+            "wrapped": true
+          },
           "items": {
             "$ref": "#/definitions/Event"
           }
@@ -794,13 +726,14 @@
       "properties": {
         "count": {
           "type": "string",
-          "required": true,
           "description": "Count all results"
         },
         "vehicleReports": {
           "type": "array",
-          "required": true,
-          "description": "Vehicle reports collection",
+          "xml": {
+            "name": "vehicleReport",
+            "wrapped": true
+          },
           "items": {
             "$ref": "#/definitions/Response"
           }

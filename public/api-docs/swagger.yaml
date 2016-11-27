@@ -1,0 +1,605 @@
+---
+  swagger: '2.0'
+  host: vehicle-history.io
+  basePath: /api
+  info: 
+    version: '1.0.0'
+    title: vehicle-history
+  tags: 
+    - 
+      name: vehicles
+      description: Vehicle reports
+    - 
+      name: buses
+      description: Buses reports
+  schemes: 
+    - https
+  paths: 
+    /vehicle-reports: 
+      get: 
+        tags: 
+          - vehicles
+        summary: Get vehicles history reports
+        description: Returns a vehicles history reports
+        operationId: getVehicleHistoryReport
+        produces: 
+          - application/vnd.vehicle-history.v1+json
+        parameters: 
+          - 
+            name: plate
+            description: Vehicle plate number
+            required: true
+            type: string
+            default: BBC12345
+            in: query
+          - 
+            name: vin
+            description: Vehicle vin number
+            required: false
+            type: string
+            default: ABC123456789DEF
+            in: query
+          - 
+            name: firstRegistrationDate
+            description: Vehicle first registration date
+            required: false
+            type: string
+            default: 11.12.2015
+            in: query
+          - 
+            name: country
+            description: Vehicle registration country
+            required: false
+            type: string
+            default: PL
+            in: query
+        responses: 
+          200: 
+            description: successful operation
+            schema: 
+              $ref: '#/definitions/VehicleReportsCollection'
+          401: 
+            description: Unauthorized
+        security: 
+          - 
+            bearerToken: 
+              - vehicle:report:get
+    /bus-reports/{plate}: 
+      get: 
+        tags: 
+          - buses
+        summary: Get bus report
+        description: Returns a bus report
+        operationId: getBusReport
+        produces: 
+          - application/vnd.vehicle-history.v1+json
+        parameters: 
+          - 
+            name: plate
+            description: Bus plate number
+            required: true
+            type: string
+            default: SBE12345
+            in: path
+        responses: 
+          200: 
+            description: successful operation
+            schema: 
+              $ref: '#/definitions/Response'
+          401: 
+            description: Unauthorized
+          404: 
+            description: Bus not found
+        security: 
+          - 
+            bearerToken: 
+              - bus:report:get
+  securityDefinitions: 
+    bearerToken: 
+      type: oauth2
+      authorizationUrl: https://vehicle-history.io/oauth/token
+      flow: implicit
+      scopes: 
+        bus:report:get: 'get bus report'
+        vehicle:report:get: 'get vehicle report'
+  definitions: 
+    Location: 
+      required: 
+        - country
+      properties: 
+        country: 
+          type: string
+          description: location country
+          enum: 
+            - PL
+            - UK
+            - UNKNOWN
+        state: 
+          type: string
+          description: location state
+    Name: 
+      required: 
+        - make
+        - model
+      properties: 
+        make: 
+          type: string
+          description: Vehicle make
+          enum: 
+            - ACCESS
+            - AUDI
+            - AUTOSAN
+            - ALTRAD
+            - ALFA_ROMEO
+            - APRILIA
+            - ASTON_MARTIN
+            - AWO
+            - BENTLEY
+            - BENZHOU
+            - BETA
+            - BIALORUS
+            - BRENDERUP
+            - BORO
+            - BOVA
+            - BURSTNER
+            - BAOTIAN
+            - BMW
+            - BELARUS
+            - CHEVROLET
+            - CADILLAC
+            - CAN_AM
+            - CHRYSLER
+            - CITROEN
+            - CI_CARAVANS
+            - COLES
+            - CPI
+            - CASE
+            - CASE_IH
+            - DACIA
+            - DAF
+            - DAFIER
+            - DAIMLER
+            - DAIHATSU
+            - DAEWOO
+            - DAVID_BROWN
+            - DERBI
+            - DODGE
+            - DOLL
+            - DUCATI
+            - EGLMOTOR
+            - FIAT
+            - FERRO
+            - FLIEGL
+            - FSC
+            - FSO
+            - FSM
+            - FSR
+            - FS_LUBLIN
+            - FUXIANDA
+            - FUXIN
+            - FORD
+            - GAZ
+            - GENERAL_TRAILERS
+            - GILERA
+            - GMC
+            - GNIOTPOL
+            - HANGLONG
+            - HAOTIAN
+            - HAILI
+            - HARLEY_DAVIDSON
+            - HOBBY
+            - HONDA
+            - HUATIAN
+            - HUSQVARNA
+            - HUONIAO
+            - HUEFFERMANN
+            - HURRICANE
+            - HYUNDAI
+            - HYOSUNG
+            - IFA
+            - IVECO
+            - INCA
+            - INTERNATIONAL
+            - ISUZU
+            - JAGUAR
+            - JANMIL
+            - JAWA
+            - JEEP
+            - JELCZ
+            - JIAJI
+            - JINCHENG
+            - JUNAK
+            - JMSTAR
+            - JOHN_DEERE
+            - JONWAY
+            - YAMAHA
+            - KANGDA
+            - KIA
+            - KAWASAKI
+            - KAESSBOHRER
+            - KEEWAY
+            - KYMCO
+            - KOCH
+            - KOEGEL
+            - KRAZ
+            - KREIDLER
+            - KRONE
+            - KTM
+            - LAMBORGHINI
+            - LANCIA
+            - LANDINI
+            - LDV
+            - LEXUS
+            - LIAZ
+            - LIFAN
+            - LINCOLN
+            - LINGBEN
+            - LONGJIA
+            - LAND_ROVER
+            - LADA
+            - MAN
+            - MALAGUTI
+            - MASSEY_FERGUSON
+            - MAZDA
+            - MBK_INDUSTRIE
+            - MERCEDES
+            - METAL_FACH
+            - MINI
+            - MITSUBISHI
+            - MAJESTIC_AUTO
+            - M_72
+            - MCC
+            - MG
+            - MZ
+            - MBK
+            - MULTICAR
+            - NEW_HOLLAND
+            - NEPTUN
+            - NISSAN
+            - NIEWIADOW
+            - OGAR
+            - OPEL
+            - PIAGGIO
+            - PEUGEOT
+            - PLYMOUTH
+            - PORSCHE
+            - PROTON
+            - RENAULT
+            - RHON
+            - ROVER
+            - ROMET_MOTORS
+            - ROUTER
+            - RIEJU
+            - RIYA
+            - RYDWAN
+            - ROLLS_ROYCE
+            - SAM
+            - SAMPO
+            - SANOK
+            - SANYANG
+            - SIAMOTO
+            - SIMSON
+            - SEAT
+            - SKODA
+            - SUPERBYKE
+            - SUZUKI
+            - SETRA
+            - SCANIA
+            - SCHMITZ_CARGOBULL
+            - SCHWARZMUELLER
+            - SHINERAY
+            - SHENKE
+            - SPRITE_SPORT
+            - SSANGYONG
+            - STAR
+            - STOPEXIM
+            - SLUPSK
+            - SAAB
+            - SUBARU
+            - SMART
+            - SOMMER
+            - SONIK
+            - STEYR
+            - SWIDNIK_TRADE
+            - SWIFT
+            - SYLAND
+            - TATA
+            - TASSO
+            - TAOTAO
+            - TOROS
+            - TOYOTA
+            - TRABANT
+            - TRIUMPH
+            - THULE
+            - TGB
+            - TEMA
+            - URSUS
+            - UAZ
+            - VOLKSWAGEN
+            - VOLVO
+            - VAUXHALL
+            - WANGYE
+            - WAZ
+            - WESTFALIA
+            - WIELTON
+            - WILK
+            - WIOLA
+            - WLADIMIREC
+            - WNP_SUSKI
+            - WONJAN
+            - WSK
+            - QINGQI
+            - YINMU
+            - YINXIANG
+            - YIBEN
+            - YIYING
+            - YAMASAKI
+            - ZASLAW
+            - ZIPP
+            - ZETOR
+            - ZHWEKI
+            - ZIL
+            - ZNEN
+            - ZUMICO
+            - UNKNOWN
+        name: 
+          type: string
+          description: Vehicle name
+        model: 
+          type: string
+          description: Vehicle model
+    Production: 
+      required: 
+        - year
+      properties: 
+        year: 
+          type: string
+          description: production year
+    Plate: 
+      required: 
+        - value
+        - country
+      properties: 
+        value: 
+          type: string
+          description: plate value
+        country: 
+          type: string
+          description: plate country
+          enum: 
+            - PL
+            - UK
+            - UNKNOWN
+    Type: 
+      required: 
+        - type
+        - kind
+      properties: 
+        type: 
+          type: string
+          description: Vehicle type
+          enum: 
+            - CAR
+            - SPECIAL_CAR
+            - OTHER_CAR
+            - MOTORCYCLE
+            - MOPED
+            - BUS
+            - TRACTOR
+            - LIGHT_TRAILER
+            - HEAVY_TRAILER
+            - TRUCK
+            - UNKNOWN
+        kind: 
+          type: string
+          description: Vehicle kind
+          enum: 
+            - HATCHBACK
+            - LIMOUSINE
+            - SEDAN
+            - COUPE
+            - CONVERTIBLE
+            - ESTATE
+            - HEARSE
+            - OFF_ROAD
+            - VAN
+            - WAGON
+            - WHEELED
+            - TRAILER
+            - LOAD_CAPACITY_OF_8_TONS
+            - LOAD_CAPACITY_MORE_THAN_8_TONS
+            - LOAD_CAPACITY_OF_2_TONS
+            - TROLLEY
+            - STANDARD
+            - SPORT
+            - CRUISER
+            - TOURING
+            - SPORT_TOURING
+            - QUAD
+            - OTHER
+            - LOADER
+            - CISTERN
+            - PLATFORM
+            - MPV
+            - OTHER_NOT_CAMPING
+            - CITY
+            - INTERCITY
+            - CRANE
+            - UNKNOWN
+    Engine: 
+      required: 
+        - cubicCapacity
+        - fuel
+      properties: 
+        cubicCapacity: 
+          type: integer
+          description: Vehicle cubic capacity (cm³)
+        fuel: 
+          type: string
+          description: Vehicle engine fuel type
+          enum: 
+            - PETROL
+            - PETROL_GAS
+            - DIESEL
+            - MIXED_FUEL_OIL
+            - ETANOL
+            - ELECTRIC
+            - HYDROGEN
+            - HYBRID
+            - OTHER
+            - UNKNOWN
+    Policy: 
+      required: 
+        - status
+      properties: 
+        status: 
+          type: string
+          description: Vehicle policy status
+          enum: 
+            - UPTODATE
+            - OUTDATED
+            - UNKNOWN
+    Inspection: 
+      required: 
+        - status
+      properties: 
+        status: 
+          type: string
+          description: Vehicle inspection status
+          enum: 
+            - UPTODATE
+            - OUTDATED
+            - UNKNOWN
+    Registration: 
+      required: 
+        - status
+      properties: 
+        status: 
+          type: string
+          description: registration status
+          enum: 
+            - REGISTERED
+            - UNREGISTERED
+            - UNKNOWN
+        firstAt: 
+          type: string
+          description: registration first at date
+    Mileage: 
+      properties: 
+        value: 
+          type: integer
+          description: Vehicle mileage value
+        type: 
+          type: string
+          description: Vehicle mileage type
+          enum: 
+            - KM
+            - MILE
+            - UNKNOWN
+    Event: 
+      required: 
+        - type
+        - createdAt
+      properties: 
+        type: 
+          type: string
+          description: Vehicle event type
+          enum: 
+            - PRODUCTION
+            - CHANGE_OWNER
+            - REGISTRATION
+            - DEREGISTRATION
+            - INSPECTION
+            - CO_OWNER
+            - HOLDER
+            - CHANGED_REGISTRATION_LOCATION
+            - STOLEN
+            - UNKNOWN
+        createdAt: 
+          type: string
+          description: event created at date
+        expireAt: 
+          type: string
+          description: event expire at date, used for INSPECTION event type
+        note: 
+          type: string
+          description: event note, used for DEREGISTRATION event type
+        firstOwner: 
+          type: string
+          description: event first owner (true/false) information, used for CHANGE_OWNER event type
+        ownerType: 
+          type: string
+          description: event owner type, used for CHANGE_OWNER or CO_OWNER event type
+          enum: 
+            - PRIVATE
+            - COMPANY
+            - UNKNOWN
+        location: 
+          $ref: '#/definitions/Location'
+        abroadRegistration: 
+          type: boolean
+          description: event abroad registration (true/false) information, used for REGISTRATION event type
+        mileage: 
+          $ref: '#/definitions/Mileage'
+    Vehicle: 
+      required: 
+        - name
+        - type
+        - engine
+        - production
+        - plate
+      properties: 
+        name: 
+          $ref: '#/definitions/Name'
+        type: 
+          $ref: '#/definitions/Type'
+        engine: 
+          $ref: '#/definitions/Engine'
+        production: 
+          $ref: '#/definitions/Production'
+        policy: 
+          $ref: '#/definitions/Policy'
+        registration: 
+          $ref: '#/definitions/Registration'
+        inspection: 
+          $ref: '#/definitions/Inspection'
+        mileage: 
+          $ref: '#/definitions/Mileage'
+        stolen: 
+          type: boolean
+          description: is Vehicle stolen
+        plate: 
+          $ref: '#/definitions/Plate'
+        vin: 
+          type: string
+          description: Vehicle vin integer
+    Response: 
+      required: 
+        - vehicle
+        - events
+      properties: 
+        vehicle: 
+          $ref: '#/definitions/Vehicle'
+        events: 
+          type: array
+          xml: 
+            name: event
+            wrapped: true
+          items: 
+            $ref: '#/definitions/Event'
+    VehicleReportsCollection: 
+      required: 
+        - count
+        - vehicleReports
+      properties: 
+        count: 
+          type: string
+          description: Count all results
+        vehicleReports: 
+          type: array
+          xml: 
+            name: vehicleReport
+            wrapped: true
+          items: 
+            $ref: '#/definitions/Response'
+
