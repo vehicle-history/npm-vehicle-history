@@ -86,7 +86,7 @@
     "yoda": [ 0 ],
 
     // strict mode
-    "strict": [ 2, "global" ],
+    "strict": [ 0, "global" ],
 
     // variables
     "no-catch-shadow": [ 2 ],

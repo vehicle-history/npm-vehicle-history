@@ -1,14 +1,14 @@
 sudo: false
 language: node_js
 cache:
+  yarn: true
   directories:
     - node_modules
 notifications:
   slack: vehicle-history:SKcpyDevstQaov9UMzwuns12
   email: true
 node_js:
-  - '6'
-  - '4'
+  - node
 before_install:
   - npm i -g npm@^2.15.1
 before_script:
@@ -16,7 +16,7 @@ before_script:
 script:
   - npm run test-travis
 after_success:
-  - npm install coveralls@2.11.9 && cat ./coverage/lcov.info | coveralls"
+  - npm install coveralls@2.11.15 && cat ./coverage/lcov.info | coveralls"
 env:
   - NODE_ENV=test CXX=g++-4.8
 addons:

@@ -1,11 +1,11 @@
-var options = require('config');
-var rewire = require('rewire');
-var SearchCarRequestBuilder = require('vehicle-history-model').model.searchCarRequest.SearchCarRequestBuilder;
-var vehicleHistory = rewire('../lib/vehicleHistory');
-var chai = require('chai');
-var should = chai.should();
+const options = require('config');
+const rewire = require('rewire');
+const SearchCarRequestBuilder = require('vehicle-history-model').model.searchCarRequest.SearchCarRequestBuilder;
+const vehicleHistory = rewire('../lib/vehicleHistory');
+const chai = require('chai');
+const should = chai.should();
 
-describe('vehicle history test', function () {
+describe('vehicle history test', () => {
 
   vehicleHistory.__set__({
     provider: {
@@ -20,9 +20,9 @@ describe('vehicle history test', function () {
 
             return cb(null, {});
           },
-          validateParams: function (searchCarRequest) {
-            searchCarRequest.vin.should.equal('ABC123456789DEF');
-            searchCarRequest.firstRegistrationDate.should.equal('11.11.2000');
+          validateParams: function({vin, firstRegistrationDate}) {
+            vin.should.equal('ABC123456789DEF');
+            firstRegistrationDate.should.equal('11.11.2000');
 
             return true;
           },
@@ -34,21 +34,21 @@ describe('vehicle history test', function () {
     }
   });
 
-  it('should call checkVehicleHistory ', function (done) {
+  it('should call checkVehicleHistory ', done => {
 
-    var plate = 'pwr 17wq';
-    var vin = 'ABC123456789DEF';
-    var firstRegistrationDate = '11.11.2000';
-    var country = 'UK';
+    const plate = 'pwr 17wq';
+    const vin = 'ABC123456789DEF';
+    const firstRegistrationDate = '11.11.2000';
+    const country = 'UK';
 
-    var searchCarRequest = new SearchCarRequestBuilder()
+    const searchCarRequest = new SearchCarRequestBuilder()
       .withPlate(plate)
       .withVin(vin)
       .withFirstRegistrationDate(firstRegistrationDate)
       .withCountry(country)
       .build();
 
-    vehicleHistory.checkVehicleHistory(searchCarRequest, options, function (err, result) {
+    vehicleHistory.checkVehicleHistory(searchCarRequest, options, (err, result) => {
       should.not.exist(err);
       should.exist(result);
       done();
@@ -56,9 +56,9 @@ describe('vehicle history test', function () {
   });
 
 
-  it('should export meta version', function (done) {
+  it('should export meta version', done => {
 
-    var version = vehicleHistory.VERSION;
+    const version = vehicleHistory.VERSION;
     should.exist(version);
     done();
   });

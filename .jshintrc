@@ -1,5 +1,7 @@
 {
-  "esnext":     true,
+  "esversion":  6,
+  "es3":        false,
+  "es5":        false,
   "bitwise":    false,
   "asi":        false,
   "browser":    false,
@@ -33,5 +35,9 @@
   "undef":      true,
   "unused":     true,
   "maxlen":     140,
-  "latedef":    true
+  "latedef":    true,
+  "globals" : {
+    "JSON": true,
+    "require": true
+  }
 }
