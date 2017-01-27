@@ -1,5 +1,6 @@
 1.1.0 / 2017-01-27
   * es6
+  * updated dependencies
 
 0.1.9 / 2015-01-18
   * Merge pull request https://github.com/vehicle-history/npm-vehicle-history/issues/2 from
