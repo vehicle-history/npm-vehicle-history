@@ -1,0 +1,17 @@
+machine:
+  environment:
+    NODE_ENV: "test"
+  node:
+    version: stable
+
+dependencies:
+  pre:
+    - curl -o- -L https://yarnpkg.com/install.sh | TERM=xterm bash
+  override:
+    - yarn
+  cache_directories:
+    - ~/.cache/yarn
+
+test:
+  override:
+    - yarn test

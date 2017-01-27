@@ -10,6 +10,9 @@ test/
 *.ipr
 *.iws
 .idea
+node_modules
+circle.yml
+yarn.lock
 Dockerfile
 newrelic_agent.log
 release.sh

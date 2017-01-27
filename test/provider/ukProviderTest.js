@@ -1,31 +1,31 @@
-var options = require('config');
-var chai = require('chai');
-var rewire = require('rewire');
-var SearchCarRequestBuilder = require('vehicle-history-model').model.searchCarRequest.SearchCarRequestBuilder;
-var provider = rewire('../../lib/provider/ukProvider');
-var should = chai.should();
-var expect = chai.expect;
+const options = require('config');
+const chai = require('chai');
+const rewire = require('rewire');
+const SearchCarRequestBuilder = require('vehicle-history-model').model.searchCarRequest.SearchCarRequestBuilder;
+const provider = rewire('../../lib/provider/ukProvider');
+const should = chai.should();
+const expect = chai.expect;
 
-describe('uk provider test', function () {
+describe('uk provider test', () => {
 
-  it('should validate plate for uk', function (done) {
+  it('should validate plate for uk', done => {
 
-    var plate = 'A123 STE';
+    const plate = 'A123 STE';
 
-    provider.isValidPlate(plate, function (err, isValid) {
-      expect(isValid, plate + ' should be valid').is.true;
+    provider.isValidPlate(plate, (err, isValid) => {
+      expect(isValid, `${plate} should be valid`).is.true;
       done();
     });
   });
 
-  it('should call checkVehicleHistory for uk', function (done) {
+  it('should call checkVehicleHistory for uk', done => {
 
-    var plate = 'A123 STE';
-    var vin = 'ABC123456789DEF';
-    var firstRegistrationDate = 'dd.mm.rrrr';
-    var country = 'UK';
+    const plate = 'A123 STE';
+    const vin = 'ABC123456789DEF';
+    const firstRegistrationDate = 'dd.mm.rrrr';
+    const country = 'UK';
 
-    var searchCarRequest = new SearchCarRequestBuilder()
+    const searchCarRequest = new SearchCarRequestBuilder()
       .withPlate(plate)
       .withVin(vin)
       .withFirstRegistrationDate(firstRegistrationDate)
@@ -48,7 +48,7 @@ describe('uk provider test', function () {
       }
     });
 
-    provider.checkVehicleHistory(searchCarRequest, options, function (err, report) {
+    provider.checkVehicleHistory(searchCarRequest, options, (err, report) => {
       should.not.exist(err);
       should.exist(report);
       done();

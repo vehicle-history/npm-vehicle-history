@@ -1,15 +1,15 @@
-var provider = require('../../lib/provider/provider');
-var chai = require('chai');
-var should = chai.should();
-var expect = chai.expect;
+const provider = require('../../lib/provider/provider');
+const chai = require('chai');
+const should = chai.should();
+const expect = chai.expect;
 
-describe('provider test', function () {
+describe('provider test', () => {
 
-  it('should get Poland provider', function (done) {
+  it('should get Poland provider', done => {
 
-    var plate = 'pwr 17wq';
+    const plate = 'pwr 17wq';
 
-    provider.selectProvider(plate, function (err, dataProvider) {
+    provider.selectProvider(plate, (err, dataProvider) => {
       expect(dataProvider).to.be.not.null;
       done();
     });
