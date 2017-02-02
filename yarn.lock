@@ -283,9 +283,9 @@ config@1.21.0:
   dependencies:
     json5 "0.4.0"
 
-config@1.24.0:
-  version "1.24.0"
-  resolved "https://registry.yarnpkg.com/config/-/config-1.24.0.tgz#553bc4d77637d6630a305b52c33cb6da2b9f42f0"
+config@1.25.1:
+  version "1.25.1"
+  resolved "https://registry.yarnpkg.com/config/-/config-1.25.1.tgz#72ac51cde81e2c77c6b3b66d0130dae527a19c92"
   dependencies:
     json5 "0.4.0"
 
