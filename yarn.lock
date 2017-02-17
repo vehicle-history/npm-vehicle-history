@@ -1089,16 +1089,15 @@ negotiator@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-newrelic@1.37.0:
-  version "1.37.0"
-  resolved "https://registry.yarnpkg.com/newrelic/-/newrelic-1.37.0.tgz#95bf64aa78800d0d3d4ee8d4f155723ba17d71fe"
+newrelic@1.37.2:
+  version "1.37.2"
+  resolved "https://registry.yarnpkg.com/newrelic/-/newrelic-1.37.2.tgz#2b05cd892c8f2c1c7be5ef17183b96fb09426d6c"
   dependencies:
     concat-stream "^1.5.0"
     https-proxy-agent "^0.3.5"
     json-stringify-safe "^5.0.0"
     readable-stream "^1.1.13"
     semver "^5.3.0"
-    yakaa "^1.0.1"
 
 node-expat@^2.3.15:
   version "2.3.15"
@@ -1811,10 +1810,6 @@ xml2json@0.11.0:
 "xtend@>=4.0.0 <4.1.0-0", xtend@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
-
-yakaa@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/yakaa/-/yakaa-1.0.1.tgz#3ecaae72f3d089da58089403126204cec772e60a"
 
 yallist@^2.0.0:
   version "2.0.0"
