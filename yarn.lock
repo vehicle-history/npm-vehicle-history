@@ -357,6 +357,10 @@ ctype@0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/ctype/-/ctype-0.5.3.tgz#82c18c2461f74114ef16c135224ad0b9144ca12f"
 
+cvss@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/cvss/-/cvss-1.0.2.tgz#df67e92bf12a796f49e928799c8db3ba74b9fcd6"
+
 cycle@1.0.x:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/cycle/-/cycle-1.0.3.tgz#21e80b2be8580f98b468f379430662b046c34ad2"
@@ -1126,12 +1130,13 @@ nopt@3.x:
   dependencies:
     abbrev "1"
 
-nsp@2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/nsp/-/nsp-2.6.2.tgz#93dfb4c5b2885cc354d8ca18b73f09e52b9c8b16"
+nsp@2.6.3:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/nsp/-/nsp-2.6.3.tgz#db05035953cda2ab3a571ee82fab84f4cb081d17"
   dependencies:
     chalk "^1.1.1"
     cli-table "^0.3.1"
+    cvss "^1.0.0"
     https-proxy-agent "^1.0.0"
     joi "^6.9.1"
     nodesecurity-npm-utils "^5.0.0"
