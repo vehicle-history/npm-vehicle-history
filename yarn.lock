@@ -1099,9 +1099,9 @@ negotiator@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-newrelic@1.37.2:
-  version "1.37.2"
-  resolved "https://registry.yarnpkg.com/newrelic/-/newrelic-1.37.2.tgz#2b05cd892c8f2c1c7be5ef17183b96fb09426d6c"
+newrelic@1.38.1:
+  version "1.38.1"
+  resolved "https://registry.yarnpkg.com/newrelic/-/newrelic-1.38.1.tgz#c3d10f02c9b14f84365f5eb939ae313ff24ff618"
   dependencies:
     concat-stream "^1.5.0"
     https-proxy-agent "^0.3.5"
