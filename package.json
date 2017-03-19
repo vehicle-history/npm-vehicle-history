@@ -8,7 +8,7 @@
     "async": "2.1.5",
     "config": "1.25.1",
     "keen-js": "3.4.1",
-    "moment": "2.17.1",
+    "moment": "2.18.0",
     "my-restify-api": "0.6.3",
     "newrelic": "1.38.1",
     "pl-numberplates": "1.0.0",
