@@ -95,9 +95,9 @@ async@2.1.4:
   dependencies:
     lodash "^4.14.0"
 
-async@2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/async/-/async-2.1.5.tgz#e587c68580994ac67fc56ff86d3ac56bdbe810bc"
+async@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/async/-/async-2.2.0.tgz#c324eba010a237e4fbd55a12dee86367d5c0ef32"
   dependencies:
     lodash "^4.14.0"
 
@@ -1058,13 +1058,9 @@ moment-timezone@^0.5.11:
   dependencies:
     moment ">= 2.6.0"
 
-moment@2.18.1, moment@^2.10.6:
+moment@2.18.1, moment@2.x.x, "moment@>= 2.6.0", moment@^2.10.6, moment@^2.17.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
-
-moment@2.x.x, "moment@>= 2.6.0", moment@^2.17.1:
-  version "2.17.1"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
 
 ms@0.7.1:
   version "0.7.1"
