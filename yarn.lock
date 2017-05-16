@@ -1043,9 +1043,9 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mocha@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-3.3.0.tgz#d29b7428d3f52c82e2e65df1ecb7064e1aabbfb5"
+mocha@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-3.4.1.tgz#a3802b4aa381934cacb38de70cf771621da8f9af"
   dependencies:
     browser-stdout "1.3.0"
     commander "2.9.0"
@@ -1110,9 +1110,9 @@ negotiator@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-newrelic@1.39.0:
-  version "1.39.0"
-  resolved "https://registry.yarnpkg.com/newrelic/-/newrelic-1.39.0.tgz#84d8ad0b4acd72e7e7205b9286139ad99490ea9e"
+newrelic@1.39.1:
+  version "1.39.1"
+  resolved "https://registry.yarnpkg.com/newrelic/-/newrelic-1.39.1.tgz#9d73571d77a436c3916d32b7fe2ae3a9dfd6bb17"
   dependencies:
     concat-stream "^1.5.0"
     https-proxy-agent "^0.3.5"

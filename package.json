@@ -10,7 +10,7 @@
     "keen-js": "3.4.1",
     "moment": "2.18.1",
     "my-restify-api": "0.6.4",
-    "newrelic": "1.39.0",
+    "newrelic": "1.39.1",
     "pl-numberplates": "1.0.0",
     "uk-numberplates": "0.0.2",
     "vehicle-history-model": "1.2.1",
@@ -22,7 +22,7 @@
   "devDependencies": {
     "chai": "3.5.0",
     "istanbul": "0.4.5",
-    "mocha": "3.3.0",
+    "mocha": "3.4.1",
     "nsp": "2.6.3",
     "rewire": "2.5.2"
   },
