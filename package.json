@@ -8,9 +8,9 @@
     "async": "2.6.0",
     "config": "1.30.0",
     "keen-js": "4.3.0",
-    "moment": "2.21.0",
+    "moment": "^2.22.0",
     "my-restify-api": "0.6.6",
-    "newrelic": "3.2.0",
+    "newrelic": "^3.3.0",
     "pl-numberplates": "1.0.0",
     "uk-numberplates": "0.0.2",
     "vehicle-history-model": "1.2.1",
@@ -24,7 +24,7 @@
     "istanbul": "0.4.5",
     "mocha": "5.0.5",
     "nsp": "3.2.1",
-    "rewire": "3.0.2"
+    "rewire": "^4.0.0"
   },
   "scripts": {
     "prepublish": "npm prune && node_modules/nsp/bin/nsp check",
